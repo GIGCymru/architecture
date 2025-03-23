@@ -28,55 +28,55 @@ For immediate ship, we want to align with what we know works well broadly (which
 
 To expand this ADR during the work-in-progress, here are a bunch of additional options, and we could/should add more as we discover them:
 
-* [Team Norms, Working Agreements, and Simple Rules by Esther Derby](doc/team-norms-by-esther-derby/)
+* [Team Norms, Working Agreements, and Simple Rules by Esther Derby](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/team-norms-by-esther-derby/)
 
-* [Working Agreements by Jane Haskell](doc/working-agreements-by-jane-haskell/)
+* [Working Agreements by Jane Haskell](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/working-agreements-by-jane-haskell/)
 
-* [Adult Principles by John Perry Barlow](doc/adult-principles-by-john-perry-barlow/)
+* [Adult Principles by John Perry Barlow](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/adult-principles-by-john-perry-barlow/)
 
-* [Principles by Nabeel S. Qureshi](doc/principles-by-nabeel-s-qureshi/)
+* [Principles by Nabeel S. Qureshi](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/principles-by-nabeel-s-qureshi/)
 
-* [Ground rules at Tesla by Elon Musk](doc/ground-rules-at-tesla-by-elon-musk/)
+* [Ground rules at Tesla by Elon Musk](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/ground-rules-at-tesla-by-elon-musk/)
 
-* [Ground Rules by Tree Bressen](doc/ground-rules-by-tree-bressen/)
+* [Ground Rules by Tree Bressen](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/ground-rules-by-tree-bressen/)
 
-* [Ground rules for effective meetings by Get The Picture](doc/ground-rules-for-effective-meetings-by-get-the-picture/)
+* [Ground rules for effective meetings by Get The Picture](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/ground-rules-for-effective-meetings-by-get-the-picture/)
 
-* [High-velocity decision making by Amazon](doc/high-velocity-decision-making-by-amazon/)
+* [High-velocity decision making by Amazon](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/high-velocity-decision-making-by-amazon/)
 
 * [How to send progress updates by Slava Akhmechet](how-to-send-progress-updates-by-slava-akhmechet)
 
-* [How we structure our work and teams at Basecamp](doc/how-we-structure-our-work-and-teams-at-basecamp/)
+* [How we structure our work and teams at Basecamp](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/how-we-structure-our-work-and-teams-at-basecamp/)
 
-* [Leadership Principles by United States Marine Corps](doc/leadership-principles-by-united-states-marine-corps/)
+* [Leadership Principles by United States Marine Corps](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/leadership-principles-by-united-states-marine-corps/)
 
-* [Project management practices by Hacker News participants](doc/project-management-practices-by-hackernews/)
+* [Project management practices by Hacker News participants](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/project-management-practices-by-hackernews/)
 
-* [Rules of the Road by Jerry Perenchio](doc/rules-of-the-road-by-jerry-perenchio/)
+* [Rules of the Road by Jerry Perenchio](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/rules-of-the-road-by-jerry-perenchio/)
 
-* [Scaled Agile Framework (SAFe)](doc/scaled-agile-framework-safe/)
+* [Scaled Agile Framework (SAFe)](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/scaled-agile-framework-safe/)
 
-* [Software Engineering at Google](doc/software-engineering-at-google/)
+* [Software Engineering at Google](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/software-engineering-at-google/)
 
-* [Software working advice by Cyranix](doc/software-working-advice-by-cyranix/)
+* [Software working advice by Cyranix](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/software-working-advice-by-cyranix/)
 
-* [Team working agreements example by giffconstable](doc/team-working-agreement-example-by-giffconstable/)
+* [Team working agreements example by giffconstable](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/team-working-agreement-example-by-giffconstable/)
 
-* [The Core Protocols by McCarthy](doc/the-core-protocols-by-mccarthy/)
+* [The Core Protocols by McCarthy](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/the-core-protocols-by-mccarthy/)
 
-* [The Five Keys to a Successful Google Team](doc/the-five-keys-to-a-successful-google-team/)
+* [The Five Keys to a Successful Google Team](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/the-five-keys-to-a-successful-google-team/)
 
-* [The unwritten laws of engineering at Stedi](doc/the-unwritten-laws-of-engineering-at-stedi/)
+* [The unwritten laws of engineering at Stedi](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/the-unwritten-laws-of-engineering-at-stedi/)
 
-* [Engineering management checklist by Patrick Newman](doc/engineering-management-checklist-by-patrick-newman/)
+* [Engineering management checklist by Patrick Newman](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/engineering-management-checklist-by-patrick-newman/)
 
-* [Strategies to improve workplace communication - By Calm Business](doc/strategies-to-improve-workplace-communication-by-calm-business/)
+* [Strategies to improve workplace communication - By Calm Business](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/strategies-to-improve-workplace-communication-by-calm-business/)
 
-* [Onboarding and induction checklist - By employmenthero](doc/onboarding-and-induction-checklist-by-employme/)
+* [Onboarding and induction checklist - By employmenthero](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/onboarding-and-induction-checklist-by-employme/)
 
-* [Our Values - What it Means to Work at ZOE](doc/our-values-what-it-means-to-work-at-zoe/)
+* [Our Values - What it Means to Work at ZOE](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/our-values-what-it-means-to-work-at-zoe/)
 
-* [101 Additional Advices by Kevin Kelly](doc/101-additional-advices-by-kevin-kelly/)
+* [101 Additional Advices by Kevin Kelly](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/101-additional-advices-by-kevin-kelly/)
 
 ## Recommendation - Decision Outcome
 
