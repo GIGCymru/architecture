@@ -8,7 +8,7 @@
 
 ## Situation - Context and Problem Statement
 
-* We want to encourage high-trust high-speed participation in our org and our repos, and help shape what good participation cna look like, rather than just a blank slate.
+* We want to encourage high-trust high-speed participation in our org and our repos, and help shape what good participation can look like, rather than just a blank slate.
 
 * Broadly this is known as our "ways of working", and some people and companies may also know this as a mix of principles, values, whys, tenets, ground rules, aspirations, norms, working agreements, culture, etc.
 
