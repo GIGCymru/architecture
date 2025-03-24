@@ -1,7 +1,7 @@
 # ADR - Architecture Decision Records Naming Convention
 
 **Status**: proposed  
-**Date**: 2025-03-24 
+**Date**: 2025-03-24  
 **Governance**: Drafted for DHCW Technical Design Authority (TDA) for approval
 
 ## Situation - Context and Problem Statement
