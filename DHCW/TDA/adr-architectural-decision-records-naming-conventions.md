@@ -1,4 +1,4 @@
-# ADR - Architectural Decision Records Naming Convention
+# ADR - Architecture Decision Records Naming Convention
 
 **Status**: proposed  
 **Date**: 2025-03-24 
@@ -37,31 +37,33 @@ Adopt an ADR **naming convention** of:
 * Author to ensure the title makes it clear what the decision relates to.
 * Author to ensure titles are human readable and unique.
 * Examples:
-    * 'ADR - Use Architectural Decision Records and Structure'
-    * 'ADR - Architectural Decision Records Naming Convention'
-    * 'ADR - Architectural Decision Record Format as Markdown'
+    * 'ADR - Use Architecture Decision Records and Structure'
+    * 'ADR - Architecture Decision Records Naming Convention'
+    * 'ADR - Architecture Decision Record Format as Markdown'
 
 Whilst numbering ADRs makes them easy to cross-reference, it introduces an administrative/process overhead to ensure numbers are unique and sequential and adds complexity in the ordering of ADRs, especially when multiple ADRs are in development in parallel (which gets published first, who gets the next ADR number etc.). 
 
 Using human readable names makes them easy to refer to and talk about.
 
+**Note:** We are referring to ADRs as '_Architecture_' decision records, not '_Architectural_' or other similar titles.
+
 ### Filenames
 Given the above, apply the following convention to **filenames**: Match the Title of the ADR and remove whitespace and adopt kebab style e.g. 
-* ``adr-architectural-decision-records-naming-convention.md``
-* ``adr-use-architectural-decision-records-and-structure.md``
+* ``adr-architecture-decision-records-naming-convention.md``
+* ``adr-use-architecture-decision-records-and-structure.md``
 * ``adr-specify-adr-format-as-markdown.md``
 
 ### Cross Referencing
 When cross-referencing ADRs, use the full title of the ADR and link to the record filename itself e.g.
-* See [ADR - Architectural Decision Records Naming Convention](adr-architectural-decision-records-naming-conventions.md)
+* See [ADR - Architecture Decision Records Naming Convention](adr-architecture-decision-records-naming-conventions.md)
 
 ### Branches
 Git branch names should utilise the same convention as the main filename of the ADR itself e.g.
-* ``git checkout -m adr-architectural-decision-records-naming-convention``
+* ``git checkout -m adr-architecture-decision-records-naming-convention``
 
 ### Confirmation
 
 This ADR will be enforced by reviewers of newly submitted ADRs, who should refer to this ADR and confirm the naming convention and decision herein is being adhered to.
 
 ## More Information (Optional)
-See [ADR - Use Architectural Decision Records and Structure](adr-use-architectural-decision-records-and-structure.md) for the structure of ADRs
+See [ADR - Use Architecture Decision Records and Structure](adr-use-architecture-decision-records-and-structure.md) for the structure of ADRs
