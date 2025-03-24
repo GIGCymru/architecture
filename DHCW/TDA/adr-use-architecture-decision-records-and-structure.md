@@ -1,4 +1,4 @@
-# 0001 - Use Architectural Decision Records
+# 0001 - Use Architecture Decision Records
 
 **Status**: proposed  
 **Date**: 2025-03-17  
