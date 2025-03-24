@@ -17,7 +17,7 @@
 ## Assessment - Considered Options
 The structure utilised by:
 * [Michael Nygard's template](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions) – The first incarnation of the term "ADR"
-* [MADR](https://adr.github.io/madr/) 4.0.0 – The Markdown Architecture Decision Records
+* [MADR](https://adr.github.io/madr/) 4.0.0 – The Markdown Architectural Decision Records
 * [Decision record template by Jeff Tyree and Art Akerman](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/locales/en/templates/decision-record-template-by-jeff-tyree-and-art-akerman) - Used in CapitalOne (regulated industry)
 * Other templates listed at <https://github.com/joelparkerhenderson/architecture_decision_record>
 * [SBAR](https://en.wikipedia.org/wiki/SBAR) (Situation, Background, Assessment, Recommendation) template - used by DHCW internally and in healthcare generally.
