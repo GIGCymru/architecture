@@ -1,13 +1,13 @@
-# 0002 - Format ADRs using plaintext Markdown
+# ADR - Format ADRs using plaintext Markdown
 
 **Status**: proposed  
-**Date**: 2025-03-22 
+**Date**: 2025-03-25  
 **Governance**: Drafted for DHCW Technical Design Authority (TDA) for approval
 
 ## Situation - Context and Problem Statement
 
 * We want to record architecture related decisions for NHS Wales organisations, made via agreed governance mechanisms. 
-* The **structure** is decided by [ADR 0001](adr-0001-use-adrs.md)
+* The **structure** is decided by [ADR - Use Architecture Decision Records](adr-use-architecture-decision-records-and-structure.md)
 * We need to agree the **format**.
 
 ## Background - Decision Drivers
@@ -41,4 +41,4 @@ Format ADRs as plaintext Markdown documents, using the CommonMark specification.
 * Markdown limits the formatting of the document (can be seen as a positive) so users may be constrained in presenting information.
 
 ## More Information
-See [ADR 0001](adr-0001-use-adrs.md) for the structure of an ADR.
+See [ADR - Use Architecture Decision Records](adr-use-architecture-decision-records-and-structure.md) for the structure of an ADR.

@@ -1,7 +1,7 @@
-# 0001 - Use Architecture Decision Records
+# ADR - Use Architecture Decision Records
 
 **Status**: proposed  
-**Date**: 2025-03-17  
+**Date**: 2025-03-25  
 **Governance**: Drafted for DHCW Technical Design Authority (TDA) for approval
 
 ## Situation - Context and Problem Statement
@@ -38,11 +38,11 @@ Adopt an ADR structure with mandatory and optional fields,  taking elements of M
 # ADR Template
 The below template forms the structure of an ADR.
 
-**Status**: {proposed | rejected | accepted | deprecated | superseded by ADR-0123}  
+**Status**: {proposed | rejected | accepted | deprecated | superseded by ADR-...}  
 **Date**: {YYYY-MM-DD when the decision was last updated}  
 **Governance**: {describe the governance involved in the decision e.g. Technical Design Authority  approved}  
 
-# {short title, representative of solved problem and found solution}
+# ADR - {short title, representative of solved problem and found solution}
 
 ## Situation - Context and Problem Statement
 
