@@ -1,4 +1,4 @@
-# ADR - Use Architecture Decision Records
+# Use Architecture Decision Records and Structure
 
 **Status**: proposed  
 **Date**: 2025-03-25  
@@ -16,7 +16,7 @@
 
 ## Assessment - Considered Options
 The structure utilised by:
-* [Michael Nygard's template](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions) – The first incarnation of the term "ADR"
+* [Michael Nygard's template](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions) – The first incarnation of the term "Architecture Decision Records" (ADR)
 * [MADR](https://adr.github.io/madr/) 4.0.0 – The Markdown Architectural Decision Records
 * [Decision record template by Jeff Tyree and Art Akerman](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/locales/en/templates/decision-record-template-by-jeff-tyree-and-art-akerman) - Used in CapitalOne (regulated industry)
 * Other templates listed at <https://github.com/joelparkerhenderson/architecture_decision_record>
@@ -25,24 +25,24 @@ The structure utilised by:
 
 ## Recommendation - Decision Outcome
 
-Adopt an ADR structure with mandatory and optional fields,  taking elements of MADR and aligning it with the existing SBAR structure.
+Adopt an Architecture Decision Record structure with mandatory and optional fields,  taking elements of MADR and aligning it with the existing SBAR structure.
 
 * Allows for structured capturing of any decision.
 * The structure is comprehensible and facilitates usage & maintenance.
 * It allows varying levels of detail to suit the decision being made.
-* Aligns with existing terminology and structure that teams will be familar with.  
-* The structure enables flexiblility in format, storage and publishing.
+* Aligns with existing terminology and structure that teams will be familiar with.  
+* The structure enables flexibility in format, storage and publishing.
 
 <br/>
 
-# ADR Template
-The below template forms the structure of an ADR.
+# Architecture Decision Record Template
+The below template forms the structure of an Architecture Decision Record.
 
-**Status**: {proposed | rejected | accepted | deprecated | superseded by ADR-...}  
+**Status**: {proposed | rejected | accepted | deprecated | superseded by ABC...}  
 **Date**: {YYYY-MM-DD when the decision was last updated}  
 **Governance**: {describe the governance involved in the decision e.g. Technical Design Authority  approved}  
 
-# ADR - {short title, representative of solved problem and found solution}
+# {short title, representative of solved problem and found solution}
 
 ## Situation - Context and Problem Statement
 
@@ -77,7 +77,7 @@ The below template forms the structure of an ADR.
 
 ### Confirmation (Optional)
 
-{Describe how the implementation of/compliance with the ADR can/will be confirmed.}
+{Describe how the implementation of/compliance with the Architecture Decision Record can/will be confirmed.}
 
 ## Pros and Cons of the Options (Optional)
 
