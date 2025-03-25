@@ -64,7 +64,7 @@ Given the above, apply the following convention to **filenames**: Match the Titl
 
 ### Cross Referencing
 When cross-referencing decisions, use the full title of the decision and link to the record filename itself e.g.
-* See [Architecture Decision Records Naming Conventions](adr-architecture-decision-records-naming-conventions.md)
+* See [Architecture Decision Records Naming Conventions](architecture-decision-records-naming-conventions.md)
 
 ### Branches
 Git branch names should utilise the same convention as the main filename of the decision itself e.g.
@@ -75,4 +75,4 @@ Git branch names should utilise the same convention as the main filename of the 
 This decision will be enforced by reviewers of newly submitted records, who should refer to this decision and confirm the naming convention and decision herein is being adhered to.
 
 ## More Information (Optional)
-See [Use Architecture Decision Records and Structure](adr-use-architecture-decision-records-and-structure.md) for the structure of records.
+See [Use Architecture Decision Records and Structure](use-architecture-decision-records-and-structure.md) for the structure of records.
