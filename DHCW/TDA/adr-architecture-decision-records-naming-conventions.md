@@ -1,7 +1,7 @@
-# ADR - Architecture Decision Records Naming Convention
+# Architecture Decision Records Naming Convention
 
 **Status**: proposed  
-**Date**: 2025-03-24  
+**Date**: 2025-03-25  
 **Governance**: Drafted for DHCW Technical Design Authority (TDA) for approval
 
 ## Situation - Context and Problem Statement
@@ -14,56 +14,65 @@
 We want:
 * a consistent naming convention for our decisions.
 * names to be human readable and easy to understand.
-* to be able to cross-reference ADRs easily.
-* the naming to support multiple ADRs being developed in parallel (i.e. avoid naming clashes).
+* to be able to cross-reference Architecture Decision Records easily.
+* the naming to support multiple Architecture Decision Records being developed in parallel (i.e. avoid naming clashes).
 
 ## Assessment - Considered Options
 
 For naming itself:
 * Just sequential numbering e.g. ADR 0001, ADR 0002, ...
-* Sequential numbering and titles e.g. ADR 0001 - ADR-0001-Title, ADR 0002 - Title, ...
-* Just titles e.g. ADR - Title, ADR - Title
+* Sequential numbering and titles e.g. ADR 0001 - Title, ADR 0002 - Title, ...
+* Just titles e.g. "Title of a Record"
 * Formless – No naming convention - author's choice.
 
 For filenames:
-* The title of the ADR as above as-is e.g. ``ADR - Title Goes Here.md``
-* Use of lowercase 'kebab' style for filenames e.g. ``adr-title-goes-here.md``
-* Use of lowercase 'snake' style for filenames e.g. ``adr_title_goes_here.md``
+* The title of the Architecture Decision Record as above as-is e.g. ``Title Goes Here.md``
+* Use of lowercase 'kebab' style for filenames e.g. ``title-goes-here.md``
+* Use of lowercase 'snake' style for filenames e.g. ``title_goes_here.md``
+
+On acronyms:
+* Use 'ADR' as an acronym for Architecture Decision Record.
+* Avoid acronyms, e.g. always spell out "Architecture Decision Record" in full.
 
 ## Recommendation - Decision Outcome
-### Naming Convention
-Adopt an ADR **naming convention** of:
-* Just titles, in Title Case, prefixed by **'ADR - '**.
+### Naming Conventions
+Adopt an Architecture Decision Record **naming convention** of:
+* Just titles, in Title Case
 * Author to ensure the title makes it clear what the decision relates to.
 * Author to ensure titles are human readable and unique.
+* Avoid the use of acronyms
 * Examples:
-    * 'ADR - Use Architecture Decision Records and Structure'
-    * 'ADR - Architecture Decision Records Naming Convention'
-    * 'ADR - Architecture Decision Record Format as Markdown'
+    * 'Use Architecture Decision Records and Structure'
+    * 'Architecture Decision Records Naming Conventions'
+    * 'Format Architecture Decision Records with Markdown'
 
-Whilst numbering ADRs makes them easy to cross-reference, it introduces an administrative/process overhead to ensure numbers are unique and sequential and adds complexity in the ordering of ADRs, especially when multiple ADRs are in development in parallel (which gets published first, who gets the next ADR number etc.). 
+Whilst numbering Architecture Decision Records makes them easy to cross-reference, it introduces an administrative/process overhead to ensure numbers are unique and sequential and adds complexity in the ordering of records, especially when multiple records are in development in parallel (which gets published first, who gets the next record number etc.). 
 
-Using human readable names makes them easy to refer to and talk about.
+Avoiding acronyms and using human readable names makes them easier for users to understand, refer to and talk about.
 
-**Note:** We are referring to ADRs as '_Architecture_' decision records, not '_Architectural_' or other similar titles.
+**Note:** We are referring to '**_Architecture_**' decision records, not '_Architectural_' or other similar words.
+
+**Note:** Readability is important, it may be better to refer to Architecture Decision Records as _decisions_ and _records_ in documents rather than always writing out the full _Architecture Decision Records_ every time e.g. 
+* "This **_record_** builds on the previous **_decision_**" (good - emphasis only added here for clarity).
+* "This _Architecture Decision Record_ builds on the previous _Architecture Decision Record_" (worse/avoid). 
 
 ### Filenames
-Given the above, apply the following convention to **filenames**: Match the Title of the ADR and remove whitespace and adopt kebab style e.g. 
-* ``adr-architecture-decision-records-naming-convention.md``
-* ``adr-use-architecture-decision-records-and-structure.md``
-* ``adr-specify-adr-format-as-markdown.md``
+Given the above, apply the following convention to **filenames**: Match the Title of the record and remove whitespace and adopt kebab style e.g. 
+* ``architecture-decision-records-naming-conventions.md``
+* ``use-architecture-decision-records-and-structure.md``
+* ``format-architecture-decision-records-with-markdown.md``
 
 ### Cross Referencing
-When cross-referencing ADRs, use the full title of the ADR and link to the record filename itself e.g.
-* See [ADR - Architecture Decision Records Naming Convention](adr-architecture-decision-records-naming-conventions.md)
+When cross-referencing decisions, use the full title of the decision and link to the record filename itself e.g.
+* See [Architecture Decision Records Naming Conventions](adr-architecture-decision-records-naming-conventions.md)
 
 ### Branches
-Git branch names should utilise the same convention as the main filename of the ADR itself e.g.
-* ``git checkout -m adr-architecture-decision-records-naming-convention``
+Git branch names should utilise the same convention as the main filename of the decision itself e.g.
+* ``git checkout -m architecture-decision-records-naming-conventions``
 
 ### Confirmation
 
-This ADR will be enforced by reviewers of newly submitted ADRs, who should refer to this ADR and confirm the naming convention and decision herein is being adhered to.
+This decision will be enforced by reviewers of newly submitted records, who should refer to this decision and confirm the naming convention and decision herein is being adhered to.
 
 ## More Information (Optional)
-See [ADR - Use Architecture Decision Records and Structure](adr-use-architecture-decision-records-and-structure.md) for the structure of ADRs
+See [Use Architecture Decision Records and Structure](adr-use-architecture-decision-records-and-structure.md) for the structure of records.
