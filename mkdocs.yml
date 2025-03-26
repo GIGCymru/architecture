@@ -1,0 +1,14 @@
+site_name: GIG Cymru NHS Wales - Architecture Decision Records
+site_url: https://sitename.example
+repo_url: https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/
+docs_dir: DHCW/TDA/
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  font:
+    text: Rubik
+  palette:
+    scheme: custom
