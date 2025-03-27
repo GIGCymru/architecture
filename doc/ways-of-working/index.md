@@ -1,5 +1,8 @@
 # Ways Of Working (WOW)
 
+!!! note
+    Work in Progress
+
 **Status**: first sketch, work in progress, request for collaboration
 
 **Date**: 2025-03-21
@@ -44,7 +47,7 @@ To expand this ADR during the work-in-progress, here are a bunch of additional o
 
 * [High-velocity decision making by Amazon](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/high-velocity-decision-making-by-amazon/)
 
-* [How to send progress updates by Slava Akhmechet](how-to-send-progress-updates-by-slava-akhmechet)
+* [How to send progress updates by Slava Akhmechet](https://www.spakhm.com/updates-howto)
 
 * [How we structure our work and teams at Basecamp](https://github.com/joelparkerhenderson/ways-of-working/tree/main/doc/how-we-structure-our-work-and-teams-at-basecamp/)
 
