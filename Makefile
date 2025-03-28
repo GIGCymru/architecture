@@ -36,6 +36,14 @@ run:
 	@echo "The documentation should now be available by browsing http://127.0.0.1:8000/"
 
 ##
+# deploy: build and deploy the latest docs to GitHub pages (gh_pages branch push)
+##
+.PHONY: deploy
+deploy:
+	uv run mkdocs gh-deploy
+	@echo "The documentation should now be available by browsing https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/"
+
+##
 # newline: display a newline character so we can print prettier messages.
 ##
 .PHONY: newline
