@@ -1,5 +1,5 @@
 site_name: GIG Cymru NHS Wales - Architecture Decision Records
-site_url: https://sitename.example
+site_url: https://gig-cymru-nhs-wales.github.io/
 repo_url: https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/
 docs_dir: doc
 extra_css:
@@ -8,8 +8,6 @@ theme:
   name: material
   logo: assets/logo.png
   favicon: assets/favicon.ico
-  font:
-    text: Rubik
   palette:
     scheme: custom
 
