@@ -28,7 +28,7 @@ High-level purpose:
 
 - We want speed because some emergency department patients have life-threatening critical issues.
 
-- We want convenience because the clinical staff has so much things happening at once. 
+- We want convenience because the clinical staff has so much things happening at once.
 
 ### Introductory reading
 
@@ -38,10 +38,10 @@ High-level purpose:
 
 * [What is the right authentication method for my medical device?](https://www.periculo.co.uk/cyber-security-blog/what-is-the-right-authentication-method-for-my-medical-device)
 
- 
+
 ### Challenges
 
-The hospital emergency department setting has challenges that are different than in most settings. 
+The hospital emergency department setting has challenges that are different than in most settings.
 
 For example, we're discovering challenges related to mobile phone text/app authentication, mobile phone camera authentication, and touchscreen interfaces.
 
@@ -58,13 +58,13 @@ No. We cannot rely on every person having sufficient access to their personal ph
 
   - Some triage staff do not want to expose their personal phones to any extra infection vectors, such as microbes in the emergency department.
 
-  - Some staff are reasonably concerned about accidentally damaging their phone, such as dropping it. 
+  - Some staff are reasonably concerned about accidentally damaging their phone, such as dropping it.
 
   - Some healthcare professionals assert increased risk of microbial infection when consumer-grade phones are used in hospital-grade settings, because the phones cannot be easily wiped or disinfected.
 
   - Some EHR representatives assert increased risk of accidents with personal mobile phones.
 
-  - Some providers do not want to carry their phones with them, because they are moving frequently among hospital areas that are dangerous for mobile phones, such as near MRI machines. 
+  - Some providers do not want to carry their phones with them, because they are moving frequently among hospital areas that are dangerous for mobile phones, such as near MRI machines.
 
   - Some hospitals have mobile coverage issues, because of subpar coverage by the local cellular company, or subpar coverage by the local wifi network, or signal interference by building structures or medical equipment.
 
@@ -109,7 +109,7 @@ We are currently investigating many options.
 
 ### Touchless chips
 
-There are options for touchless chipces, such as by using a touchless smartcard (or wristband, or ring, etc.) that use radio-frequency identification (RFID) and/or near field communication (NFC). 
+There are options for touchless chipces, such as by using a touchless smartcard (or wristband, or ring, etc.) that use radio-frequency identification (RFID) and/or near field communication (NFC).
 
 These can be used with many kinds of implementations, such as an RFID chip on a physcial ID card, or an NFC interaction by using a phone or smartwatch, etc.
 
@@ -121,16 +121,16 @@ Newer protocols such as FIDO2 with WebAuthn and CTAP2 offer possibilities to go 
 
 ### Professional mobile phones
 
-Could the hospital provide each staff member with a professional mobile phone? This could be a highly-durable phone, with a drop-proof water-proof case, and with hospital-specific multi-device management software. 
+Could the hospital provide each staff member with a professional mobile phone? This could be a highly-durable phone, with a drop-proof water-proof case, and with hospital-specific multi-device management software.
 
-There are expenses for this. 
+There are expenses for this.
 
 This option does not seem to address the problems with areas near MRI machines, nor sub-par coverage.
 
 
 ### Touchscreen kiosks/devices
 
-Could the hospital provide a medical-grade large touchscreen, such as 15-inch or larger, such as on a medical cart? 
+Could the hospital provide a medical-grade large touchscreen, such as 15-inch or larger, such as on a medical cart?
 
 There are commercial options for self-contained computers with medical-grade large touchscreens, that have multiple large-capacity battery packs that can be swapped in and out as needed, for 24-hour power without needing any wall outlet.
 
