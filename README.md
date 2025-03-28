@@ -12,7 +12,7 @@ An Architecture Decision Record (ADR) is a document that captures an important a
 
 Our records are published using [Mkdoc Material](https://squidfunk.github.io/mkdocs-material/).
 
-### Building Docs with Make
+### Building docs with make
 
 If you are a developer, or you want to generate documentation on your own system, then you can use the command `make`.
 
@@ -22,7 +22,7 @@ To see options for the command `make`:
 make help
 ```
 
-### Building Docs Manually
+### Building docs manually
 
 Install 'uv' for Python package/env management e.g. :
 
