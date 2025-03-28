@@ -1,12 +1,15 @@
 # Format Architecture Decision Records using plaintext Markdown
 
+!!! note "Pending Approval"
+    Awaiting approval by DHCW Technical Design Authority
+
 **Status**: proposed  
-**Date**: 2025-03-25  
+**Date**: 2025-03-27  
 **Governance**: Drafted for DHCW Technical Design Authority (TDA) for approval
 
 ## Situation - Context and Problem Statement
 
-* We want to record architecture related decisions for NHS Wales organisations, made via agreed governance mechanisms. 
+* We want to record architecture related decisions for NHS Wales organisations, made via agreed governance mechanisms.
 * The **structure** is decided by [Use Architecture Decision Records](use-architecture-decision-records-and-structure.md)
 * We need to agree the **format**.
 
@@ -31,9 +34,13 @@ Format Architecture Decision Records as plaintext Markdown documents, using the 
 
 * Allows for Architecture Decision Records to be created and edited in any text editor, no specific software needed.
 * Markdown is easy to learn.
-* Markdown supports the basic formatting we need (bold, italics, headings, lists etc.) 
+* Markdown supports the basic formatting we need (bold, italics, headings, lists etc.)
 * Due to the limitations, it guides us to keep things simple (KISS) and easy to read.
 * The CommonMark standard for Markdown is supported by GitHub and many other tools, so widely supported.
+
+!!! tip
+
+    Use [Markdown Lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) in Visual Studio  Code to ensure the formatting in documents will work well when publishing/rendering.
 
 ### Consequences
 
@@ -41,4 +48,5 @@ Format Architecture Decision Records as plaintext Markdown documents, using the 
 * Markdown limits the formatting of the document (can be seen as a positive) so users may be constrained in presenting information.
 
 ## More Information
+
 See [Use Architecture Decision Records and Structure](use-architecture-decision-records-and-structure.md) for the structure of an Architecture Decision Record.
