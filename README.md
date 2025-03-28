@@ -53,6 +53,3 @@ Navigate to ``http://127.0.0.1:8000/``
 ## License
 
 This repository is licensed under the [MIT License](LICENSE)
-## License
-
-This repository is licensed under the [MIT License](LICENSE)
