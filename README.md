@@ -22,6 +22,12 @@ To see options for the command `make`:
 make help
 ```
 
+To do everything to build the documentation and run it:
+
+```sh
+make
+```
+
 ### Building docs manually
 
 Install 'uv' for Python package/env management e.g. :
