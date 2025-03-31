@@ -24,7 +24,7 @@ Background reading:
 
 * [Self-contained python scripts with uv - discussion on Hacker News](https://news.ycombinator.com/item?id=43519669))
   
-* [Python specifications: inline script metadata syntax (PEP 723)](https://packaging.python.org/en/latest/specifications/inline-script-metadata/#inline-script-metadata)
+* [Python specifications: inline script metadata](https://packaging.python.org/en/latest/specifications/inline-script-metadata/)
 
 ### Givens
 
@@ -51,7 +51,12 @@ File `example.py`:
 ```python
 #!/usr/bin/env -S uv run --script
 # /// script
-# dependencies = ["alfa", "bravo", "charlie"]
+# requires-python = ">=3.13"
+# dependencies = [
+#   "alfa", 
+#   "bravo", 
+#   "charlie",
+# ]
 # ///
 import alfa
 import bravo
