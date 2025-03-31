@@ -1,4 +1,4 @@
-# {short title, representative of solved problem and found solution}
+# Architecture Decision Record Template
 
 **Status**: {proposed | rejected | accepted | deprecated | superseded by ABC...}  
 **Date**: {YYYY-MM-DD when the decision was last updated}  
