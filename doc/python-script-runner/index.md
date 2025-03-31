@@ -28,7 +28,7 @@ Background reading:
 
 ### Givens
 
-At previous clients, Joel evaluated `pip`, `pipx`, `poetry`, `uv`, by trying them in real use on real projects that had significant needs such as for AI, cloud services, and test automation. Joel chose uv because it provides more-reliable dependency version management, more-batteries-included capabilities, and much faster speed; DCHW could do a separate ARD for choosing uv, if there's anyone that feels that there's a better choice or a strong need to consider other choices.
+At previous clients, Joel evaluated `pip`, `pipx`, `poetry`, `uv`, by trying them in real use on real projects that had significant needs such as for AI, cloud services, and test automation. Joel chose uv because it provides more-reliable dependency version management, more-batteries-included capabilities, and much faster speed; Digital Health and Care Wales could do a separate architecture decision record for choosing uv, if there's anyone that feels that there's a better choice or a strong need to consider other choices.
 
 "The whole point of uv is to solve the nightmare that is running a script with the right version of python with the right dependencies. "Just use the system python" gets you right back to the start such as, oh no! It didn't parse because it used python 3.11 features and I'm still on 3.6."
 
@@ -123,7 +123,7 @@ Revisit periodically, such as when there are new capabilities for `uv`, or new l
 
 Cautions thanks to the original article:
 
-* Be aware the virtual environment is not created/resolved before running. This means that you won'tt get linting/autocomplete properly for the environment.
+* Be aware the virtual environment is not created/resolved before running. This means that you won't get linting/autocomplete properly for the environment.
 
 * Be aware that the `-S` flag depends on coreutils env, which isn't available by default on some systems, such as the busybox env that you get when using default Alpine. One workaround is to install GNU `coreutils` in your container, or to install `uutils-coreutils` for a more lightweight implementation in Rust.
 
