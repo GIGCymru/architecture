@@ -53,9 +53,9 @@ File `example.py`:
 # /// script
 # requires-python = ">=3.13"
 # dependencies = [
-#   "alfa", 
-#   "bravo", 
-#   "charlie",
+#   "alfa>=1", 
+#   "bravo>=2", 
+#   "charlie>=3",
 # ]
 # ///
 import alfa
