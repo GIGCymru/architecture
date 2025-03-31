@@ -228,7 +228,6 @@ TODO
 
 TODO
 
-
 ## Recommendation - Decision Outcome
 
 Given what we know so far, and the immediacy of the emergency department module, we are immediately pursuing the combination of one choice in each category that we believe will keep the most options open for our ongoing improvements and learning. In other words, we need to kickstart real work, and we know that what we learn about our needs may well alter our longer-term choices.
@@ -246,3 +245,23 @@ Ways of working:
 * We understand that all of these options are significantly ahead of NHS Wales DHCW can design and develop internally, because we are resourced constrained.
 
 * We believe that any combination of the above options will be better than none, so we're using the principles of 1) bias for action, 2) don't let perfect be the enemy of the good, 3) ship soon then improve, 4) helping the emergency department staff and getting their direct feedback is a higher priority than any specific pre-planning of colors, fonts, logos, layouts, etc.
+
+## Consequences
+
+Positive Consequences:
+
+* Consistency: Using a unified design system will ensure a consistent experience across different platforms and applications, improving user familiarity.
+
+* Accessibility: By following established government and business guidelines, the design will ensure accessibility is prioritized, making the system usable by all.
+
+* Maintainability: TypeScript’s static typing ensures fewer runtime errors, and a strong component-based system built with Shadcn offers long-term scalability and ease of updates.
+
+* Flexibility: Shadcn customization options make it adaptable to different design languages, allowing for seamless integration with NHS, GOV.UK, or Material design.
+
+Negative Consequences:
+
+* Initial Complexity: Merging different design guidelines may initially increase the complexity of the design process.
+
+* Overhead: TypeScript requires developers to be proficient in it, and its setup can be more time-consuming compared to JavaScript.
+
+* Performance: While Shadcn and Flowbite are generally efficient, they may introduce more runtime overhead compared to lightweight frameworks like SkeletonUI, particularly for very minimal or extremely-performance-sensitive applications.
