@@ -4,19 +4,25 @@
 
 **Date**: 2025-03-31
 
-**Governance**: To Be Discovered; potentially a combo of this repo partipants, DHCW CISO, NHS Wales UCB peers, etc.
+**Governance**: To Be Discovered; potentially a combo of this repo participants, DHCW CISO, NHS Wales UCB peers, etc.
 
 ## Situation - Context and Problem Statement
 
 Generally we are aiming for software engineering to use the python programming language for many needs, such as general purpose scripting, system administration, test automation, AI/ML interconnection, etc.
 
-Specifically we are aiming to make it fast and easy for python programmers to run python scripts that are as self-supporting as reasonably possible, which means the scripts can download their own dependencies, create their own virtual environments, and run themselves from the command line.
+Specifically we are aiming to make it fast and easy for python programmers to run python scripts that are standalone and as self-supporting as reasonably possible. For example this means a typical one-file python script that can download its own dependencies, create its own virtual environments, and run itseflf from the command line.
 
 ## Background - Decision Drivers
 
-Python has a long history of many ways to launch it that are incompatible, many kinds of dependency management that are incompatible, and many kinds of virtual environment managers that are incompatible. There is no perfect way to write a self-supporting python script. 
+Python has a long history of many ways to launch it that are incompatible, many kinds of dependency management that are incompatible, and many kinds of virtual environment managers that are incompatible. As far as we know, there is no perfect way to write a standalone self-supporting python script. 
 
 Therefore we aim to get as close as reasonably possible, using good modern tooling and good modern practices. We're willing to accept some up-front setup, such as ensuring that a system already has a current runtime python and current runtime manager.
+
+Scope:
+
+* In scope: single-file python scripts (or a small set of files that are python scripts and any related files such as assets) that don't use a python package manager.
+  
+* Out of scope: any larger-scale python projects, such as multi-file python scripts that already have a requirements.txt file, or a python package that's deployable with pip, or a python notebook such as in Jupyter, or a python web app such as with Django, etc.
 
 Background reading:
 
