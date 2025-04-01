@@ -45,6 +45,8 @@ Government guideline options:
 
 * [GOV.UK Design System](https://design-system.service.gov.uk/)
 
+* [GOV.UK Prototype Kit](https://prototype-kit.service.gov.uk/)
+
 * [NHS.UK: Design system](https://service-manual.nhs.uk/design-system)
 
 * [UK Office of National Statistics (ONS) Design System](https://service-manual.ons.gov.uk/design-system)
@@ -96,6 +98,12 @@ Component frameworks:
 
 TODO
 
+### Government guideline: GOV.UK Prototype Kit
+
+[GOV.UK Prototype Kit](https://prototype-kit.service.gov.uk/)
+
+[Our ADR assessment: unfit because it's poorly maintained](gov-uk-prototype-kit/)
+
 ### Government guideline: NHS.UK Design System
 
 [NHS.UK: Design system](https://service-manual.nhs.uk/design-system)
@@ -107,6 +115,7 @@ TODO
 [UK Office of National Statistics (ONS) Design System](https://service-manual.ons.gov.uk/design-system)
 
 TODO
+
 
 ### Government guideline: 18F Design System
 
@@ -258,9 +267,9 @@ As far as I can tell, GOV.UK is the original starting point for the NHS UK digit
 
 What good looks like to me for origin-derivation design systems:
 
-* The origin system (i.e. GOV.UK) has some kind of child list, such as a section that explains "Here are design systems that we know about that are derived from GOV.UK and how they compare."
+* The origin system (i.e. GOV.UK) would have some kind of child list, such as a section that explains "Here are design systems that we know about that are derived from GOV.UK and how they compare."
 
-* The derivation design systems each have a section that explains "This design system starts with from GOV.UK, then we change these X items because Y".
+* The derivation design systems (i.e. NHS UK, ONS UK) would each have a section that explains "This design system starts with from GOV.UK, then we change these X items because Y".
 
 I haven't yet found derivation explanations.
 
