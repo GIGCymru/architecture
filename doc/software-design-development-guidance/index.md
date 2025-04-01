@@ -238,7 +238,7 @@ TODO
 
 ## Evaluations - Opinions
 
-[Compare capabilities - TSV table - please update this as we learn more](compare-capabilties.tsv)
+[Compare capabilities - TSV table - please update this as we learn more](compare-capabilities.tsv)
 
 [Compare components - TSV table - please update this as we learn more](compare-components.tsv)
 
