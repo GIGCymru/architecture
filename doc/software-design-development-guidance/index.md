@@ -85,7 +85,7 @@ Component frameworks:
 
 * [shadch: build your component library](https://ui.shadcn.com/)
 
-* [Flowbite: Build websites even faster with components])https://flowbite.com/)
+* [Flowbite: Build websites even faster with components](https://flowbite.com/)
 
 * [SkeletonUI adaptive design system](https://www.skeleton.dev/)
 
@@ -226,7 +226,7 @@ TODO
 
 ### Component framework: Flowbite
 
-[Flowbite: Build websites even faster with components])https://flowbite.com/)
+[Flowbite: Build websites even faster with components](https://flowbite.com/)
 
 TODO
 
