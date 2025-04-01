@@ -236,6 +236,37 @@ TODO
 
 TODO
 
+## Evaluations - Opinions
+
+### By Joel
+
+What I see in GOV.UK:
+
+* Pros: the principles are excellent, and expressed clear ways, and with good examples. 
+  
+* Cons: the implementation technology is Mozilla Nunjucks, which is quite outdated by multiple years, and doesn't lead with modern JavaScript practices such as ESM, and seems to have no obvious way to upgrade the whole project to ESM.
+
+As far as I can tell, GOV.UK is the original starting point for the NHS UK digital service manual design system and the UK Office of National Statistics (ONS) Design System. 
+
+What good looks like to me for origin-derivation design systems:
+
+* The origin system (i.e. GOV.UK) has some kind of child list, such as a section that explains "Here are design systems that we know about that are derived from GOV.UK and how they compare."
+
+* The derivation design systems each have a section that explains "This design system starts with from GOV.UK, then we change these X items because Y".
+
+I haven't yet found derivation explanations. 
+
+* What good looks like to me here, ideally, is figuring out what/how NHS UK derived from GOV UK, and why the NHS UK team didn't/couldn't send upstream changes. In other words, I haven't found an explanation yet of what makes the NHS UK design system incompatible with the GOV UK design system.
+
+* As far as I can tell, the GOV.UK derivations shouldn't need to exist, and I mean this in a good way. For example, everything I see in derivations looks prima facie great for all of the UK, and great for upstreaming to GOV UK. I haven't yet found an explanation of why the derivations haven't upstreamed.
+
+Ideally someone on our UI/UX team will do a derivation comparison with these, because they seem to be quite similar yet incompatible.
+
+* Until we know more, the safest choice is the original, because it is the most-general, and the easiest to make more-specific later on if we want to use any of the derivations.
+
+* My educated guess is that there's good work to do here, unifying all three of the UK systems that we know about.
+
+
 ## Recommendation - Decision Outcome
 
 Given what we know so far, and the immediacy of the emergency department module, we are immediately pursuing the combination of one choice in each category that we believe will keep the most options open for our ongoing improvements and learning. In other words, we need to kickstart real work, and we know that what we learn about our needs may well alter our longer-term choices.
