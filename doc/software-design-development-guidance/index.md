@@ -266,6 +266,53 @@ Ideally someone on our UI/UX team will do a derivation comparison with these, be
 
 * My educated guess is that there's good work to do here, unifying all three of the UK systems that we know about.
 
+### Comparison table
+
+We intend to edit this comparison table as we learn more.
+
+<table>
+
+<tr>
+<th></th>
+<th><b>GOV.UK</b></th>
+<th><b>NHS UK</b></th>
+<th><b>ONS UK</b></th>
+<th><b>18F</b></th>
+</tr>
+
+<tr>
+<td><b>Provenance</b></td>
+<td>Original</td>
+<td>Derived</td>
+<td>Derived</td>
+<td>Original</td>
+</tr>
+
+<tr>
+<td><b>Capability 1</b></td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td><b>Capability 2</b></td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+</tr>
+
+<tr>
+<td><b>Capability 3</b></td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+</tr>
+
+</table>
 
 ## Recommendation - Decision Outcome
 
