@@ -16,9 +16,9 @@ Broadly we need to design and develop many software products for patients and he
 Narrowly we need to immediately design and develop the emergency department module, and we need to give the program some UI/UX guardrails:
 
 * Design system: e.g. how should a top navigation menu look and feel to the user.
-  
+
 * Development system: e.g. how should a programmer implement the menu with JavaScript/TypeScript.
- 
+
 * Testing system: e.g. how to test the menu for accessibility, multi-language capability, etc.
 
 ## Background - Decision Drivers
@@ -60,7 +60,7 @@ Business specifications options:
 * [Microsoft Fluent 2 Design System](https://fluent2.microsoft.design/)
 
 * [IBM Carbon Design System](https://carbondesignsystem.com/)
-  
+
 * Gitlab Pajamas
 
 * [Wix Studio Design System](https://www.wix.com/studio/blog/design-system-examples)
@@ -120,7 +120,7 @@ TODO
 
 Apple’s Human Interface Guidelines are for those who design, develop and distribute apps through Apple’s platforms (macOS, iOS, watchOS, tvOS and visionOS). The brand has additional guidelines organized by tech vertical, covering 28 additional branded elements such as CarPlay, HomeKit, Augmented Reality, iCloud and Wallet.
 
-Under each platform, you can find guidance on app architecture, user interaction, system capabilities and visual design. Each section offers in-depth guidance on the intended use of each interface element and the rationale behind it. The goal is to ensure that apps offered through Apple’s platforms feel familiar and consistent to people who use them. 
+Under each platform, you can find guidance on app architecture, user interaction, system capabilities and visual design. Each section offers in-depth guidance on the intended use of each interface element and the rationale behind it. The goal is to ensure that apps offered through Apple’s platforms feel familiar and consistent to people who use them.
 
 There’s also an extensive resource library with Sketch, Photoshop and Adobe XD files, which house a range of UI elements and specifications. You can also watch video sessions and tutorials on how to build intuitive, user-friendly experiences.
 
@@ -130,7 +130,7 @@ There’s also an extensive resource library with Sketch, Photoshop and Adobe XD
 
 Going on a decade strong, Material Design has inspired many other companies to adopt their own design systems. It builds upon the metaphor of material, meaning that components are created to mimic the physical world and its textures (such as how objects reflect light and cast shadows). The idea is that when components behave like real-world objects, they become more familiar and predictable, which in turn reduces cognitive load for users.
 
-Material Design is comprehensive and covers an array of topics ranging from design principles like color, typography, and iconography, to UI components–many of which are available as open source–to code documentation and other resources. 
+Material Design is comprehensive and covers an array of topics ranging from design principles like color, typography, and iconography, to UI components–many of which are available as open source–to code documentation and other resources.
 
 In 2018, Google introduced Material Theming, which extends Material Design principles to other brands, allowing designers to style components according to their brand’s needs. It added much-needed flexibility to the system, by offering ways to customize a single set of components. A series of hypothetical case studies, called Material Studies, demonstrate how components can be styled to fit any product, ranging from a finance app to an eCommerce app.
 
@@ -162,9 +162,9 @@ There’s even a section on community-based UX research contributions, accompani
 
 The design elements in this system are very clearly organized and follow an atomic design approach, as they’re labeled components, regions and objects. This method, developed by Brad Frost in his book Atomic Design, emphasizes a modular approach in combining elements such as basic UI components to create increasingly more complex objects, such as an entire page.
 
-### Business specifications: Wix Studio Design System 
+### Business specifications: Wix Studio Design System
 
-Wix Studio's Design System offers a comprehensive toolkit for developers and designers to craft beautiful and intuitive product experiences. We use it to create our website pages and Wix Studio applications. 
+Wix Studio's Design System offers a comprehensive toolkit for developers and designers to craft beautiful and intuitive product experiences. We use it to create our website pages and Wix Studio applications.
 
 The Wix Studio Design System offers: a library with core UI components, various sets of design patterns for use in different contexts, a Figma kit with components, icons and ready-to-use page templates, detailed component documentation including demos and props reference, a sub-brand for developers with the same DNA but a different vibe, an interactive playground for hands-on exploration, and more.
 
@@ -172,13 +172,13 @@ For developers, the Wix Studio Design System includes a React library of core re
 
 ### Business specifications: Salesforce Lightning Design System
 
-Created nearly ten years ago, the Salesforce Lightning Design System is an excellent example of a design system that’s evolved over time. SLDS establishes principles and best practices for designing enterprise applications across the Salesforce ecosystem. Rather than focusing on pixels, it allows designers to focus on user experience, interactions, and flows, and helps developers focus on application logic. 
+Created nearly ten years ago, the Salesforce Lightning Design System is an excellent example of a design system that’s evolved over time. SLDS establishes principles and best practices for designing enterprise applications across the Salesforce ecosystem. Rather than focusing on pixels, it allows designers to focus on user experience, interactions, and flows, and helps developers focus on application logic.
 
 Salesforce also pioneered the use of design tokens, which store visual design attributes (e.g., color, font size, spacing) that can be applied and updated across components and platforms. Rather than hard-coding individual values as visual designs evolve, design tokens ensure that changes are reflected across the entire product experience. They allow for a consistent visual system that's also much simpler to scale.
 
 ### Business specifications: Atlassian Design System
 
-Atlassian recently introduced their new design system, which is a combination of two older sites (Atlassian Design Guidelines and Atlaskit). Prior to introducing the new system, Atlassian’s design guidelines and code documentation were hosted on separate sites, which led to growing inconsistencies that reflected a design and code split. 
+Atlassian recently introduced their new design system, which is a combination of two older sites (Atlassian Design Guidelines and Atlaskit). Prior to introducing the new system, Atlassian’s design guidelines and code documentation were hosted on separate sites, which led to growing inconsistencies that reflected a design and code split.
 
 With the new design system, Atlassian weaves content and code together from both sites so that designers, developers, and content designers have a unified destination to update, contribute to, and build upon. The new design system includes a section on brand mission, personality, values and brand promise. It also lays out guidelines for foundations, components, patterns, content and resources to help simplify the creation process.
 
@@ -202,19 +202,19 @@ The design system also has an extensive set of UX writing guidelines, which aim 
 
 ### Business specifications: Uber Design System
 
-Uber’s design system covers nine main elements: logo, color, composition, iconography, illustration, motion, photography, tone of voice and typography. The company takes pride in the system’s flexibility and ease-of-use, maintaining brand consistency across various sub-brands, applications and assets. 
+Uber’s design system covers nine main elements: logo, color, composition, iconography, illustration, motion, photography, tone of voice and typography. The company takes pride in the system’s flexibility and ease-of-use, maintaining brand consistency across various sub-brands, applications and assets.
 
 In addition to their visual and style guidelines, Uber’s also created Base Web, an open-source library of UI components that focus on the basics (hence the name, “Base”), such as typography, color, grid and iconography, as well as essential elements like buttons, lists and controls. While these components are designed as basic building blocks, they’re also highly customizable through style overrides and can be configured in many different ways.
 
 ### Business specifications: The Guardian Digital Design System
 
-The Guardian digital design system is a visually stunning set of guidelines that you can scroll through page-by-page. It starts with a high-level overview of what a webpage consists of, followed by more granular elements such as fronts, containers, cards and articles. 
+The Guardian digital design system is a visually stunning set of guidelines that you can scroll through page-by-page. It starts with a high-level overview of what a webpage consists of, followed by more granular elements such as fronts, containers, cards and articles.
 
 Within the card pages, for example, you can see the different options available for card sizes and card types. The design system also demonstrates how the design team treats color, typography, layout, rules and spacing.
 
 ### Business specifications: SAP Fiori for Web
 
-SAP (Systems, Applications and Processing) is an enterprise software applications provider that helps businesses of all sizes run better. The company’s software acts as a centralized system that allows departments to access and share data, and at the heart of these different software is the SAP Fiori for Web design system. 
+SAP (Systems, Applications and Processing) is an enterprise software applications provider that helps businesses of all sizes run better. The company’s software acts as a centralized system that allows departments to access and share data, and at the heart of these different software is the SAP Fiori for Web design system.
 
 Built with the company’s SAPUI5 framework, which is a collection of user interfaces for web apps, the company places an emphasis on designing for common components, including navigational elements, tables and user inputs. Big picture, the brand includes guidelines for general principles, using layouts, patterns and controls, as well as concrete guidance to execute a user-centered approach to designing SAP Fiori apps.
 
@@ -246,11 +246,11 @@ TODO
 
 What I see in GOV.UK:
 
-* Pros: the principles are excellent, and expressed clear ways, and with good examples. 
-  
+* Pros: the principles are excellent, and expressed clear ways, and with good examples.
+
 * Cons: the implementation technology is Mozilla Nunjucks, which is quite outdated by multiple years, and doesn't lead with modern JavaScript practices such as ESM, and seems to have no obvious way to upgrade the whole project to ESM.
 
-As far as I can tell, GOV.UK is the original starting point for the NHS UK digital service manual design system and the UK Office of National Statistics (ONS) Design System. 
+As far as I can tell, GOV.UK is the original starting point for the NHS UK digital service manual design system and the UK Office of National Statistics (ONS) Design System.
 
 What good looks like to me for origin-derivation design systems:
 
@@ -258,7 +258,7 @@ What good looks like to me for origin-derivation design systems:
 
 * The derivation design systems each have a section that explains "This design system starts with from GOV.UK, then we change these X items because Y".
 
-I haven't yet found derivation explanations. 
+I haven't yet found derivation explanations.
 
 * What good looks like to me here, ideally, is figuring out what/how NHS UK derived from GOV UK, and why the NHS UK team didn't/couldn't send upstream changes. In other words, I haven't found an explanation yet of what makes the NHS UK design system incompatible with the GOV UK design system.
 
