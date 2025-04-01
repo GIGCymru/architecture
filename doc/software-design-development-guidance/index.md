@@ -240,7 +240,11 @@ TODO
 
 [Compare capabilities - TSV table - please update this as we learn more](compare-capabilities.tsv)
 
+{{ read_table('./compare-capabilities.tsv', sep = '\t') }}
+
 [Compare components - TSV table - please update this as we learn more](compare-components.tsv)
+
+{{ read_table('./compare-components.tsv', sep = '\t') }}
 
 ### By Joel
 
