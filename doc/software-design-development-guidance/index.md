@@ -35,6 +35,10 @@ We generally favor considering systems that we are confident are relevant and re
 
 * Free open source components using JavaScript and TypeScript: shadcn, Flowbite, SkeletonUI, others?
 
+We want to use accessibility:
+
+* [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/) including must-have minimum level A, should-have medium level AA, could-have maximum level AAA.
+
 ## Assessment - Considered Options
 
 We generally favor considering systems that we are confident are relevant and ready:
