@@ -69,6 +69,12 @@ The use of multiple kinds of interaction modalities, such as a using a mouse poi
 
 TODO: we need to learn more about this area.
 
+### Accessibility software engineering
+
+We are evaluating accessibility software engineering practices and implementations, such as UI/UX design principles, and programming component frameworks and libraries.
+
+TODO: we need to learn more about this area.
+
 ### Accessibility testing
 
 Accessibility testing will be a part of the development lifecycle. 
