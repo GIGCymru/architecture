@@ -1,18 +1,34 @@
 site_name: GIG Cymru NHS Wales - Architecture Decision Records
-site_url: https://sitename.example
+site_url: https://gig-cymru-nhs-wales.github.io/
 repo_url: https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/
 docs_dir: doc
 extra_css:
   - stylesheets/extra.css
 theme:
   name: material
+  custom_dir: doc/overrides
   logo: assets/logo.png
   favicon: assets/favicon.ico
-  font:
-    text: Rubik
   palette:
     scheme: custom
-
+copyright: >
+  Copyright &copy; 2025 GIG Cymru - NHS Wales –
+  <a href="#__consent">Change cookie settings</a>
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to optimise site functionality and give you the best
+      possible experience, recognise your repeated visits and preferences, as
+      well as to measure the effectiveness of our site and whether
+      users find what they're searching for. With your consent, you're helping
+      us to make our site better.
+    cookies:
+      analytics:
+        name: Simple Analytics
+        checked: true
+  analytics:
+    provider: simple
 markdown_extensions:
   - admonition
   - pymdownx.details
