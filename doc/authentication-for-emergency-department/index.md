@@ -137,6 +137,25 @@ There are commercial options for self-contained computers with medical-grade lar
 There are commercial options for rapid disinfectable screens, including with dedicated physical buttons to lock the screen, so wiping the screen doesn't accidentally cause any interface touch events.
 
 
+### Two-person rule & two-person integrity
+
+The two-person rule is a control mechanism designed to achieve a high level of
+security for especially critical material or operations. Under this rule, access
+and actions require the presence of two or more authorized people.
+
+Two-person integrity (TPI) is the name for the security measures taken to
+prevent single-person access.
+
+In the context of healthcare, the two-person rule and two-person integrity can
+be useful in a variety of ways.
+
+* Example: When a clinician prescribes a highly-controlled substance, such as a
+  medication that is risky or is known to be likely to be abused, then
+  prescription requires a second clinician to sign it.
+
+* Example When a clinician is treating a minor, then the clinician must have a
+  second-in-command clinician present and also concurring with the treatment.
+
 ### Microsoft Windows Hello
 
 Microsoft Windows Hello is "a more personal way to sign in, using your face, fingerprint or a PIN. You can use Windows Hello to sign in to your device from the lock screen and sign in to your account on the web."
