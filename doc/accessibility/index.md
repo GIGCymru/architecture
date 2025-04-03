@@ -14,7 +14,7 @@ Work in progress, request for discussion
 
 We want to ensure accessibility for users, including users with disabilities. This is a fundamental aspect of providing an inclusive user experience, and an ethical principle, and a legal requirement.
 
-The team has to decide on how to integrate accessibility into the product’s design and architecture to ensure compliance with accessibility standards and deliver an experience that is usable for all users.
+The team has to decide on how to integrate accessibility into the product’s design and architecture. We believe this includes ensuring compliance with accessibility standards, and testing with users with disabilities, and delivering an experience that is usable for all users.
 
 We believe that there's extensive knowledge and experience in the NHS Four Nations community, and in the global public health sector, and we want to leverage that.
 
