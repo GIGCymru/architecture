@@ -105,7 +105,7 @@ The system will be more inclusive and usable for a wider range of people, includ
 
 - Possible slower release cycles due to the time required for accessibility testing and refinements.
 
-- Potential additional development and maintenance costs due to the complexity of implementing and testing accessibility features.
+- Potential additional development rigor and maintenance rigor, due to the complexity of implementing and testing accessibility features. This may include building to a higher standard to the benefit of all users, and may include increased use of resources e.g. time, money, equipment.
 
 - As a side effect, increased legal and regulatory compliance, minimizing the risk of lawsuits or fines related to accessibility issues.
 
