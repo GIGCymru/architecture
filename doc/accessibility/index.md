@@ -41,7 +41,11 @@ United States Center for Disease Control (CDC), etc.
 
 The Web Content Accessibility Guidelines (WCAG) are a set of guidelines for making web content accessible to people with disabilities. 
 
-There are various versions, such as the current version which is 2.2. 
+There are various versions:
+
+* Version 2.2. is the current version as of December 2024.
+
+* Version 2.1. is the previous version which is more widely used because it's been around longer.
 
 There are various levels:
 
