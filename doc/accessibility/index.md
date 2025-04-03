@@ -1,8 +1,7 @@
 # Accessibility
 
-!!! note 
+!!! note
 Work in progress, request for discussion
-
 
 **Status**: first sketch, work in progress, request for collaboration
 
@@ -103,11 +102,11 @@ TODO
 
 The system will be more inclusive and usable for a wider range of people, including those with disabilities, such as visual impairments, motor impairments, and cognitive impairments.
 
-- Possible slower release cycles due to the time required for accessibility testing and refinements.
+* Possible slower release cycles due to the time required for accessibility testing and refinements.
 
-- Potential additional development rigor and maintenance rigor, due to the complexity of implementing and testing accessibility features. This may include building to a higher standard to the benefit of all users, and may include increased use of resources e.g. time, money, equipment.
+* Potential additional development rigor and maintenance rigor, due to the complexity of implementing and testing accessibility features. This may include building to a higher standard to the benefit of all users, and may include increased use of resources e.g. time, money, equipment.
 
-- As a side effect, increased legal and regulatory compliance, minimizing the risk of lawsuits or fines related to accessibility issues.
+* As a side effect, increased legal and regulatory compliance, minimizing the risk of lawsuits or fines related to accessibility issues.
 
 ## Related
 
