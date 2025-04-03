@@ -103,11 +103,11 @@ TODO
 
 The system will be more inclusive and usable for a wider range of people, including those with disabilities, such as visual impairments, motor impairments, and cognitive impairments.
 
-- Increased legal and regulatory compliance, minimizing the risk of lawsuits or fines related to accessibility issues.
+- Possible slower release cycles due to the time required for accessibility testing and refinements.
 
 - Potential additional development and maintenance costs due to the complexity of implementing and testing accessibility features.
 
-- Possible slower release cycles due to the time required for accessibility testing and refinements.
+- As a side effect, increased legal and regulatory compliance, minimizing the risk of lawsuits or fines related to accessibility issues.
 
 ## Related
 
