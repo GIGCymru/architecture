@@ -16,6 +16,8 @@ We want to ensure accessibility for users, including users with disabilities. Th
 
 The team has to decide on how to integrate accessibility into the product’s design and architecture to ensure compliance with accessibility standards and deliver an experience that is usable for all users.
 
+We believe that there's extensive knowledge and experience in the NHS Four Nations community, and in the global public health sector, and we want to leverage that.
+
 ## Drivers
 
 Broadly, we want to provide excellent software that is accessible, and we want to use existing industry standards and practices, and we want to do software engineering that works well with accessibility automatic testing, and we want to not reinvent the wheel.
@@ -23,6 +25,17 @@ Broadly, we want to provide excellent software that is accessible, and we want t
 Specifically, Joel is programming the emergency department module authentication demo ASAP, and wants to make it accessible. We're currently learning about emergency department use cases, and there are many accessibility-related questions due to the nature of the emergency department.
 
 ## Options
+
+The list below is simply a starting point. We believe that someone on our team TBD will have more knowledge and experience in this area, and will be able to provide more specific guidance, and will be able to research our peer organizations to gather best practices and standards.
+
+For example research accessibility practices at:
+
+* Our closest peer organizations e.g. NHS England, NHS Scotland, NHS Northern Ireland.
+
+* Government digital practice organizations e.g. GOV.UK, 18F, etc.
+
+* Public health organizations e.g. World Health Organization (WHO), Global Health Council (GHC), United Kingdom Royal Society for Public Health (RSPH).
+United States Center for Disease Control (CDC), etc. 
 
 ### Web Content Accessibility Guidelines (WCAG)
 
