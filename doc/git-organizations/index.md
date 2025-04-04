@@ -2,10 +2,9 @@
 
 **Status**: first sketch, work in progress, request for collaboration
 
-**Date**: 2025-03-27
+**Date**: Updated 2025-04-04
 
 **Governance**: To Be Discovered; potentially a combo of this repo partipants, DHCW CISO, NHS Wales UCB peers, etc.
-
 
 ## Situation - Context and Problem Statement
 
@@ -17,10 +16,9 @@ Joel is delivering these via a public health free open source git organization. 
 
 Dan wants to use the learnings that come from these, in order to improve the internal systems.
 
-
 ## Background - Decision Drivers
 
-Joel's decision drivers are the typical best practices in the U.S. and E.U. which is to create a bright-line information security separation between two categories of work: 
+Joel's decision drivers are the typical best practices in the U.S. and E.U. which is to create a bright-line information security separation between two categories of work:
 
 1. Category one is for the public. This includes things like demonstrations, examples, tutorials, free open source software, fake testing information, data that is free and clear of any personally identifying information, etc.
 
@@ -29,7 +27,6 @@ Joel's decision drivers are the typical best practices in the U.S. and E.U. whic
 This is the approach taken by organizations such as Apple, Microsoft, Google, etc. and it improves security with U.S. SOC 2 compliance, the EU Cybersecurity Act, the  International Standards Organization (ISO) 27001 information security framework, etc.
 
 Dan's decision drivers are TODO @Dan.
-
 
 ### Decision Driver Questions
 
@@ -41,22 +38,20 @@ TODO @Joel add questions here.
 
 TODO @Dan add questions here.
 
-
 ## Assessment - Considered Options
 
-Option 1: Our current path. 
+Option 1: Our current path.
 
-  * Joel and DevOps continue to use the category one GitHub repo. 
+* Joel and DevOps continue to use the category one GitHub repo. 
   
-  * Dan and NDR continue to use the category 2 GitHub repo, plus do anything they want to improve the internal systems. 
+* Dan and NDR continue to use the category 2 GitHub repo, plus do anything they want to improve the internal systems. 
   
-  * We update each other about learnings as we go. 
+* We update each other about learnings as we go. 
 
-  * We revisit together later on, such as after the emergency department module ships and the radiology testing ships.
+* We revisit together later on, such as after the emergency department module ships and the radiology testing ships.
 
 Option 2: TODO @Dan.
 
-
 ## Recommendation - Decision Outcome
 
-
+TODO
