@@ -42,11 +42,11 @@ TODO @Dan add questions here.
 
 Option 1: Our current path.
 
-* Joel and DevOps continue to use the category one GitHub repo. 
-  
-* Dan and NDR continue to use the category 2 GitHub repo, plus do anything they want to improve the internal systems. 
-  
-* We update each other about learnings as we go. 
+* Joel and DevOps continue to use the category one GitHub repo.
+
+* Dan and NDR continue to use the category 2 GitHub repo, plus do anything they want to improve the internal systems.
+
+* We update each other about learnings as we go.
 
 * We revisit together later on, such as after the emergency department module ships and the radiology testing ships.
 
