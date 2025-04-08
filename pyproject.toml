@@ -5,5 +5,7 @@ description = "MKDocs Material Setup for ADR site"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "mkdocs-awesome-nav>=3.1.1",
     "mkdocs-material>=9.6.9",
+    "mkdocs-table-reader-plugin>=3.1.0",
 ]
