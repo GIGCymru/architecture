@@ -4,10 +4,12 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "CISO",
         "DHCW",
         "IGDC",
         "NCSC",
-        "UKNCSC"
+        "UKNCSC",
+        "organisation"
     ],
     "ignoreWords": [],
     "import": []
