@@ -3,7 +3,11 @@
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "CISO",
+        "DHCW",
+        "organisation"
+    ],
     "ignoreWords": [],
     "import": []
 }
