@@ -49,7 +49,7 @@ These metrics are in two categories:
 
 We want to develop a live dashboard to track our projects' DORA metrics. This
 dashboard will be used by software engineering teams, including our programmers,
-project managers, and all the project's other stakeholders. 
+project managers, and all the project's other stakeholders.
 
 We believe this kind of visibility, transparency, and monitoring can help us
 improve our software engineering practices and outcomes.
@@ -79,7 +79,7 @@ aspects below.
 
 **Backend Services**:
 
-* A **RESTful API** will serve as the backend for the dashboard, handling
+* A RESTful API will serve as the backend for the dashboard, handling
   requests from the frontend.
 
 * Authentication and authorization TBD.
@@ -90,7 +90,7 @@ aspects below.
   maintainability.
 
 * Data visualization will be handled using an off-the-shelf charting library TBD.
-  
+
 * We'll consider developing the frontend to update dynamically based on data
   changes via WebSockets or Server-Sent Events (SSE).
 
