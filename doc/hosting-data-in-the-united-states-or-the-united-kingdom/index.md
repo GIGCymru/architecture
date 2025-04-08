@@ -11,20 +11,20 @@
 
 ## Context
 
-Our organisation stakeholders are asking questions about hosting data in the United States versus the United Kingdom. 
+Our organisation stakeholders are asking questions about hosting data in the United States versus the United Kingdom.
 
 The decision will have significant implications for data security, compliance with legal and regulatory requirements, performance (e.g., latency), cost, risk, piloting, and more.
 
 We want to learn more about how to make a well-informed choice between hosting the data in one of these countries, considering the current needs and potential future growth.
 
-We also want to learn more about hosting in both regions, such as using a multi-cloud approach. 
+We also want to learn more about hosting in both regions, such as using a multi-cloud approach.
 
 * We believe there are tradeoffs compliance and operational efficiency.
 
-We also want to learn more about hosting in the EU region, such as using a European hosting company. 
+We also want to learn more about hosting in the EU region, such as using a European hosting company.
 
 * There may be benefits of EU scale/cost/capabilities over the UK. For example, Germany may offer larger-scale, better-cost, faster-deployment, etc. than the UK.
-  
+
 * There may be EU law/harmonization/openness as compared to the US. For example, the EU has better legal harmony with the UK relating to GDPR, ISO 27001, etc.
 
 ## Drivers
@@ -67,6 +67,10 @@ We intend to research this area more in depth.
 
 * **U.S.:** Depending on future political shifts and regulatory changes, hosting in the U.S. might face stricter scrutiny and regulatory changes, particularly for businesses with international customers.
 
+## Recommendation - Decision Outcome
+
+TODO
+
 ## Consequences
 
 We intend to research this area more in depth.
@@ -86,22 +90,3 @@ We intend to research this area more in depth.
 * Increased latency for European users.
 
 * More fragmented privacy laws and potential surveillance concerns.
-
-**Alternative Considered:**
-
-**Decision Rationale:**
-Given our user base in Europe, the need for compliance with stringent privacy laws, and the desire to avoid complex international data transfer requirements, the U.K. is the preferred choice for hosting data.
-
-**Consequences for the Future:**
-This decision may be revisited as regulatory environments evolve, particularly concerning international data transfer rules, but for the immediate future, it aligns best with our privacy, compliance, and performance goals.
-
----
-
-**Review:**
-- **Review Date:** 2025-04-08
-- **Author:** [Your Name/Team]
-- **Status:** Pending Approval
-
----
-
-This template should help you align your hosting decision with key business priorities like compliance, data protection, user performance, and cost.
