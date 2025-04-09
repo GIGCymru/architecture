@@ -3,7 +3,14 @@
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "CISO",
+        "DHCW",
+        "IGDC",
+        "NCSC",
+        "UKNCSC",
+        "organisation"
+    ],
     "ignoreWords": [],
     "import": []
 }
