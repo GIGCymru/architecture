@@ -1,0 +1,13 @@
+append_unmatched: true
+flatten_single_child_sections: true
+nav:
+  - Home: index.md
+  - Decisions:
+    - DHCW Design Authority:
+      - design-authority/dhcw/index.md
+      - Decisions: design-authority/dhcw/
+    - Template: design-authority/dhcw/architecture-decision-record-template.md
+    - Meta Decisions:
+      - meta-decisions/*
+    - Development:
+      - "*"
