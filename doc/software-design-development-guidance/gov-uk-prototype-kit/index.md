@@ -13,15 +13,15 @@ issues and pull requests.
 
 ### Demo
 
+<https://github.com/joelparkerhenderson/demo-gov-uk-prototype-kit>
+
 Joel tried the tutorial project, and turned up many deprecation warnings,
 especially in two categories: deprecation warnings due to Dart SaaS, and color
 warnings due to the GOV.UK itself.
 
-https://github.com/joelparkerhenderson/demo-gov-uk-prototype-kit
-
 ### GitHub repo
 
-https://github.com/alphagov/govuk-prototype-kit/
+<https://github.com/alphagov/govuk-prototype-kit/>
 
 207 open issues. A recent typical example is "Cannot use
 govuk-suppressed-warnings as they are overwritten by the kit" which looks
@@ -32,7 +32,7 @@ which looks plausible but has no review at 6 weeks.
 
 ### Support guidance from maintainers
 
-https://github.com/alphagov/govuk-prototype-kit/issues/2389
+<https://github.com/alphagov/govuk-prototype-kit/issues/2389>
 
 The GOV.UK Prototype Kit is currently maintained by the GOV.UK Design System
 team. Huge thanks to the GOV.UK Prototype team, who’s hard work has made our job
