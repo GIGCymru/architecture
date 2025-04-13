@@ -87,7 +87,7 @@ Example cons: More complex to implement; people might miss out on knowledge in o
 
 **Security**: Sensitive information must be stored securely, with access control in place.
 
-**Integratability**: The system should integrate well with other internal tools (e.g., document management systems, chat apps, etc.).
+**Integrability**: The system should integrate well with other internal tools (e.g., document management systems, chat apps, etc.).
 
 ## Consequences
 
@@ -109,7 +109,7 @@ Examples that we want to know more about...
 
 ## Recommendations
 
-Start right now with lightweight ways of working and lightweight documentation tooling. 
+Start right now with lightweight ways of working and lightweight documentation tooling.
 
 Use these as landing zones:
 
