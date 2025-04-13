@@ -40,3 +40,4 @@ markdown_extensions:
 plugins:
   - search
   - table-reader
+  - awesome-nav

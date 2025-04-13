@@ -3,6 +3,7 @@
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
+<<<<<<< HEAD
     "words": [
         "CISO",
         "DHCW",
@@ -14,6 +15,17 @@
         "organisation"
         "shadcn"
     ],
+||||||| parent of 32266f3 (Add cspell words)
+    "words": [],
+=======
+    "words": [
+        "CISO",
+        "DHCW",
+        "Fiori",
+        "kickstarting",
+        "shadcn"
+    ],
+>>>>>>> 32266f3 (Add cspell words)
     "ignoreWords": [],
     "import": []
 }
