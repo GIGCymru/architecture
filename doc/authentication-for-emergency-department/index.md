@@ -17,8 +17,7 @@ This is a work in progress (WIP) and a request for comments (RFC).
 We welcome constructive advice, constructive criticism, pointers to resources,
 and help.
 
-Direct contact information:<br>
-Joel Henderson <a href="mailto:joel.henderson@wales.nhs.uk">joel.henderson@wales.nhs.uk</a>
+Contact: Joel Henderson <joel.henderson@wales.nhs.uk>
 
 ## Background - Decision Drivers
 
