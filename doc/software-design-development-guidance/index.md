@@ -55,7 +55,7 @@ Government guideline options:
 
 * [UK Office of National Statistics (ONS) Design System](https://service-manual.ons.gov.uk/design-system)
 
-* [18F.gov: The U.S. Web Design System ](https://guides.18f.gov/ux-guide/design/use-a-design-system/)
+* [18F.gov: The U.S. Web Design System](https://guides.18f.gov/ux-guide/design/use-a-design-system/)
 
 Business specifications options:
 
@@ -95,7 +95,6 @@ Component frameworks:
 
 * [SkeletonUI adaptive design system](https://www.skeleton.dev/)
 
-
 ### Government guideline: GOV.UK Design System
 
 [GOV.UK Design System](https://design-system.service.gov.uk/)
@@ -120,10 +119,9 @@ TODO
 
 TODO
 
-
 ### Government guideline: 18F Design System
 
-[18F.gov: The U.S. Web Design System ](https://guides.18f.gov/ux-guide/design/use-a-design-system/)
+[18F.gov: The U.S. Web Design System](https://guides.18f.gov/ux-guide/design/use-a-design-system/)
 
 TODO
 
