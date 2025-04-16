@@ -1,9 +1,19 @@
 {
     "version": "0.2",
+    "language": "en,en-GB",
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "CISO",
+        "DHCW",
+        "Fiori",
+        "IGDC",
+        "kickstarting",
+        "NCSC",
+        "UKNCSC",
+        "shadcn"
+    ],
     "ignoreWords": [],
     "import": []
 }
