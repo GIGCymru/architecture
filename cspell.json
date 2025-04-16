@@ -1,15 +1,18 @@
 {
     "version": "0.2",
+    "language": "en,en-GB",
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
         "CISO",
         "DHCW",
+        "Fiori",
         "IGDC",
+        "kickstarting",
         "mkdocs",
         "NCSC",
-        "organisation",
+        "shadcn",
         "UKNCSC"
     ],
     "ignoreWords": [],
