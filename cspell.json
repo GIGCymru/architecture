@@ -10,9 +10,10 @@
         "Fiori",
         "IGDC",
         "kickstarting",
+        "mkdocs",
         "NCSC",
-        "UKNCSC",
-        "shadcn"
+        "shadcn",
+        "UKNCSC"
     ],
     "ignoreWords": [],
     "import": []
