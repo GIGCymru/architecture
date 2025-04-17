@@ -6,13 +6,18 @@
     "dictionaries": [],
     "words": [
         "CISO",
+        "daemonless",
         "DHCW",
+        "Fargate",
         "Fiori",
         "IGDC",
         "kickstarting",
+        "Knative",
+        "mkdocs",
         "NCSC",
-        "UKNCSC",
-        "shadcn"
+        "Pulumi",
+        "shadcn",
+        "UKNCSC"
     ],
     "ignoreWords": [],
     "import": []
