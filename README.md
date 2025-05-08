@@ -14,7 +14,18 @@ An Architecture Decision Record (ADR) is a document that captures an important a
 
 ## Documentation
 
-Our records are published using [Mkdoc Material](https://squidfunk.github.io/mkdocs-material/).
+Our records are published using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+
+### Running via a Container (Podman / Docker)
+
+Ensure you have [Podman](https://podman.io/) installed first.
+
+```sh
+podman build --tag mkdocs .
+podman run -p 8000:8000 mkdocs
+```
+
+Navigate to ``http://127.0.0.1:8000/``
 
 ### Building docs with make
 
