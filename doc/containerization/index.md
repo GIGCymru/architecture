@@ -326,7 +326,6 @@ Cons:
 
 * No overlap with local tooling
 
-
 ### Direct management (e.g., via systemd or scripts)
 
 Pros:
@@ -342,7 +341,6 @@ Cons:
 * Not scalable
 
 * Not easy in the cloud
-
 
 ### Kubernetes / Orchestration tools
 
