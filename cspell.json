@@ -19,8 +19,9 @@
         "Mkdoc",
         "NCSC",
         "Pulumi",
-        "NCSC",
         "shadcn",
+        "TDA",
+        "TDAG",
         "UKNCSC"
     ],
     "ignoreWords": [],
