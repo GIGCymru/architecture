@@ -42,6 +42,21 @@ Chosen Option: **Mermaid**
 We will use Mermaid for creating and embedding diagrams in our Architecture
 Decision Records.
 
+!!! Info
+
+    To enhance accessibility for screen readers, always include ``accTitle``
+    (a short, descriptive title) and ``accDescr`` (a longer description) within
+    your Mermaid diagram code blocks.
+
+    This provides context for users who cannot see the visual diagram.
+
+    For more details, see [Mermaid Accessibility - accTitle and accDescr](https://mermaid.js.org/config/accessibility.html#acctitle-and-accdescr-usage-examples).
+
+!!! Tip
+
+    Install the [Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) VS Code Extension to preview diagrams when editing
+    Markdown files in VS Code.
+
 ### Justification
 
 Mermaid is chosen due to its excellent integration with Markdown-based
@@ -123,6 +138,11 @@ Below is an example flowchart diagram embedded in this record:
 
 ``` mermaid
 graph LR
+  accTitle: Example flowchart diagram
+  accDescr {
+      A simple flowchart diagram with points A, B, C and D with a few 
+      connections between them to demonstrate the use of Mermaid.
+  }
   A[Start] --> B{Error?};
   B -->|Yes| C[Hmm...];
   C --> D[Debug];
