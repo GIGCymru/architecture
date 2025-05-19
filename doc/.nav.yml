@@ -10,7 +10,14 @@ nav:
     - DHCW Design Authority:
       - design-authority/dhcw/index.md
       - Decisions: design-authority/dhcw/
+<<<<<<< HEAD
     - Decision Template: design-authority/dhcw/architecture-decision-record-template.md
+=======
+    - Enterprise Architecture Metamodel:
+      - design-authority/ea-metamodel/index.md
+      - Metamodel Decisions: design-authority/ea-metamodel/ 
+    - Template: design-authority/dhcw/architecture-decision-record-template.md
+>>>>>>> e3d9f93 (Start capturing EA Metamodel decisions)
     - Meta Decisions:
       - meta-decisions/*
     - Development:
