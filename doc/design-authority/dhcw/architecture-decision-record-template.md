@@ -1,8 +1,11 @@
 # {Your Title Here}
 
-!!! note "Status"
+!!! info
 
-    { Proposed | Under Review | Accepted | Rejected | Superseded | Deprecated }
+    **Status**: { Proposed | Under Review | Accepted |
+              Rejected | Superseded | Deprecated }
+    
+    **Updated**: {YYYY-MM-DD}
 
 ## Summary
 
