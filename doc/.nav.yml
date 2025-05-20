@@ -10,7 +10,7 @@ nav:
     - DHCW Design Authority:
       - design-authority/dhcw/index.md
       - Decisions: design-authority/dhcw/
-    - Template: design-authority/dhcw/architecture-decision-record-template.md
+    - Decision Template: design-authority/dhcw/architecture-decision-record-template.md
     - Meta Decisions:
       - meta-decisions/*
     - Development:
