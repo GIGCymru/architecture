@@ -18,8 +18,10 @@ when first proposed.
 There are multiple levels of decision defined, which follow different
 processes proportionate to their impact/significance.
 
-The approved [ADR template](../architecture-decision-record-template.md)
-should be used to ensure consistency and completeness.
+!!! success "Template"
+
+    The approved [ADR template](../architecture-decision-record-template.md)
+    should be used to ensure consistency and completeness.
 
 ## When to Create an Architecture Decision Record
 
@@ -188,12 +190,12 @@ recommending or granting approval.
 
 ## Initiation Process
 
-Prior to the creation of an ADR it is recommended that an Issue is raised in
-this GitHub repository outlining the need for a new ADR (or update to an
-existing one). This enables very early discussion around the potential ADR
-with minimal outlay and effort.
+Prior to the creation of an ADR it is recommended that an [Issue](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/issues)
+is raised in this GitHub repository outlining the need for a new ADR (or
+update to an existing one). This enables very early discussion around the
+potential ADR with minimal outlay and effort.
 
-Once the proposer wants to move forward with creating/update the ADR, they are
+Once the proposer wants to move forward with creating/updating an ADR, they are
 encouraged to use the standard Git/GitHub workflow and raise a Pull Request
 (PR) ahead of following the decision making process documented here.
 
@@ -262,31 +264,49 @@ within the agreed timeframe, the matter should be **escalated**.
 To ensure the ADR process is proportionate to the impact and scope of a
 decision, decisions are categorised into four levels:
 
+!!! Note
+
+    When determining the level, consider also how **easily reversible** the
+    decision is (can it be easily stopped, omitted, or undone?) and how
+    **easily isolatable** it is (can it run in parallel with similar decisions
+    without interference?). Decisions that are hard to reverse and/or hard to
+    isolate typically warrant a higher level due to increased risk and
+    commitment.
+
 ### Level 1: Project-Specific Decisions
 
 * **Scope:** Primarily impacts a single project or a small, closely related
   set of components within a project.
 * **Impact:** Minimal impact outside the immediate project team.
+* **Characteristics:** Often **easily reversible** and **easily isolatable**.
+  The commitment is typically low, allowing for quick trials and adjustments.
 * **Examples:** Choice of a specific library within a project, minor
   refactoring decisions, specific implementation details that don't affect
   external interfaces or broader architectural patterns.
 
 ### Level 2: Cross-Project/Team Decisions
 
-* **Scope:** Impacts multiple projects or teams, but not necessarily the
-  entire organisation.
+* **Scope:** Impacts multiple projects or teams, but not necessarily the entire
+  organisation.
 * **Impact:** Requires coordination or consistency across several teams or
   projects.
+* **Characteristics:** May have varying degrees of reversibility and
+  isolatability. While potentially more complex to undo or run in parallel
+  than Level 1, they are generally less entangled than higher-level decisions.
 * **Examples:** Standardising a specific tool or framework used by several
   teams, decisions affecting shared services used by a subset of projects,
   changes to internal APIs consumed by multiple teams.
 
 ### Level 3: Organisation-Wide Decisions
 
-* **Scope:** Impacts all projects, teams, or the entire organisation's
-  technical landscape.
+* **Scope:** Impacts all projects, teams, or the entire organisation's technical
+  landscape.
 * **Impact:** Requires broad consensus or mandates organisation-wide
   standards or practices.
+* **Characteristics:** Tend to be **harder to reverse** due to broad adoption
+  and significant impact if changed. They may also be **harder to isolate**
+  as they often establish organisation-wide standards or affect shared
+  infrastructure.
 * **Examples:** Mandated programming languages, standard architectural
   patterns for all new services, organisation-wide security policies
   affecting technical implementation.
@@ -297,6 +317,9 @@ decision, decisions are categorised into four levels:
   level implications.
 * **Impact:** High risk, high cost, or significant external visibility/
   dependency. May involve external stakeholders or national standards.
+* **Characteristics:** Typically **hard to reverse** and **hard to isolate**,
+  involving substantial commitment (e.g., financial, training, integration
+  effort). These demand the most rigorous review and careful consideration.
 * **Examples:** Adoption of a major new cloud platform, significant changes
   to core infrastructure, decisions impacting national data standards or
   interoperability.
@@ -342,7 +365,7 @@ The process for reviewing and finalising an ADR varies by its defined level:
 
 Level 3 decisions follow the same process as Level 2, but require **five**
 members to form a TDG and in addition to submission of the agreed decision to
-TDAG then decisions are also submitted to the Technical Design Authority (TDA)
+TDAG decisions are also submitted to the Technical Design Authority (TDA)
 agenda (below the line) for information only.
 
 ### Level 4: Major/Significant Decisions Process
