@@ -49,7 +49,7 @@ graph TD
 !!! tip
 
     See [Mermaid Docs](https://mermaid.js.org/syntax/flowchart.html) for more
-    information on creating/editing these diagrams.
+    information on creating/editing these diagrams and the [Mermaid Live Editor](https://mermaid.live/edit).
 
 ## Metamodel Compliance Query
 

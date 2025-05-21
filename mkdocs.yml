@@ -44,10 +44,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-<<<<<<< HEAD
   - pymdownx.tabbed:
       alternate_style: true
-=======
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -55,8 +53,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       check_paths: true
-  - pymdownx.superfences
->>>>>>> e3d9f93 (Start capturing EA Metamodel decisions)
 plugins:
   - search
   - table-reader
