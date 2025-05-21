@@ -30,4 +30,4 @@ Our first decisions are for [DHCW](https://https://dhcw.nhs.wales/) to utilise a
 
 ### Creating a new record
 
-See [Process](design-authority/dhcw/architecture-decision-record-process/README.md)
+See [Process](design-authority/dhcw/architecture-decision-record-process/index.md)
