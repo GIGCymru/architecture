@@ -7,10 +7,13 @@ nav:
       - design-authority/principles/index.md
       - Principles: design-authority/principles/
   - Decisions:
+    - Decision Template: design-authority/dhcw/architecture-decision-record-template.md
     - DHCW Design Authority:
       - design-authority/dhcw/index.md
       - Decisions: design-authority/dhcw/
-    - Decision Template: design-authority/dhcw/architecture-decision-record-template.md
+    - Enterprise Architecture Metamodel:
+      - design-authority/ea-metamodel/index.md
+      - Metamodel Decisions: design-authority/ea-metamodel/ 
     - Meta Decisions:
       - meta-decisions/*
     - Development:
