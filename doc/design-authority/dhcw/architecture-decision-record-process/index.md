@@ -134,6 +134,9 @@ The defined statuses are:
     Decision Group for Level 2+). This status indicates the ADR has moved
     past the initial `Proposed` state and is undergoing evaluation before a
     decision is reached.
+* **Accepted**: The ADR has been approved by the relevant decision-making
+    process (e.g., consensus on a PR, TDG agreement). The decision
+    documented is now considered active and should be followed.
 * **Rejected**: The proposed decision was reviewed but not approved. The ADR
     is kept for the record of the discussion and outcome.
 * **Superseded**: An `Accepted` ADR that has been replaced by a newer ADR.
