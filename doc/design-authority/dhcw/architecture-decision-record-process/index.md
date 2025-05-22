@@ -130,10 +130,10 @@ The defined statuses are:
 * **Proposed**: The initial state of an ADR. It has been drafted and is
     ready for discussion and review.
 * **Under Review**: The ADR is actively being discussed and reviewed by
-    stakeholders, typically via a Pull Request or by a Temporary Decision
-    Group (TDG). This is a transient phase for a `Proposed` ADR.
-* **Accepted**: The decision documented in the ADR has been formally
-    approved through the defined decision-making process.
+    stakeholders (e.g. via a Pull Request for Level 1, or by a Temporary
+    Decision Group for Level 2+). This status indicates the ADR has moved
+    past the initial `Proposed` state and is undergoing evaluation before a
+    decision is reached.
 * **Rejected**: The proposed decision was reviewed but not approved. The ADR
     is kept for the record of the discussion and outcome.
 * **Superseded**: An `Accepted` ADR that has been replaced by a newer ADR.
@@ -211,7 +211,7 @@ encouraged to use the standard Git/GitHub workflow and raise a Pull Request
       `git checkout main`, `git checkout -b adr-for-x`
     * Make the required changes (add/update files) in your editor of choice.
       (note [the template](architecture-decision-record-template.md))
-    * Commit the changes: `git add changed-file.md`, `git commit -m "Added new ARD for x"`
+    * Commit the changes: `git add changed-file.md`, `git commit -m "Added new ADR for x"`
     * Push the changes to GitHub `git push -u origin HEAD`
     * Raise a [Pull Request](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/pulls) on GitHub.com
 
@@ -369,9 +369,10 @@ The process for reviewing and finalising an ADR varies by its defined level:
 ### Level 3: Organisation-Wide Decisions Process
 
 Level 3 decisions follow the same process as Level 2, but require **five**
-members to form a TDG and in addition to submission of the agreed decision to
-TDAG decisions are also submitted to the Technical Design Authority (TDA)
-agenda (below the line) for information only.
+members (including the proposer) to form the TDG. In addition to submitting
+the agreed decision to TDAG for information, it is also submitted to the
+Technical Design Authority (TDA) agenda (below the line) for information
+only.
 
 ### Level 4: Major/Significant Decisions Process
 
