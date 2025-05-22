@@ -1,5 +1,10 @@
 # Architecture Decision Record (ADR) Process
 
+!!! warning
+
+    This process is pending approval from the DHCW Technical Design Authority
+    (TDA)
+
 This document outlines the process for proposing, developing, collaborating
 on, and approving Architecture Decision Records (ADRs) within DHCW. The
 process emphasises collaboration and working in the open whilst minimising
