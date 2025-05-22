@@ -450,6 +450,24 @@ authority is exercised through:
 * For Level 1 ADRs (which do not use a TDG), the approval is by peer
     consensus on the Pull Request, with TDAG reviewing for information.
 
+## Compliance & Enforcement
+
+Beyond the ADR approval process, TDA and TDAG also play a key role in upholding
+the decisions documented in `Accepted` ADRs. Architectural designs and
+proposals submitted to TDA/TDAG for review are expected to align with these
+decisions.
+
+The ADR template includes a `Confirmation` section for proposers to articulate
+this alignment, justify any deviations, and to propose specific methods for
+confirming ongoing compliance with the decision.
+
+TDA and TDAG have the authority to challenge or reject submissions that do not
+adequately comply with, or justify deviations from, `Accepted` ADRs, thereby
+ensuring architectural consistency and adherence to accepted decisions.
+
+Teams need to be proactive in consulting the ADRs and using them as a living
+knowledge base of architectural decisions to inform designs and approaches.
+
 ## General Approach to ADRs
 
 The TDG (or the original proposer, for less complex ADRs) will conduct
