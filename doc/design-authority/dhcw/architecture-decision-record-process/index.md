@@ -5,14 +5,14 @@
     This process is pending approval from the DHCW Technical Design Authority
     (TDA)
 
+## Introduction
+
 This document outlines the process for proposing, developing, collaborating
 on, and approving Architecture Decision Records (ADRs) within DHCW. The
 process emphasises collaboration and working in the open whilst minimising
 the involvement of formal governance bodies (e.g. Technical Design Authority
 (TDA) and Technical Design Assurance Group (TDAG)) as much as is practicable
 whilst maintaining suitable levels of assurance and governance.
-
-## Overview
 
 Anyone can propose an ADR and request collaboration to approve a decision.
 The proposal should clearly articulate the problem and context, and may
@@ -28,7 +28,7 @@ processes proportionate to their impact/significance.
     The approved [ADR template](../architecture-decision-record-template.md)
     should be used to ensure consistency and completeness.
 
-## When to Create an Architecture Decision Record
+## When to Create an ADR
 
 An ADR should be created for decisions that have a significant impact on the
 architecture of a system or the technical landscape of DHCW. The primary
@@ -45,9 +45,7 @@ Generally, an ADR is justified when a decision:
 * Would benefit future developers, architects, or stakeholders to understand
     the "why" behind the decision.
 
-### When an ADR May Not Be Necessary
-
-While the above guidelines cover many scenarios, an ADR is typically not
+While the above guidelines cover many scenarios, an ADR is typically **not**
 required for:
 
 * Decisions that do not fall into the category of "Architecture" (e.g.,
@@ -60,65 +58,33 @@ required for:
 * Low-risk, self-contained decisions made by a single developer within a
     project with no impact outside that immediate scope.
 
-## Handling Sensitive or Secure ADRs
+## Initiation and Commissioning
 
-The default is to collaborate on ADRs via the DHCW public GitHub repository,
-in the open.
+Prior to the creation of an ADR it is recommended that an [Issue](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/issues)
+is raised in this GitHub repository outlining the need for a new ADR (or
+update to an existing one). This enables very early discussion around the
+potential ADR with minimal outlay and effort.
 
-While ADRs are public by default to promote transparency, there are exceptional
-circumstances where the subject matter is highly sensitive (e.g., involving
-security vulnerabilities, confidential commercial information, or critical
-infrastructure details that should not be broadly disclosed).
+Once the proposer wants to move forward with creating/updating an ADR, they are
+encouraged to use the standard Git/GitHub workflow and raise a Pull Request
+(PR) ahead of following the decision making process documented here.
 
-### Requesting a Private ADR Process
+??? Tip "Example Git Workflow"
 
-If a proposed ADR topic is believed to be highly sensitive:
+    * Clone this repository: `git clone git@github.com:GIG-Cymru-NHS-Wales/Architecture-Decision-Records.git`
+    * Create a branch from `main` to work on (see [Naming Conventions](../architecture-decision-records-naming-conventions/index.md)):
+      `git checkout main`, `git checkout -b adr-for-x`
+    * Make the required changes (add/update files) in your editor of choice.
+      (note [the template](../architecture-decision-record-template.md))
+    * Commit the changes: `git add changed-file.md`, `git commit -m "Added new ADR for x"`
+    * Push the changes to GitHub `git push -u origin HEAD`
+    * Raise a [Pull Request](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/pulls) on GitHub.com
 
-1. The proposer must formally request an exception for private discussion
-    and restricted documentation from the **Technical Design Authority (TDA)**
-    or the **Technical Design Assurance Group (TDAG)** (depending on the
-    level of decision). This request should be made through appropriate internal
-    channels and should outline the nature of the sensitivity and why a private
-    process is necessary.
-2. The TDA/TDAG will review the request. Approval for a private process will
-    be granted if the justification for sensitivity is deemed valid.
+Notwithstanding the above guidance, the Technical Design Authority (TDA),
+Technical Design Assurance Group (TDAG), or other relevant governance bodies
+may commission the creation or update of an ADR in specific areas as needed.
 
-### Private Discussion and Documentation
-
-If approved for a private process:
-
-* Discussions will occur in a restricted forum, as determined and facilitated
-    by the TDA/TDAG (e.g., a private channel, dedicated secure meetings).
-* An ADR will still be created using the standard template and will follow the
-    standard lifecycle (e.g., Proposed, Accepted).
-* However, the ADR itself, containing sensitive details, will be stored in a
-    secure, access-controlled location designated by the TDA/TDAG, rather
-    than the public repository.
-
-### Transparency of Outcome for Private ADRs
-
-To maintain a degree of transparency and traceability while protecting
-sensitive information a placeholder or summary ADR **may** be created in the
-public repository.
-
-This public-facing ADR would typically:
-
-* Indicate that a decision on a sensitive topic has been made and recorded.
-* State the ADR title (if the title itself is not sensitive).
-* Provide a high-level, non-sensitive summary of the decision's scope or
-    impact, if possible and appropriate.
-* Clearly state that the full details are restricted and stored in a
-    secure location due to sensitivity, referencing the approval from
-    TDA/TDAG.
-* Link to the original generic public issue if one was created.
-* The decision on whether to create a public placeholder/summary, and the
-    level of detail it contains, will be made by the TDA/TDAG, in
-    consultation with relevant security and information governance stakeholders.
-* The existence of the decision and its status (e.g., Accepted) should still
-    be traceable through appropriate governance channels (TDA/TDAG records),
-    even if the full content is not publicly accessible.
-
-## ADR Lifecycle and Status
+## Lifecycle and Status
 
 Each ADR progresses through a lifecycle, and its current state is tracked using
 a defined status. This ensures clarity, traceability, and helps manage the
@@ -162,7 +128,7 @@ stateDiagram-v2
     Deprecated --> [*]
 ```
 
-## ADR Quality and Approval Criteria
+## Quality and Approval Criteria
 
 For an ADR to be considered "good enough" for approval and merging, it should
 meet a set of quality criteria. These criteria ensure that the decision is
@@ -195,34 +161,6 @@ within a Temporary Decision Group for higher levels), reviewers and TDG members
 are expected to assess the ADR against these quality criteria before
 recommending or granting approval.
 
-## Initiation Process
-
-Prior to the creation of an ADR it is recommended that an [Issue](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/issues)
-is raised in this GitHub repository outlining the need for a new ADR (or
-update to an existing one). This enables very early discussion around the
-potential ADR with minimal outlay and effort.
-
-Once the proposer wants to move forward with creating/updating an ADR, they are
-encouraged to use the standard Git/GitHub workflow and raise a Pull Request
-(PR) ahead of following the decision making process documented here.
-
-??? Tip "Example Git Workflow"
-
-    * Clone this repository: `git clone git@github.com:GIG-Cymru-NHS-Wales/Architecture-Decision-Records.git`
-    * Create a branch from `main` to work on (see [Naming Conventions](../architecture-decision-records-naming-conventions/index.md)):
-      `git checkout main`, `git checkout -b adr-for-x`
-    * Make the required changes (add/update files) in your editor of choice.
-      (note [the template](../architecture-decision-record-template.md))
-    * Commit the changes: `git add changed-file.md`, `git commit -m "Added new ADR for x"`
-    * Push the changes to GitHub `git push -u origin HEAD`
-    * Raise a [Pull Request](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/pulls) on GitHub.com
-
-### Commissioning of ADRs
-
-Notwithstanding the above guidance, the Technical Design Authority (TDA),
-Technical Design Assurance Group (TDAG), or other relevant governance bodies
-may commission the creation or update of an ADR in specific areas as needed.
-
 ## Temporary Decision Groups (TDG)
 
 Depending on the level of decision, it may require the formation of a Temporary
@@ -233,7 +171,7 @@ interest and desire to be involved in the ADR.
 When a TDG is utilised, any decision reached by the group is automatically
 accepted by the relevant assurance and governance committee.
 
-### TDG Operations and Decision Making
+### Operations and Decision Making
 
 Temporary Decision Groups (TDGs) are formed to collaboratively review and
 decide on ADRs, particularly for Level 2 and above. While open to interested
@@ -331,7 +269,7 @@ decision, decisions are categorised into four levels:
   to core infrastructure, decisions impacting national data standards or
   interoperability.
 
-## Decision-Making Process by Level
+## Process by Level
 
 The process for reviewing and finalising an ADR varies by its defined level:
 
@@ -380,7 +318,7 @@ outcomes of decisions are shared with TDAG for information.
 Clear roles and responsibilities are essential for the effective functioning
 of the ADR process. The following outlines key roles and their involvement:
 
-### ADR Stewardship and Maintenance
+### Stewardship and Maintenance
 
 The overall "stewarding" or "librarianship" of the ADRs, including the
 repository, process documentation, template, and ensuring consistency, falls
@@ -400,7 +338,7 @@ Once an ADR is **Accepted**:
     related ADRs should also identify existing ADRs that may need to be
     superseded.
 
-### Key Roles in the ADR Process
+### Key Roles
 
 | Role                 | Responsibility           |
 | :------------------- | :----------------------- |
@@ -411,7 +349,7 @@ Once an ADR is **Accepted**:
 | **TDA**              | Commissions and facilitates TDG formation for Level 4 ADRs. Acts as an escalation point for unresolved disagreements in Level 4 TDGs. Reviews outcomes of Level 3 & 4 ADRs for information. Can commission ADRs. Approves requests for private ADRs (Level 4). Provides ultimate governance oversight for the ADR process and supports the ADR Steward function. |
 | **ADR Steward**      | (A function likely performed by TDAG/TDA secretariat or a designated individual/team) Owns the ADR repository structure and process documentation. Ensures ADR template compliance, consistency across ADRs, and manages the lifecycle metadata (e.g., status updates in the log). Assists in reporting on ADR activity. |
 
-### ADR Stages, Activities and Owners
+### Stages, Activities and Owners
 
 | Stage                              | Activities                 | Owner(s)  |
 |:-----------------------------------|:---------------------------|:----------|
@@ -426,7 +364,7 @@ Once an ADR is **Accepted**:
 | **9. Communication** | Add to TDAG/TDA agenda as needed, broadcast key decisions. | TDAG & TDA Coordinators |
 | **10. Lifecycle Management**       | Monitor for relevance, deprecate outdated ADRs. | ADR Steward |
 
-### TDA and TDAG Approval Authority
+### Approval Authority
 
 The primary role of TDAG and TDA in the context of ADRs that have been through
 a Temporary Decision Group (TDG) is one of oversight, process assurance, and
@@ -469,7 +407,65 @@ ensuring architectural consistency and adherence to accepted decisions.
 Teams need to be proactive in consulting the ADRs and using them as a living
 knowledge base of architectural decisions to inform designs and approaches.
 
-## General Approach to ADRs
+## Handling Sensitive or Secure ADRs
+
+The default is to collaborate on ADRs via the DHCW public GitHub repository,
+in the open.
+
+While ADRs are public by default to promote transparency, there are exceptional
+circumstances where the subject matter is highly sensitive (e.g., involving
+security vulnerabilities, confidential commercial information, or critical
+infrastructure details that should not be broadly disclosed).
+
+### Requesting a Private ADR Process
+
+If a proposed ADR topic is believed to be highly sensitive:
+
+1. The proposer must formally request an exception for private discussion
+    and restricted documentation from the **Technical Design Authority (TDA)**
+    or the **Technical Design Assurance Group (TDAG)** (depending on the
+    level of decision). This request should be made through appropriate internal
+    channels and should outline the nature of the sensitivity and why a private
+    process is necessary.
+2. The TDA/TDAG will review the request. Approval for a private process will
+    be granted if the justification for sensitivity is deemed valid.
+
+### Private Discussion and Documentation
+
+If approved for a private process:
+
+* Discussions will occur in a restricted forum, as determined and facilitated
+    by the TDA/TDAG (e.g., a private channel, dedicated secure meetings).
+* An ADR will still be created using the standard template and will follow the
+    standard lifecycle (e.g., Proposed, Accepted).
+* However, the ADR itself, containing sensitive details, will be stored in a
+    secure, access-controlled location designated by the TDA/TDAG, rather
+    than the public repository.
+
+### Transparency of Outcome for Private ADRs
+
+To maintain a degree of transparency and traceability while protecting
+sensitive information a placeholder or summary ADR **may** be created in the
+public repository.
+
+This public-facing ADR would typically:
+
+* Indicate that a decision on a sensitive topic has been made and recorded.
+* State the ADR title (if the title itself is not sensitive).
+* Provide a high-level, non-sensitive summary of the decision's scope or
+    impact, if possible and appropriate.
+* Clearly state that the full details are restricted and stored in a
+    secure location due to sensitivity, referencing the approval from
+    TDA/TDAG.
+* Link to the original generic public issue if one was created.
+* The decision on whether to create a public placeholder/summary, and the
+    level of detail it contains, will be made by the TDA/TDAG, in
+    consultation with relevant security and information governance stakeholders.
+* The existence of the decision and its status (e.g., Accepted) should still
+    be traceable through appropriate governance channels (TDA/TDAG records),
+    even if the full content is not publicly accessible.
+
+## General Approach
 
 The TDG (or the original proposer, for less complex ADRs) will conduct
 thorough research, analysis, and evaluation of potential solutions or
