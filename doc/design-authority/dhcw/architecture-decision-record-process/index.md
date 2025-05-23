@@ -1,4 +1,4 @@
-# Architecture Decision Record (ADR) Process
+# Architecture Decision Record Process
 
 !!! warning
 
@@ -209,10 +209,10 @@ encouraged to use the standard Git/GitHub workflow and raise a Pull Request
 ??? Tip "Example Git Workflow"
 
     * Clone this repository: `git clone git@github.com:GIG-Cymru-NHS-Wales/Architecture-Decision-Records.git`
-    * Create a branch from `main` to work on (see [Naming Conventions](../architecture-decision-records-naming-conventions.md)):
+    * Create a branch from `main` to work on (see [Naming Conventions](../architecture-decision-records-naming-conventions/index.md)):
       `git checkout main`, `git checkout -b adr-for-x`
     * Make the required changes (add/update files) in your editor of choice.
-      (note [the template](architecture-decision-record-template.md))
+      (note [the template](../architecture-decision-record-template.md))
     * Commit the changes: `git add changed-file.md`, `git commit -m "Added new ADR for x"`
     * Push the changes to GitHub `git push -u origin HEAD`
     * Raise a [Pull Request](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/pulls) on GitHub.com
