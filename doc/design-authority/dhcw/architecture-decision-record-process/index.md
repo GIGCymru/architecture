@@ -171,24 +171,23 @@ reference.
 
 The following checklist should be considered during the review of an ADR:
 
-* Clear Problem Articulation: Is the problem statement, context, and the
-driving factors behind the need for a decision clearly and concisely
-described? (See Situation and Background sections in the template).
-* Exploration of Alternatives: Have sufficient and relevant alternative
-solutions been considered and documented? (See Considered Options
-section).
-* Documented Rationale and Trade-offs: Is the chosen solution clearly
-stated, and is the rationale behind the decision well-justified? Are the
-trade-offs (pros, cons, consequences) of the chosen solution and key
-alternatives explicitly documented? (See Recommendation and Pros and Cons
-sections).
-* Stakeholder Engagement: Has feedback from relevant stakeholders been
-sought and incorporated, or is there a rationale if not?
-* Sufficient Context and Linkages: Does the ADR include necessary
-background information, references to related ADRs, issues (e.g., GitHub
-issues), or other relevant documentation? (See More Information section).
-* Completeness and Clarity: Is the ADR well-written, easy to understand,
-and does it adhere to the ADR template?
+* **Clear Problem Articulation:** Is the problem statement, context, and the
+  driving factors behind the need for a decision clearly and concisely
+  described? (See the **Summary** and **Drivers** sections in the ADR template)
+* **Exploration of Alternatives:** Have sufficient and relevant alternative
+  solutions been considered and documented? (See the **Options** section.)
+* **Documented Rationale and Trade-offs:** Is the chosen solution clearly
+  stated, and is the rationale behind the decision well-justified? Are the
+  trade-offs (pros, cons, consequences) of the chosen solution and key
+  alternatives explicitly documented? (See the **Options Analysis** and
+  **Recommendation** sections.)
+* **Stakeholder Engagement:** Has feedback from relevant stakeholders been
+  sought and incorporated, or is there a rationale if not?
+* **Sufficient Context and Linkages:** Does the ADR include necessary
+  background information, references to related ADRs, issues (e.g., GitHub
+  issues), or other relevant documentation?
+* **Completeness and Clarity:** Is the ADR well-written, easy to understand,
+  and does it adhere to the [latest ADR template](../architecture-decision-record-template.md)?
 
 It is the responsibility of the ADR proposer to strive to meet these criteria.
 During the review process (whether via a Pull Request for Level 1 decisions or
@@ -340,13 +339,10 @@ The process for reviewing and finalising an ADR varies by its defined level:
 
 * **Review Timeframe:** A fixed review timeframe (default **one** week) is set
   for the PR by the proposer and specified in the PRs description.
-
 * **Feedback:** Team members and other relevant peers provide feedback via the
   PR.
-
 * **Approval:** The ADR is merged upon reaching consensus or at the end of the
   review period if no major objections are raised.
-
 * **Notification:** All Level 1 ADRs merged since the last Technical Design
   Assurance Group (TDAG) meeting are added as 'below the line' submissions to
   the TDAG agenda for information.
@@ -355,17 +351,13 @@ The process for reviewing and finalising an ADR varies by its defined level:
 
 * **Flagging:** The proposer flags the ADR to the Technical Design
   Assurance Group (TDAG) agenda as a Level 2 decision.
-
 * **TDG Formation:** The proposer explains the ADR at the TDAG and requests
   volunteers to form a TDG. The TDG must include at least **two** reviewers,
   in addition to the proposer.
-
 * **Review Timeframe:** The proposer, in consultation with the TDG, sets a
   timeframe for discussion and review (default: **two** weeks).
-
 * **Decision:** The TDG collaborates on the ADR and collectively makes the
   decision.
-
 * **Notification:** The finalised ADR and its decision are added to the next
   TDAG agenda for information only.
 
