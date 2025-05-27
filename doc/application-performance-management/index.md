@@ -8,22 +8,32 @@
 
 ## Summary
 
-We are deploying many applications and we want to rapidly sigificantly improve our system quality attributes, focusing on patients and clinicians, and with many needs for across-application uses. The category of tooling for this is known as application performance management (APM). We are seeking APM tooling that includes user experience monitoring (UEM), application analytics (AA), discovery/tracing/diagnostics (DTD), and related areas. Wikipedia: <https://en.wikipedia.org/wiki/Application_performance_management>
+We are deploying many applications and we want to rapidly sigificantly improve
+our system quality attributes, focusing on patients and clinicians, and with
+many needs for across-application uses. The category of tooling for this is
+known as application performance management (APM). We are seeking APM tooling
+that includes user experience monitoring (UEM), application analytics (AA),
+discovery/tracing/diagnostics (DTD), and related areas. Wikipedia:
+<https://en.wikipedia.org/wiki/Application_performance_management>
 
 ## Drivers
 
-* Now: we are developing the emergency department module (EDM), and we need to get clinician feedback on the authentication (which is UEM), and need to discover latency (which is AA), and need to discover and trace diagnostics across EDM subsections.
+* Now: we are developing the emergency department module (EDM), and we need to
+  get clinician feedback on the authentication (which is UEM), and need to
+  discover latency (which is AA), and need to discover and trace diagnostics
+  across EDM subsections.
   
-* Soon: we need to do the same for the upcoming nursing care record (NCR) application, plus we are hearing currently reports of performance problems includingly slow responsiveness that's impeding work to the point of the users wanting a full rewrite; we current don't know if the issues are caused by code, or data, or networking.
+* Soon: we need to do the same for the upcoming nursing care record (NCR)
+  application, plus we are hearing currently reports of performance problems
+  includingly slow responsiveness that's impeding work to the point of the users
+  wanting a full rewrite; we current don't know if the issues are caused by
+  code, or data, or networking.
 
-* Also: We currently hiring for a role "Head of Enpterprise Operations Monitoring". We want to enable this person to take point on providing sufficient APM capabilities across all our applications.
+* Also: We are onboarding for a role "Head of Enpterprise Operations
+  Monitoring". We want to enable this person to take point on providing
+  sufficient APM capabilities across all our applications.
 
 ## Options
-
-
-Our datadog bill is starting to get eye watering for web APM purposes. We use datadog for web APM because we need insight into site code for a couple of python and nodejs services, and well.. they were the safe choice. But our data volume has gone up quite a bit over the past 4 months so i'm now tasked to evaluate other options.
-
-We already use elastic for an internal service and we're happy with that, so that could be an option for logging. I'm open to ideas, 
 
 * Dynatrace
 * Datadog
@@ -42,45 +52,6 @@ We already use elastic for an internal service and we're happy with that, so tha
 * last9.io <https://last9.io/>
 * KloudMate
 * mutis
-
-### {Option 1 Title}
-
-{Describe the option, provide a summary, list the facts, provide links etc.}
-
-### {Option n Title}
-
-...
-
-## Options Analysis
-
-{This is where you critically evaluate each option presented in the *Options*
-section. For each option, provide a balanced view of its advantages,
-disadvantages, and any other relevant considerations or trade-offs. Be specific
-and, where possible, relate your points back to the *Drivers*.
-
-Consider aspects like:
-
-* Cost (development, operational, licensing)
-* Complexity (implementation, maintenance, learning curve)
-* Risks (technical, operational, security)
-* Alignment with architectural principles or existing standards
-* Impact on performance, scalability, usability, maintainability,
-    security etc.
-
-Include as may Pro/Con/Other statements as required.
-}
-
-### {Option 1 Assessment}
-
-* Pro: {A specific advantage or benefit of this option.}
-
-* Con: {A specific disadvantage, risk, or cost associated with this option.}
-
-* Other: {A relevant point that isn't strictly a pro or con.}
-
-### {Option n Assessment}
-
-...
 
 ## Advice
 
@@ -180,12 +151,51 @@ things that we didn’t realize would cost us a lot of money, they reached out
 immediately and worked with us to fix it and figure out how to do what we wanted
 for a fraction of the cost.
 
+### {Option 1 Title}
+
+{Describe the option, provide a summary, list the facts, provide links etc.}
+
+### {Option n Title}
+
+...
+
+## Options Analysis
+
+{This is where you critically evaluate each option presented in the *Options*
+section. For each option, provide a balanced view of its advantages,
+disadvantages, and any other relevant considerations or trade-offs. Be specific
+and, where possible, relate your points back to the *Drivers*.
+
+Consider aspects like:
+
+* Cost (development, operational, licensing)
+* Complexity (implementation, maintenance, learning curve)
+* Risks (technical, operational, security)
+* Alignment with architectural principles or existing standards
+* Impact on performance, scalability, usability, maintainability,
+    security etc.
+
+Include as may Pro/Con/Other statements as required.
+}
+
+### {Option 1 Assessment}
+
+* Pro: {A specific advantage or benefit of this option.}
+
+* Con: {A specific disadvantage, risk, or cost associated with this option.}
+
+* Other: {A relevant point that isn't strictly a pro or con.}
+
+### {Option n Assessment}
+
+...
+
 ## Recommendation
 
 {This is where you clearly state the final decision, and explicitly name the
-option that has been selected. Explain in detail **why** this option was
-chosen. You should clearly articulate how the chosen option best addresses the
-*Drivers* and meets the key requirements or solves the stated problem.}
+option that has been selected. Explain in detail **why** this option was chosen.
+You should clearly articulate how the chosen option best addresses the *Drivers*
+and meets the key requirements or solves the stated problem.}
 
 ### Consequences
 
@@ -194,8 +204,8 @@ chosen. You should clearly articulate how the chosen option best addresses the
 {Now that a decision has been made what are the expected outcomes and impacts,
 both positive and negative? What known limitations, costs, or risks are being
 accepted by making this decision? How will this decision affect different
-stakeholders, other systems, development practices, operational procedures,
-or user experience?}
+stakeholders, other systems, development practices, operational procedures, or
+user experience?}
 
 * Pro: {A specific positive outcome or benefit expected from this decision.}
 
