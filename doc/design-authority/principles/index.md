@@ -13,5 +13,5 @@ Authority (TDA):
 The following principles are under development:
 
 * [User-Centred Design Principles](user-centred-design/index.md)
-* Digital Products & Software Engineering
+* [Digital Products & Software Engineering](digital-products-and-software-engineering/index.md)
 * Clinical Principles
