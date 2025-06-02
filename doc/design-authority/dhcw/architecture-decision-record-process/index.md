@@ -501,7 +501,7 @@ graph TD
     Request_Private             --> Private_Approval{"Private Process Approved?"};
     Private_Approval    -- Yes  --> Process_Privately["ADR Handled **Privately**: Secure discussion & storage. **Optional** public placeholder on GitHub."];
     Private_Approval    -- No   --> Process_Publicly["ADR Handled **Publicly**: Open discussion, public storage via GitHub & Pull Request process"];
-    Process_Privately           --> TDG_Decision{"Decison Level?"};
+    Process_Privately           --> TDG_Decision{"Decision Level?"};
     Process_Publicly            --> TDG_Decision;
 
     %% Level 1 Process
