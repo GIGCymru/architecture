@@ -1,158 +1,153 @@
-# Python pacakage management
-
+# Python Package Management
 
 !!! info
 
-    **Status**: WIP RFC
+    **Status**: Proposed
     
-    **Updated**: 2025-05-29
+    **Level**: 2
+
+    **Updated**: 2025-06-03
 
 ## Summary
 
-Effective management of Python dependencies and virtual environments is critical
-for project reproducibility, dependency resolution, performance, and ease of
-use. The team must select a tool or a combination of tools to handle this.
+Python projects require effective dependency and virtual environment management
+to ensure reproducibility, reliable dependency resolution, and efficient
+development workflows. This ADR evaluates and recommends tooling for managing
+Python packages and environments across projects, with a focus on
+reproducibility, ease of use, and maintainability.
 
 ## Drivers
 
-We need programming language package management because we need:
+We need to standardise Python package management tooling because:
 
-* Dependency resolution
-* Environment isolation
-* Reproducible builds
-* Lock file generation
-* Speed and scalability
-* Compatibility with CI/CD
+* Current ad-hoc approach leads to inconsistent environments and dependency conflicts
+* Multiple tools in use create confusion and maintenance overhead
+* Need for reproducible builds and deterministic environments across CI/CD
+* Requirements for fast, reliable dependency resolution
+* Need for lock file support to ensure consistent environments
+* Development experience needs improvement with simpler workflows
 
-Our priorities in order:
+Our key priorities are:
 
-* **Reproducibility**: Lockfiles and deterministic environments
-* **Ease of use**: Clean CLI, minimal configuration, dev experience
-* **Compatibility**: Works well with popular tools and CI/CD systems
-* **Community and support**: Maturity, documentation, adoption
-* **Performance**: Fast dependency resolution and installation
+1. Reproducibility: Guaranteed consistent environments via lock files
+2. Developer Experience: Simple CLI, minimal config, efficient workflows
+3. CI/CD Compatibility: Works well with our deployment pipelines
+4. Community Support: Mature tooling with good documentation
+5. Performance: Fast dependency resolution and installation
 
 ## Options
 
-We aim to evaluate these tools and possibly others, as time lets us:
+We evaluated these popular Python package management tools:
 
-* [`uv`](https://github.com/astral-sh/uv)
-* [`poetry`](https://python-poetry.org/)
-* [`pip`](https://pip.pypa.io/)
-* [`venv`](https://docs.python.org/3/library/venv.html)
-* [`pipenv`](https://pipenv.pypa.io/)
-* [`conda`](https://docs.conda.io/en/latest/)
-* [`hatch`](https://hatch.pypa.io/)
+* [`uv`](https://github.com/astral-sh/uv) - Modern, fast package installer and resolver
+* [`poetry`](https://python-poetry.org/) - Comprehensive Python packaging tool
+* [`pip + venv + pip-tools`](https://pip.pypa.io/) - Standard Python tooling
+* [`pipenv`](https://pipenv.pypa.io/) - Unified dependency management
+* [`conda`](https://docs.conda.io/) - Cross-platform package manager
+* [`hatch`](https://hatch.pypa.io/) - Modern project management tool
 
-## Analyses
-
-Joel's assessments.
+## Options Analysis
 
 ### `uv`
 
-Overall: superb software engineering, bulletproof reliable, and successfully
-replaced poetry on my most-recent client's python project.
-
-* **Pros**:
-
-  * Extremely fast (written in Rust)
-  * Full support for `pyproject.toml`
-  * Handles dependency resolution and installation
-  * Lock file support (compatible with Poetry and pip)
-  * Drop-in replacement for `pip` and `pip-tools`
-
-* **Cons**:
-
-  * Newer and still evolving
-  * Fewer plugins and integrations
+* Pro: Extremely fast performance (Rust implementation)
+* Pro: Full pyproject.toml support with lock file generation
+* Pro: Drop-in replacement for pip and pip-tools
+* Pro: Compatible with existing Poetry and pip lock files
+* Pro: Combined environment and dependency management
+* Con: Newer tool with evolving feature set
+* Con: Limited plugin ecosystem currently
 
 ### `poetry`
 
-Summary: a chaotic mess that's caused severe team problems.
-
-* **Pros**:
-
-  * All-in-one: builds, dependency resolution, publishing
-  * Mature and well-documented
-  * Excellent lock file support
-  * Native `pyproject.toml` management
-  * Strong community and plugin ecosystem
-
-* **Cons**:
-
-  * Complicated for monorepos or nonstandard workflows
-  * Can be strict or opinionated (e.g., editable installs)
-  * Slower resolution performance
+* Pro: Complete solution for dependency management and publishing
+* Pro: Mature tool with extensive documentation
+* Pro: Strong lock file support and reproducibility
+* Pro: Native pyproject.toml support
+* Con: Complex configuration for monorepos
+* Con: Strict/opinionated approach limits flexibility
+* Con: Slower dependency resolution
 
 ### `pip + venv + pip-tools`
 
-Overall: formally correct, but many too many moving pieces.
-
-* **Pros**:
-
-  * Fully standard and supported by Python ecosystem
-  * Maximum control and transparency
-  * Lightweight, no external dependencies
-  * Works everywhere (CI, Docker, legacy systems)
-  
-* **Cons**:
-
-  * Manual and error-prone setup
-  * No built-in lockfile management (requires `pip-tools`)
-  * Slower dependency resolution
-  * Poor UX for larger projects
+* Pro: Standard Python ecosystem tools
+* Pro: Maximum flexibility and control
+* Pro: Lightweight, no external dependencies
+* Pro: Universal compatibility (CI, Docker, legacy systems)
+* Con: Manual setup process prone to errors
+* Con: Requires multiple tools working together (e.g. for lockfile management)
+* Con: Slower dependency resolution
+* Con: Poor developer experience for larger projects
 
 ### `pipenv`
 
-Overall: it's sunsetting so not viable long term.
-
-* **Pros**:
-
-  * Combined env + dependency management
-  * User-friendly CLI
-  * Creates lockfiles and manages `Pipfile`
-
-* **Cons**:
-
-  * Falling out of favor; less actively maintained
-  * Slower and sometimes inconsistent resolution
-  * Does not use `pyproject.toml`
+* Pro: Combined environment and dependency management
+* Pro: User-friendly command line interface
+* Pro: Creates lockfiles and manages `Pipfile`
+* Con: Declining maintenance and community support
+* Con: Slower and inconsistent dependency resolution
+* Con: No pyproject.toml support
 
 ### `conda`
 
 Overall: I love conda and it's great for AI/ML work, but didn't play well with
 other kinds of python projects such as Django apps and Flask services.
 
-* **Pros**:
-
-  * Cross-language dependency management (great for data science)
-  * Binary packages = faster installs
-  * Excellent for managing non-Python deps (e.g., OpenCV, MKL)
-
-* **Cons**:
-
-  * Not standard in Python-only ecosystems
-  * Environments are larger and less portable
-  * Lockfile support not as robust as pip/poetry
+* Pro: Excellent for data science/ML dependencies
+* Pro: Fast binary package installation
+* Pro: Handles non-Python dependencies well
+* Con: Not standard for Python-only projects
+* Con: Large environment footprint
+* Con: Limited lock file capabilities
 
 ### `hatch`
 
-Overall: I haven't looked at this yet.
-
-* **Pros**:
-
-  * Modern, PEP 517/518 compliant
-  * Strong environment management
-  * Good for Python packaging and monorepos
-
-* **Cons**:
-
-  * Smaller community
-  * Still growing adoption
-  * May be overkill if only dependency management is needed
+* Pro: Modern `PEP 517/518` compliant tooling
+* Pro: Strong environment management
+* Pro: Good for Python packaging and monorepos
+* Con: Smaller community and adoption
+* Con: May be excessive for basic dependency management
+* Con: Limited evaluation due to newer adoption
 
 ## Recommendation
 
-Choose uv.
+We recommend adopting `uv` as the standard Python package management tool for
+projects.
 
-If anyone on the team has specialized needs, such as already working in a conda environment, then freely choose whatever works well in that conda environment.
+The decision is based on:
+
+* Superior performance and reliability compared to alternatives
+* Strong support for modern Python packaging standards
+* Excellent lock file support ensuring reproducibility
+* Simple drop-in replacement for existing tools
+* Growing community adoption and active development
+
+### Consequences
+
+* Pro: Significant performance improvements in CI/CD
+* Pro: Simplified developer workflows
+* Pro: Better reproducibility via reliable lock files
+* Con: Some learning curve for teams used to other tools
+* Con: May need to maintain compatibility with legacy projects using other tools
+
+### Confirmation
+
+Implementation will be verified through:
+
+* Updated project templates using `uv`
+* CI/CD pipeline updates to standardize on `uv`
+* Team documentation and training
+* Monitoring of build times and dependency resolution issues
+
+## More Information
+
+Special cases:
+
+* Teams working with data science/ML projects may continue using conda if required
+* Legacy projects may maintain existing tools until convenient migration points
+
+This decision should be reviewed in 12 months to assess:
+
+* Community adoption of `uv`
+* Team feedback and pain points
+* New alternatives in the Python packaging ecosystem
