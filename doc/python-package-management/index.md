@@ -6,7 +6,7 @@
     
     **Level**: 2
 
-    **Updated**: 2025-06-03
+    **Updated**: 2025-06-04
 
 ## Summary
 
@@ -48,66 +48,96 @@ We evaluated these popular Python package management tools:
 
 ## Options Analysis
 
-### `uv`
+### `uv` Analysis
 
-* Pro: Extremely fast performance (Rust implementation)
-* Pro: Full pyproject.toml support with lock file generation
-* Pro: Drop-in replacement for pip and pip-tools
-* Pro: Compatible with existing Poetry and pip lock files
-* Pro: Combined environment and dependency management
-* Con: Newer tool with evolving feature set
-* Con: Limited plugin ecosystem currently
+**Pro:**
 
-### `poetry`
+* Extremely fast performance (Rust implementation)
+* Full pyproject.toml support with lock file generation
+* Drop-in replacement for pip and pip-tools
+* Compatible with existing Poetry and pip lock files
+* Combined environment and dependency management
 
-* Pro: Complete solution for dependency management and publishing
-* Pro: Mature tool with extensive documentation
-* Pro: Strong lock file support and reproducibility
-* Pro: Native pyproject.toml support
-* Con: Complex configuration for monorepos
-* Con: Strict/opinionated approach limits flexibility
-* Con: Slower dependency resolution
+**Con:**
 
-### `pip + venv + pip-tools`
+* Newer tool with evolving feature set
+* Limited plugin ecosystem currently
 
-* Pro: Standard Python ecosystem tools
-* Pro: Maximum flexibility and control
-* Pro: Lightweight, no external dependencies
-* Pro: Universal compatibility (CI, Docker, legacy systems)
-* Con: Manual setup process prone to errors
-* Con: Requires multiple tools working together (e.g. for lockfile management)
-* Con: Slower dependency resolution
-* Con: Poor developer experience for larger projects
+### `poetry` Analysis
 
-### `pipenv`
+**Pro:**
 
-* Pro: Combined environment and dependency management
-* Pro: User-friendly command line interface
-* Pro: Creates lockfiles and manages `Pipfile`
-* Con: Declining maintenance and community support
-* Con: Slower and inconsistent dependency resolution
-* Con: No pyproject.toml support
+* Complete solution for dependency management and publishing
+* Mature tool with extensive documentation
+* Strong lock file support and reproducibility
+* Native pyproject.toml support
 
-### `conda`
+**Con:**
+
+* Complex configuration for monorepos
+* Strict/opinionated approach limits flexibility
+* Slower dependency resolution
+
+### `pip + venv + pip-tools` Analysis
+
+**Pro:**
+
+* Standard Python ecosystem tools
+* Maximum flexibility and control
+* Lightweight, no external dependencies
+* Universal compatibility (CI, Docker, legacy systems)
+
+**Con:**
+
+* Manual setup process prone to errors
+* Requires multiple tools working together (e.g. for lockfile management)
+* Slower dependency resolution
+* Poor developer experience for larger projects
+
+### `pipenv` Analysis
+
+**Pro:**
+
+* Combined environment and dependency management
+* User-friendly command line interface
+* Creates lockfiles and manages `Pipfile`
+
+**Con:**
+
+* Declining maintenance and community support
+* Slower and inconsistent dependency resolution
+* No pyproject.toml support
+
+### `conda` Analysis
 
 Overall: I love conda and it's great for AI/ML work, but didn't play well with
 other kinds of python projects such as Django apps and Flask services.
 
-* Pro: Excellent for data science/ML dependencies
-* Pro: Fast binary package installation
-* Pro: Handles non-Python dependencies well
-* Con: Not standard for Python-only projects
-* Con: Large environment footprint
-* Con: Limited lock file capabilities
+**Pro:**
 
-### `hatch`
+* Excellent for data science/ML dependencies
+* Fast binary package installation
+* Handles non-Python dependencies well
 
-* Pro: Modern `PEP 517/518` compliant tooling
-* Pro: Strong environment management
-* Pro: Good for Python packaging and monorepos
-* Con: Smaller community and adoption
-* Con: May be excessive for basic dependency management
-* Con: Limited evaluation due to newer adoption
+**Con:**
+
+* Not standard for Python-only projects
+* Large environment footprint
+* Limited lock file capabilities
+
+### `hatch` Analysis
+
+**Pro:**
+
+* Modern `PEP 517/518` compliant tooling
+* Strong environment management
+* Good for Python packaging and monorepos
+
+**Con:**
+
+* Smaller community and adoption
+* May be excessive for basic dependency management
+* Limited evaluation due to newer adoption
 
 ## Recommendation
 
@@ -124,11 +154,16 @@ The decision is based on:
 
 ### Consequences
 
-* Pro: Significant performance improvements in CI/CD
-* Pro: Simplified developer workflows
-* Pro: Better reproducibility via reliable lock files
-* Con: Some learning curve for teams used to other tools
-* Con: May need to maintain compatibility with legacy projects using other tools
+**Pro:**
+
+* Significant performance improvements in CI/CD
+* Simplified developer workflows
+* Better reproducibility via reliable lock files
+
+**Con:**
+
+* Some learning curve for teams used to other tools
+* May need to maintain compatibility with legacy projects using other tools
 
 ### Confirmation
 
