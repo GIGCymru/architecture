@@ -7,7 +7,7 @@
     
     **Level**: { 1 - 4 }
 
-    **Updated**: {YYYY-MM-DD}
+    **Updated**: { YYYY-MM-DD }
 
 ## Summary
 
@@ -64,16 +64,24 @@ Consider aspects like:
 * Impact on performance, scalability, usability, maintainability,
     security etc.
 
-Include as may Pro/Con/Other statements as required.
-}
+Include as many Pro/Con/Other statements as required.}
 
 ### {Option 1 Assessment}
 
-* Pro: {A specific advantage or benefit of this option.}
+**Pro:**
 
-* Con: {A specific disadvantage, risk, or cost associated with this option.}
+* {A specific advantage or benefit of this option.}
+* ...
 
-* Other: {A relevant point that isn't strictly a pro or con.}
+**Con:**
+
+* {A specific disadvantage, risk, or cost associated with this option.}
+* ...
+
+**Other:**
+
+* {A relevant point that isn't strictly a pro or con.}
+* ...
 
 ### {Option n Assessment}
 
