@@ -2,7 +2,7 @@
 
 [![mkdocs](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/actions/workflows/publish.yml/badge.svg)](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/actions/workflows/publish.yml)
 
-This documents in this repository are published to [https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/](https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/).
+The documents in this repository are published to [https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/](https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/).
 
 An Architecture Decision Record (ADR) is a document that captures an important architecture decision made along with its context and consequences.
 
