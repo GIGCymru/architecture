@@ -1,0 +1,30 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+    "name": "ADR Python Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/python:3.13-bookworm",
+    "features": {
+        "ghcr.io/va-h/devcontainers-features/uv:1": {}
+    },
+    
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    "forwardPorts": [8000],
+    
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "uv sync",
+
+    // Configure tool-specific properties.
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "DavidAnson.vscode-markdownlint",
+                "streetsidesoftware.code-spell-checker",
+                "bierner.markdown-mermaid",
+                "redhat.vscode-yaml"
+            ],
+            "settings": {
+                "editor.rulers": [80, 120] // Add a vertical ruler at the 80 and 120 characters
+            }
+        }
+    }
+}

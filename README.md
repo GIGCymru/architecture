@@ -9,61 +9,126 @@ An Architecture Decision Record (ADR) is a document that captures an important a
 ## Introduction
 
 * [Why write architecture decision records - By GitHub Engineering](https://github.blog/engineering/architecture-optimization/why-write-adrs/)
+* [A practical overview on Architecture Decision Records](https://ctaverna.github.io/adr/)
 
-* [A practical overview on Architecture Decision Records: How to start and why this could be your most valuable action as a software architect](https://ctaverna.github.io/adr/)
+## Getting Started
+
+There are several ways to set up your development environment:
+
+### 1. GitHub Codespaces (Recommended)
+
+The fastest way to start contributing:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/GIG-Cymru-NHS-Wales/Architecture-Decision-Records?quickstart=1)
+
+This provides:
+
+* A pre-configured VS Code environment (with useful extensions installed)
+* All required dependencies installed
+* Automatic port forwarding for preview
+* Git integration
+
+Once you have successfully launched Codespaces you can run the
+development server from the VS Code Terminal:
+
+```bash
+    uv run mkdocs serve
+```
+
+You will be prompted to **Open in Browser** to view the locally running site.
+
+See the [Quickstart Guide](http://docs.github.com/en/codespaces/quickstart) for
+more information.
+
+Note: It can take a few minutes to fully launch Codespaces the first time, but
+is faster on subsequent launches as the environment is then cached.
+
+### 2. Local Development
+
+**Prerequisites:**
+
+* Python 3.11 or higher
+* [uv](https://github.com/astral-sh/uv) for package/env management
+* Git
+
+**Setup Steps:**
+
+Clone the repository:
+
+```bash
+    git clone https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records.git
+    cd Architecture-Decision-Records
+```
+
+Install uv (if not already installed):
+
+```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Set up environment and dependencies:
+
+```bash
+    uv sync
+```
+
+Start the development server:
+
+```bash
+    uv run mkdocs serve
+```
+
+View the documentation at: ``http://127.0.0.1:8000/``
+
+### 3. Container-based Development
+
+If you prefer using containers:
+
+**Prerequisites:**
+
+* [Podman](https://podman.io/) or [Docker](https://www.docker.com/)
+
+**Setup Steps:**
+
+Build the container:
+
+```bash
+    podman build --tag mkdocs .
+```
+
+Run the development server:
+
+```bash
+    podman run -p 8000:8000 mkdocs
+```
+
+View the documentation at: ``http://127.0.0.1:8000/``
+
+### 4. Make-based Workflow
+
+For those familiar with Make:
+
+```bash
+    # See available commands
+    make help
+
+    # Full build and serve
+    make
+```
+
+View the documentation at: ``http://127.0.0.1:8000/``
 
 ## Documentation
 
-Our records are published using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+Our documentation is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
-### Running via a Container (Podman / Docker)
+## Contributing
 
-Ensure you have [Podman](https://podman.io/) installed first.
-
-```sh
-podman build --tag mkdocs .
-podman run -p 8000:8000 mkdocs
-```
-
-Navigate to ``http://127.0.0.1:8000/``
-
-### Building docs with make
-
-If you are a developer, or you want to generate documentation on your own system, then you can use the command `make`.
-
-To see options for the command `make`:
-
-```sh
-make help
-```
-
-To do everything to build the documentation and run it:
-
-```sh
-make
-```
-
-### Building docs manually
-
-Install 'uv' for Python package/env management e.g. :
-
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
-Setup the local environment and install dependencies:
-
-```bash
-uv sync
-```
-
-Run mkdocs locally:
-
-```bash
-uv run mkdocs serve
-```
-
-Navigate to ``http://127.0.0.1:8000/``
+1. Choose your preferred development environment from above
+2. Create a new branch for your changes
+3. Make your changes
+4. Test your changes locally
+5. Submit a Pull Request
 
 ## License
 
