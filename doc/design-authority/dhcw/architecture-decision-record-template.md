@@ -1,68 +1,146 @@
-# Architecture Decision Record Template
+# {Your Title Here}
 
-**Status**: {proposed | rejected | accepted | deprecated | superseded by ABC...}  
-**Date**: {YYYY-MM-DD when the decision was last updated}  
-**Governance**: {describe the governance involved in the decision e.g. Technical Design Authority approved}  
+!!! info
 
-## Situation - Context and Problem Statement
+    **Status**: { Proposed | Under Review | Accepted |
+                  Rejected | Superseded   | Deprecated }
+    
+    **Level**: { 1 - 4 }
 
-{Describe the situation, what is the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story.}
+    **Updated**: { YYYY-MM-DD }
 
-## Background - Decision Drivers (Optional)
+## Summary
 
-{Optionally describe the background to the situation, what are the factors are driving the decision}
+{This is the 'executive summary' or 'elevator pitch' for your ADR. In a few
+concise sentences (typically 2-4), clearly state the core problem, question,
+or opportunity this ADR addresses. Include a brief hint at the decision made or
+the area of focus. The goal is to help readers quickly understand what this
+ADR is about and decide if it's relevant to them, without needing to read the
+entire document. Think of it as the abstract of a technical paper or a very
+brief introduction to the main topic.}
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+## Drivers
 
-## Assessment - Considered Options
+{This section explains **why** this decision is being made **now**.
+Clearly articulate the primary motivations, needs, or problems that necessitate
+this architectural decision. Think about the underlying reasons and pressures.}
 
-{List briefly the options that have been considered}
+* {e.g. We are developing a new feature/capability that needs...}
+* {e.g. We need to improve performance, accessibility, remove debt...}
+* {e.g. Feedback from users suggests...}
+* {e.g. The current approach imposes these limitations...}
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+## Options
 
-## Recommendation - Decision Outcome
+{This is where you list the different options you are considering. Stick to
+the facts and avoid opinions, the next section covers the analysis. Include a
+concise description, links to relevant documentation or examples.
 
-{Describe the chosen option and justification}.
+Include all significant alternatives you explored, even if they were ultimately
+not chosen. The goal is to give readers a clear, unbiased understanding of each
+alternative before you dive into the evaluation.}
 
-### Consequences (Optional)
+### {Option 1 Title}
 
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
+{Describe the option, provide a summary, list the facts, provide links etc.}
 
-### Confirmation (Optional)
+### {Option n Title}
 
-{Describe how the implementation of/compliance with the Architecture Decision Record can/will be confirmed.}
+...
 
-## Pros and Cons of the Options (Optional)
+## Options Analysis
 
-### {title of option 1}
+{This is where you critically evaluate each option presented in the *Options*
+section. For each option, provide a balanced view of its advantages,
+disadvantages, and any other relevant considerations or trade-offs. Be specific
+and, where possible, relate your points back to the *Drivers*.
 
-<!-- This is an optional element. Feel free to remove. -->
-{example | description | pointer to more information | …}
+Consider aspects like:
 
-* Good, because {argument a}
-* Good, because {argument b}
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
+* Cost (development, operational, licensing)
+* Complexity (implementation, maintenance, learning curve)
+* Risks (technical, operational, security)
+* Alignment with architectural principles or existing standards
+* Impact on performance, scalability, usability, maintainability,
+    security etc.
 
-### {title of other option}
+Include as many Pro/Con/Other statements as required.}
 
-{example | description | pointer to more information | …}
+### {Option 1 Assessment}
 
-* Good, because {argument a}
-* Good, because {argument b}
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* …
+**Pro:**
 
-## More Information (Optional)
+* {A specific advantage or benefit of this option.}
+* ...
 
-{You might want to provide additional evidence/confidence for the decision outcome here and/or document the team agreement on the decision and/or define when/how this decision the decision should be realised and if/when it should be re-visited. Links to other decisions and resources might appear here as well.}
+**Con:**
+
+* {A specific disadvantage, risk, or cost associated with this option.}
+* ...
+
+**Other:**
+
+* {A relevant point that isn't strictly a pro or con.}
+* ...
+
+### {Option n Assessment}
+
+...
+
+## Recommendation
+
+{This is where you clearly state the final decision, and explicitly name the
+option that has been selected. Explain in detail **why** this option was
+chosen. You should clearly articulate how the chosen option best addresses the
+*Drivers* and meets the key requirements or solves the stated problem.}
+
+### Consequences
+
+{This section is **optional**.}
+
+{Now that a decision has been made what are the expected outcomes and impacts,
+both positive and negative? What known limitations, costs, or risks are being
+accepted by making this decision? How will this decision affect different
+stakeholders, other systems, development practices, operational procedures,
+or user experience?}
+
+* Pro: {A specific positive outcome or benefit expected from this decision.}
+
+* Con: {A specific accepted downside, cost, or risk resulting from this
+    decision. }
+
+* Other: {A consequence that isn't strictly a pro or con.}
+
+### Confirmation
+
+{This section is **optional**.}
+
+{Outline how the implementation of this decision will be verified and how
+ongoing compliance will be ensured. This helps demonstrate that the decision
+isn't just theoretical but will be actively put into practice and monitored.
+
+How will you check that the decision has been correctly implemented?
+(e.g., code reviews, specific tests, demonstrations, peer review).
+
+How will adherence to this decision be maintained over time? (e.g., automated
+checks, periodic audits, updates to team guidelines, training).
+
+Are there specific metrics or indicators that will show the decision is
+achieving its intended positive outcomes? (e.g., performance benchmarks,
+adoption rates, reduction in specific errors, user feedback scores).
+
+Who is responsible for overseeing this, and what happens if the decision is
+not followed?}
+
+## More Information
+
+{This section is **optional**.}
+
+{Use this section to provide any supplementary information that supports the
+decision, adds context, or guides future actions. Links to other decisions
+and resources might appear here as well.
+
+You could briefly note who was involved in the decision-making process and
+if/how consensus was reached. You may also want to suggest a timeframe or
+specific events that might prompt a re-evaluation of this decision in the
+future.}

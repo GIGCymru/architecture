@@ -20,22 +20,14 @@ Our first decisions are for [DHCW](https://https://dhcw.nhs.wales/) to utilise a
 
 * [Introduction](design-authority/dhcw/index.md)
 
-* [Use Architecture Decision Records and Structure](design-authority/dhcw/use-architecture-decision-records-and-structure.md)
+* [Use Architecture Decision Records and Structure](design-authority/dhcw/use-architecture-decision-records-and-structure/index.md)
 
-* [Architecture Decision Records Naming Convention](design-authority/dhcw/architecture-decision-records-naming-conventions.md)
+* [Architecture Decision Records Naming Convention](design-authority/dhcw/architecture-decision-records-naming-conventions/index.md)
 
-* [Format Architecture Decision Records using plaintext Markdown](design-authority/dhcw/format-architecture-decision-records-with-markdown.md)
+* [Format Architecture Decision Records using plaintext Markdown](design-authority/dhcw/format-architecture-decision-records-with-markdown/index.md)
 
-* [Use Material for MkDocs for Publishing](design-authority/dhcw/use-material-for-mkdocs-for-publishing.md)
+* [Use Material for MkDocs for Publishing](design-authority/dhcw/use-material-for-mkdocs-for-publishing/index.md)
 
 ### Creating a new record
 
-To create a new record:
-
-* Create a branch from ``main`` see [naming conventions](design-authority/dhcw/architecture-decision-records-naming-conventions.md)
-
-* Make a copy of [the template](design-authority/dhcw/architecture-decision-record-template.md).
-
-* Enter as much detail as you can in the record
-
-* Create a [Pull Request](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/pulls) on GitHub.com
+See [Process](design-authority/dhcw/architecture-decision-record-process/index.md)

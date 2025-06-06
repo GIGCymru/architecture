@@ -1,7 +1,8 @@
 site_name: GIG Cymru NHS Wales - Architecture
-site_url: https://gig-cymru-nhs-wales.github.io/
+site_url: https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/
 repo_url: https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/
 docs_dir: doc
+edit_uri: edit/main/doc/
 extra_css:
   - stylesheets/extra.css
 theme:
@@ -14,7 +15,9 @@ theme:
   features:
     - navigation.tabs
     - navigation.footer
-    - toc.integrate
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
 copyright: >
   Copyright &copy; 2025 GIG Cymru - NHS Wales –
   <a href="#__consent">Change cookie settings</a>
@@ -36,7 +39,20 @@ extra:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      check_paths: true
 plugins:
   - search
   - table-reader
