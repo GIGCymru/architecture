@@ -1,9 +1,9 @@
 # Architecture Decision Record Process
 
-!!! warning
+!!! success "Approved"
 
-    This process is pending approval from the DHCW Technical Design Authority
-    (TDA)
+    This process was approved by the DHCW Technical Design Authority (TDA) on
+    13/06/2025
 
 ## Introduction
 
