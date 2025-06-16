@@ -41,7 +41,7 @@ run:
 .PHONY: deploy
 deploy:
 	uv run mkdocs gh-deploy --force
-	@echo "The documentation should now be available by browsing https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/"
+	@echo "The documentation should now be available by browsing https://gig-cymru-nhs-wales.github.io/architecture-decision-records/"
 
 ##
 # newline: display a newline character so we can print prettier messages.

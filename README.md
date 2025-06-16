@@ -1,8 +1,8 @@
 # GIG Cymru NHS Wales - Architecture Decision Records
 
-[![mkdocs](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/actions/workflows/publish.yml/badge.svg)](https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/actions/workflows/publish.yml)
+[![mkdocs](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/actions/workflows/publish.yml/badge.svg)](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/actions/workflows/publish.yml)
 
-The documents in this repository are published to [https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/](https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/).
+The documents in this repository are published to [https://gig-cymru-nhs-wales.github.io/architecture-decision-records/](https://gig-cymru-nhs-wales.github.io/architecture-decision-records/).
 
 An Architecture Decision Record (ADR) is a document that captures an important architecture decision made along with its context and consequences.
 
@@ -19,7 +19,7 @@ There are several ways to set up your development environment:
 
 The fastest way to start contributing:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/GIG-Cymru-NHS-Wales/Architecture-Decision-Records?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/GIG-Cymru-NHS-Wales/architecture-decision-records?quickstart=1)
 
 This provides:
 
@@ -56,8 +56,8 @@ is faster on subsequent launches as the environment is then cached.
 Clone the repository:
 
 ```bash
-    git clone https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records.git
-    cd Architecture-Decision-Records
+    git clone https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records.git
+    cd architecture-decision-records
 ```
 
 Install uv (if not already installed):
