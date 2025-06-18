@@ -72,7 +72,7 @@ encouraged to use the standard Git/GitHub workflow and raise a Pull Request
 ??? Tip "Example Git Workflow"
 
     * Clone this repository: `git clone git@github.com:GIG-Cymru-NHS-Wales/architecture-decision-records.git`
-    * Create a branch from `main` to work on (see [Naming Conventions](../architecture-decision-records-naming-conventions/index.md)):
+    * Create a branch from `main` to work on (see [Naming Conventions](../../../decisions/meta-decisions/architecture-decision-records-naming-conventions/index.md)):
       `git checkout main`, `git checkout -b adr-for-x`
     * Make the required changes (add/update files) in your editor of choice.
       (note [the template](../architecture-decision-record-template.md))
