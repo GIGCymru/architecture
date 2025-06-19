@@ -1,33 +1,62 @@
-# GIG Cymru - NHS Wales - Architecture
+# Welcome to NHS Wales Architecture
 
-This site provides NHS Wales architecture related information.
+This site serves as a repository for sharing NHS Wales architectural
+knowledge, decisions, and principles. It is maintained by [Digital Health and Care Wales (DHCW)](https://dhcw.nhs.wales/).
 
-## Principles
+## What You'll Find Here
 
-See [DHCW Architecture Principles](design-authority/principles/index.md)
+### Architecture Principles
 
-## Decisions
+Our [Architecture Principles](principles/index.md) guide how we design and build
+systems across NHS Wales. These principles cover areas including:
 
-An Architecture Decision Record (ADR) is a document that captures an important architecture decision made along with its context and consequences.
+- User-Centred Design
+- Security and Identity
+- Cloud and Infrastructure
+- Digital Products and Software Engineering
+- Data and Analytics
+- Open Architecture
 
-* [Why write architecture decision records - By GitHub Engineering](https://github.blog/engineering/architecture-optimization/why-write-adrs/)
+### Architecture Decisions
 
-* [A practical overview on Architecture Decision Records: How to start and why this could be your most valuable action as a software architect](https://ctaverna.github.io/adr/)
+We use Architecture Decision Records (ADRs) to document important architectural
+choices, including their context, consequences, and rationale. This
+documentation helps teams understand not just what was decided, but why those
+decisions were made.
 
-### First Decisions
+Our decisions are organised into three categories:
 
-Our first decisions are for [DHCW](https://https://dhcw.nhs.wales/) to utilise achitecture decision records, specify how we will name them and agree the format:
+- **Meta Decisions**: Decisions about our ADR process itself, documentation
+  standards, and tooling
+- **Process Decisions**: Decisions about how we work, including security
+  processes, development workflows, and operational procedures
+- **Technical Decisions**: Technology choices, system architectures, integration
+  patterns, and infrastructure decisions
 
-* [Introduction](design-authority/dhcw/index.md)
+### Design Authority
 
-* [Use Architecture Decision Records and Structure](design-authority/dhcw/use-architecture-decision-records-and-structure/index.md)
+The [DHCW Technical Design Authority](design-authority/index.md) (TDA) oversees
+architectural decisions and ensures alignment with NHS Wales's strategic
+objectives. You'll find:
 
-* [Architecture Decision Records Naming Convention](design-authority/dhcw/architecture-decision-records-naming-conventions/index.md)
+- Our ADR process and templates
+- Terms of reference
+- Meeting records and decisions
+- Enterprise architecture metamodel
 
-* [Format Architecture Decision Records using plaintext Markdown](design-authority/dhcw/format-architecture-decision-records-with-markdown/index.md)
+## Getting Started
 
-* [Use Material for MkDocs for Publishing](design-authority/dhcw/use-material-for-mkdocs-for-publishing/index.md)
+1. New to ADRs? Read [why we write architecture decision records](https://github.blog/engineering/architecture-optimization/why-write-adrs/)
+   and this [practical overview of ADRs](https://ctaverna.github.io/adr/)
 
-### Creating a new record
+2. Want to propose a new architecture decision? Follow our [ADRProcess](design-authority/dhcw/architecture-decision-record-process/index.md)
 
-See [Process](design-authority/dhcw/architecture-decision-record-process/index.md)
+3. Looking for guidance? Start with our [Architecture Principles](principles/index.md)
+
+4. Need to review past decisions? Browse our [Categorised decisions](decisions/index.md)
+
+## Contributing
+
+This site is managed through our [GitHub repository](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records).
+We welcome contributions from the NHS Wales technology community. See our
+[ADR process](design-authority/dhcw/architecture-decision-record-process/index.md) documentation for details on how to propose changes or new decisions.
