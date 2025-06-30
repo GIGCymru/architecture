@@ -16,7 +16,7 @@ Documents can vary in formats—from scanned paper records and PDFs to structure
 
 There is ongoing ambiguity across systems, teams, and stakeholders about what constitutes a clinical document, leading to inconsistent handling, impact on storage, misclassification, and poor user experience in accessing patient records.
 
-By clarifying what is a document makes them distinguishable from other clinical artefacts such as, but not limited to, clinical data, images and results. This definition is essential for effective governance, maintenance, storage, metadata tagging, information lifecycle management, and ensuring the right information is available at the right time for care decisions.<p></p>
+By clarifying what is a document makes them distinguishable from other clinical artefacts such as, but not limited to, clinical data, images and results. This definition is essential for effective governance, maintenance, storage, metadata tagging, information lifecycle management, and ensuring the right information is available at the right time for care decisions.
 
 ## Assessment - Considered Options
 
