@@ -2,7 +2,7 @@
 
 **Status**: Request for collaboration, Decision  
 **Date**: 2025-05-07  
-**Governance**: Collaboration to be confirmed, TDA, TDAG?   
+**Governance**: Collaboration to be confirmed, TDA, TDAG?
 
 ## Situation - Context and Problem Statement
 
@@ -74,7 +74,7 @@ To ensure clarity and prevent misclassification, it must also be stated that a d
 - Raw or un-contextualised text notes
 - Temporary drafts or internal UI outputs
 - A file lacking authorship, provenance, or clinical context
-- An active form, as that is structured clinical data. 
+- An active form, as that is structured clinical data.
 
 **Action Steps**:
 
@@ -87,5 +87,3 @@ Train system designers, product teams, and clinical staff on appropriate classif
 Ensure search, lifecycle management, and metadata tagging are aligned with the above definition
 
 Exclude non-document artefacts from document repositories (e.g., data points, logs, raw media, images, active forms, etc)
-
-
