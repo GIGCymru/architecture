@@ -1,4 +1,4 @@
-# Architecture Decision Record Template
+# What is a document
 
 **Status**: Request for collaboration, Decision  
 **Date**: 2025-05-07  
