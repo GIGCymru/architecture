@@ -1,2 +1,5 @@
+.git/
+.github/
+.venv/
 .vscode
 site/
