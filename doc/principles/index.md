@@ -60,8 +60,8 @@ formally approved, they provide valuable guidance in their respective areas:
   services that meet user needs
 * [Digital Products & Software Engineering](digital-products-and-software-engineering/index.md) -
   Best practices for building and maintaining digital products
-* Clinical Principles _(Coming Soon)_ - Guidelines for clinical systems and
-  healthcare technology
+* [Clinical Principles](clinical/index.md) - Guidelines for clinical systems
+  and healthcare technology
 
 ## Using These Principles
 
