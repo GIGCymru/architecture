@@ -1,12 +1,14 @@
 # Adoption of Architecture Overview Documents
 
-**Status**: Proposed
+!!! info
 
-**Level**: 3
+    **Status**: Proposed
 
-**Updated**: 2025-07-24
+    **Level**: 2
 
-## Situation: Context and Problem Statement
+    **Updated**: 2025-07-24
+
+## Summary  
 
 DHCW has well-established assurance processes for design that have been aligned to traditional waterfall methodologies for many years. As part of this approach, architects complete designs documented in Solution Architecture Documents (SADs), which are then peer-reviewed by the TDAG committee comprising experts from all major technical domains.
 
@@ -16,7 +18,7 @@ There are several issues associated to using SADs within the organisation:
 * SADs tend to be very lengthy documents and are difficult to consume for the end reviewers.
 * SAD format doesn't take into account all areas of design concern.
 
-## Background: Decision Drivers
+## Drivers
 
 The current assurance process results in SADs that often become obsolete once services are delivered, as changes made during implementation are not consistently captured or updated. This leads to a loss of accuracy in the documented state of the global architecture, reducing confidence in SADs as a reliable source of truth.  Decision drivers are as follows:
 
@@ -27,25 +29,73 @@ The current assurance process results in SADs that often become obsolete once se
 * Focus on end-to-end design architecture, rather than just software.
 * Adopt a template format that AI can interpret and work with to improve their output when asked to contribute to projects.
 
-## Assessment: Considered Options
+## Options
 
-Several options were identified that could be considered for the review:
+Several options were identified that were considered for the review.
 
-**1. Keep existing documentation standards(Keep SAD, SRS, HLD, LLD)** - this approach no longer fits and is sustainable for the change to Product focussed delivery.
+### Option 1 - Keep existing documentation standards
 
-**2. Come up with a DHCW specific lightweight design template.** - A lightweight format can be adopted but will require DHCW to agree a format, and manage the document format as a product.
+Retain the existing processes and design artefacts such as SAD, SRS, HLD, LLD.
 
-**3. Adopt a supported recognised industry standard.** - Best of both worlds.  A lightweight format that can be adopted in line with other new tools, and maintained by the industry keeping it relevant to the latest architecture concerns.
+### Option 2 - DHCW specific lightweight design template
 
-**Option 3** was investigated in further detail to identify possible options.  The following options were considered:
+DHCW would design a lightweight document template, managing the new format as a product.
+
+### Option 3 - Adopt a recognised industry standard
+
+ A lightweight format that can be adopted in line with other new tools, and maintained by the industry keeping it relevant to the latest architecture concerns.
+
+## Options Analysis
+
+### Option 1 Assessment
+
+**Pros:**
+
+* DHCW architects familiar with the existing artefacts and processes.
+
+**Cons:**
+
+* Documents are not kept up to date.
+* Implementation does not match the design.
+* Very lengthy documents and difficult to consume for the end reviewers.
+* Not sustainable for the change to Product focussed delivery.
+* Doesn't cover all aspects of the end to end design.
+
+### Option 2 Assessment
+
+**Pros:**
+
+* DHCW can tailor a template for itself.
+* Can utilise and complement our existing toolset.
+* New lightweight design template.
+
+**Cons:**
+
+* DHCW responsible for maintaining the template.
+* Architecture function will be responsible for training.
+
+### Option 3 Assessment
+
+**Pros:**
+
+* Maintained and supported industry standard.
+* Pre-existing templates and examples.
+* Well known in the architect community.
+
+**Cons:**
+
+* DHCW responsible for maintaining the template.
+* Architecture function will be responsible for training.
+
+## Recommendation
+
+After an initial assessment of the pros and cons for all options, option 3 was selected for further investigation to identify possible standards.  The following standards were considered:
 
 * **C4 modelling** - excellent tool for modelling software, however lacking the end-to-end view.
 
 * **Arc42** - An industry wide adopted methodology for documenting architecture, open source and supported, primarily based on Markdown.  Well documented template in multiple formats, with supporting documentation to assist architects through the information gathering process.  Many supporting examples.
 
-## Recommendation: Decision Outcome
-
-After consideration, the decision is that DHCW will adopt the arc42 modelling template for solution architecture for the following reasons:
+After consideration, the recommendation is that DHCW will adopt the arc42 modelling template for solution architecture for the following reasons:
 
 **1. Structured and Comprehensive Framework** - arc42 provides a well-defined, standardised template covering all critical aspects of architecture, including context, constraints, quality scenarios, building blocks, runtime views, and decisions. This ensures designs are documented holistically rather than inconsistently or partially, which is common with unstructured documentation.
 
