@@ -34,10 +34,32 @@ The following or delegates are required to be quorate:
 
 * Executive Director of Strategy
 * Executive Director of Operations
-* Chief Digital Architect
+* Chief Product and Technology Officer
 * Chief Data Officer
 * Cyber Security
 
 In addition, specific domain leads (or delegates) are required to be quorate if
 a paper/submission is relevant to their domain. This will be determined by the
 chair.
+
+## Scope
+
+**In Scope​:**
+
+All architecture domains:
+
+* Digital Workplace​
+* Digital Products & Software Engineering​
+* Open Architecture & Integration​
+* Data & Analytics​
+* Security & Identity​
+* Cloud & Infrastructure
+* User-Centred Design
+* Clinical
+
+**Out of Scope:**
+
+* Business change/readiness​
+* Project or programme governance​
+* Existing projects or solutions (other than major changes)​
+* Compliance
