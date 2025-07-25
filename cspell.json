@@ -12,21 +12,18 @@
         "Descr",
         "DHCW",
         "Fargate",
+        "FHIR",
         "Fiori",
-        "IGDC",
         "isolatability",
         "isolatable",
-        "kickstarting",
         "Knative",
         "metamodel",
         "Mkdoc",
         "mkdocs",
         "NCSC",
         "Pulumi",
-        "shadcn",
         "TDA",
-        "TDAG",
-        "UKNCSC"
+        "TDAG"
     ],
     "ignoreWords": [],
     "import": []
