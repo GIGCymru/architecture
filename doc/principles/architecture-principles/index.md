@@ -1,8 +1,8 @@
 # Architecture Principles
 
-!!! warning
+!!! success "Approved"
 
-    Proposed changes to these principles are under review by the DHCW TDA
+    These principles have been approved by the DHCW TDA
 
 ## Deliver Sustainable Services
 
