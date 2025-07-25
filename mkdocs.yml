@@ -37,7 +37,9 @@ extra:
   analytics:
     provider: simple
 markdown_extensions:
+  - abbr
   - admonition
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
@@ -53,7 +55,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       check_paths: true
+      auto_append:
+        - includes/abbreviations.md
 plugins:
   - search
   - table-reader
   - awesome-nav
+watch:
+  - includes
