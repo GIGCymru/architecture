@@ -1,10 +1,6 @@
 {
   "search.followSymlinks": false,
   "yaml.schemas": {
-    "https://squidfunk.github.io/mkdocs-material/schema.json": [
-      "mkdocs.yml"
-    ],
     "./.vscode/mkdocs-custom-schema.json": "mkdocs.yml",
-    "file:///c%3A/Users/Ch312943/Projects/architecture-decision-records/.vscode/mkdocs-custom-schema.json": "file:///c%3A/Users/Ch312943/Projects/architecture-decision-records/mkdocs.yml"
   }
 }
