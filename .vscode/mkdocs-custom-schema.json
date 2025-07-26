@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Custom MkDocs Schema for NHS Wales Architecture",
+  "description": "Extends the official Material for MkDocs schema to allow for custom plugins.",
+  "allOf": [
+    {
+      "$ref": "https://squidfunk.github.io/mkdocs-material/schema.json"
+    }
+  ],
+  "properties": {
+    "plugins": {
+      "type": ["array", "object"],
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "https://squidfunk.github.io/mkdocs-material/schema.json#/properties/plugins/items"
+          },
+          {
+            "const": "awesome-nav",
+            "description": "Enables the awesome-nav plugin for folder-based navigation."
+          }
+        ]
+      }
+    }
+  }
+}
