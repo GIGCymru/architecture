@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=.vscode/mkdocs-custom-schema.json
 site_name: GIG Cymru NHS Wales - Architecture
 site_url: https://gig-cymru-nhs-wales.github.io/architecture-decision-records/
 repo_url: https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/

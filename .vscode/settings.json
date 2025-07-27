@@ -1,6 +1,0 @@
-{
-  "search.followSymlinks": false,
-  "yaml.schemas": {
-    ".vscode/mkdocs-custom-schema.json": "mkdocs.yml",
-  }
-}
