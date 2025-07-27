@@ -1,7 +1,10 @@
 {
     "version": "0.2",
     "language": "en,en-GB",
-    "ignorePaths": [],
+    "ignorePaths": [
+        ".*",
+        "mkdocs.yml"
+    ],
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
