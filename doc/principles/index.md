@@ -31,7 +31,7 @@ target timetable to compliance.
 
 These principles have been derived from the [NHS England Architecture Principles January 2021 v4](https://digital.nhs.uk/developer/architecture/principles).
 They also reflect the [Digital Service Standards for Wales](https://digitalpublicservices.gov.wales/guidance-and-standards/digital-service-standards-wales)
-published by the Centre for Digital Public Services.
+published by the [Centre for Digital Public Services](https://digitalpublicservices.gov.wales/).
 
 ## Approved Principles
 
@@ -40,26 +40,26 @@ Technical Design Authority (TDA):
 
 * [Architecture Principles](architecture-principles/index.md) - Our foundational
   principles that guide all architectural decisions
-* [Open Architecture & Integration](open-architecture/index.md) - Guidelines for
-  creating interoperable and extensible systems
-* [Digital Workplace](digital-workplace/index.md) - Principles for creating
-  effective digital working environments
-* [Data & Analytics](data-and-analytics/index.md) - Guidelines for data
-  management, analytics, and insights
 * [Cloud & Infrastructure](cloud-and-infrastructure/index.md) - Principles for
   cloud adoption and infrastructure design
+* [Data & Analytics](data-and-analytics/index.md) - Guidelines for data
+  management, analytics, and insights
+* [Digital Products & Software Engineering](digital-products-and-software-engineering/index.md) -
+  Best practices for building and maintaining digital products
+* [Digital Workplace](digital-workplace/index.md) - Principles for creating
+  effective digital working environments
+* [Open Architecture & Integration](open-architecture/index.md) - Guidelines for
+  creating interoperable and extensible systems
 * [Security & Identity](security-and-identity/index.md) - Core security and
   identity management principles
+* [User-Centred Design](user-centred-design/index.md) - Principles for creating
+  services that meet user needs
 
 ## Principles Under Development
 
 The following principles are currently being developed and reviewed. While not yet
 formally approved, they provide valuable guidance in their respective areas:
 
-* [User-Centred Design](user-centred-design/index.md) - Principles for creating
-  services that meet user needs
-* [Digital Products & Software Engineering](digital-products-and-software-engineering/index.md) -
-  Best practices for building and maintaining digital products
 * [Clinical Principles](clinical/index.md) - Guidelines for clinical systems
   and healthcare technology
 
@@ -78,5 +78,5 @@ and seek appropriate approval through the [Governance Process](../design-authori
 ## Contributing
 
 If you'd like to suggest changes to existing principles or propose new ones,
-please follow our [ADR process](../design-authority/dhcw/architecture-decision-record-process/index.md)
+please [Create an Issue](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/issues)
 and raise your proposal through the appropriate channels.

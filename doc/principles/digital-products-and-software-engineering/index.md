@@ -1,8 +1,8 @@
 # Digital Products & Software Engineering Principles
 
-!!! warning
+!!! success "Approved"
 
-    These principles are not yet approved by the DHCW TDA
+    These principles have been approved by the DHCW TDA
 
 ## Introduction
 

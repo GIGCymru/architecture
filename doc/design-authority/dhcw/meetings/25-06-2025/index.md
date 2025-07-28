@@ -35,3 +35,5 @@ See [TDA 13/06/2025](../13-06-2025/index.md)
 | TDA-A009 | CL       | Form a Temporary Decision Group (TDG) to develop an Architecture Decision Record (ADR) and framework for the selection of Cloud provider for products and services |
 | TDA-A010 | RR       | Develop ways of working around API Delivery model for review |
 | TDA-A011 | All      | Review [Clinical Principles​](../../../../principles/clinical/index.md) for approval an next TDA |
+| TDA-A012 | CC       | Add Rationale and Implications to all principles for review |
+| TDA-A013 | CC       | Undertake holistic review of all principles and propose changes to make cohesive for review |
