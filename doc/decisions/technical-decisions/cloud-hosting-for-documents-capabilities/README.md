@@ -1,7 +1,7 @@
 # Cloud Hosting for Documents Capability
 
 **Status**: Request for collaboration, decision
-**Date**: 2025-18-07 
+**Date**: 2025-18-07
 **Governance**: Collaboration to be confirmed, TDA, TDAG?
 
 ## Situation: Context and Problem Statement
@@ -41,7 +41,7 @@ To realise this vision, the service must be underpinned by a fit-for-purpose clo
 
 - Clinical Document Service is positioned to meet its long-term goals, avoiding delays, duplicated effort, and architectural missteps.
 - Cloud storage of clinical document binaries, accessible for operational use and analytics (e.g., NDAP).
-- Microservice hosting, leveraging containerisation and orchestration for scalable, portable, re-useable and resilient service delivery. 
+- Microservice hosting, leveraging containerisation and orchestration for scalable, portable, re-useable and resilient service delivery.
 - Core security services, including malware scanning, access auditing, and alignment with national standards.
 - API management (e.g., Apigee), to support secure authentication, access control, logging, and monitoring.
 - Unify business-as-usual (BAU) operations through the consistent use of technologies such as SOLR, streamlining search, indexing, and retrieval.
