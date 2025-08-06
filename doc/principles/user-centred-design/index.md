@@ -1,8 +1,8 @@
 # User-Centred Design (UCD) Principles
 
-!!! Note
+!!! success "Approved"
 
-    These principles are not yet approved by the DHCW TDA
+    These principles have been approved by the DHCW TDA
 
 ## Start with user needs
 
