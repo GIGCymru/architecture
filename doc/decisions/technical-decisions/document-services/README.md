@@ -1,4 +1,4 @@
-# What is a document
+# What is a Document
 
 **Status**: Request for collaboration, Decision  
 **Date**: 2025-05-07  
