@@ -63,7 +63,7 @@ Following a cross-functional meeting on 18/07/2025 with representation from NDR,
 
 - Document Binary Storage will be hosted in GCP, as this aligns with the Data Strategy and supports seamless integration with National Data and Analytics Platforms (BigQuery, machine learning and vertex AI).
 - Clinical Data will be stored in the CDR
-- Indexed data will be stored in SOLR
+- Indexed data will continue to be stored in our current SOLR-based indexing solution. While SOLR is being maintained for business continuity, it is considered a transitional platform pending full migration to the strategic solution.
 - Microservices supporting operational workflows and aligning with NTA business capabilities can be hosted on the most suitable platform from an infrastructure, resourcing, and deployment perspective—platform-neutral at this stage. This decision can be placed on lowest cost option.
 - Google Apigee will provide the proxy layer and access mechanisms for users of the microservices.
 
