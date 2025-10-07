@@ -1,6 +1,7 @@
+# yaml-language-server: $schema=.vscode/mkdocs-custom-schema.json
 site_name: GIG Cymru NHS Wales - Architecture
-site_url: https://gig-cymru-nhs-wales.github.io/Architecture-Decision-Records/
-repo_url: https://github.com/GIG-Cymru-NHS-Wales/Architecture-Decision-Records/
+site_url: https://gigcymru.github.io/architecture/
+repo_url: https://github.com/GIGCymru/architecture/
 docs_dir: doc
 edit_uri: edit/main/doc/
 extra_css:
@@ -37,7 +38,9 @@ extra:
   analytics:
     provider: simple
 markdown_extensions:
+  - abbr
   - admonition
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
@@ -53,7 +56,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       check_paths: true
+      auto_append:
+        - includes/abbreviations.md
 plugins:
   - search
   - table-reader
   - awesome-nav
+watch:
+  - includes
