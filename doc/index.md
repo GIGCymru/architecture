@@ -57,6 +57,11 @@ objectives. You'll find:
 
 ## Contributing
 
-This site is managed through our [GitHub repository](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records).
-We welcome contributions from the NHS Wales technology community. See our
-[ADR process](design-authority/dhcw/architecture-decision-record-process/index.md) documentation for details on how to propose changes or new decisions.
+This site is managed through our [GitHub repository](https://github.com/GIGCymru/architecture).
+We welcome contributions from the NHS Wales technology community.
+
+Feel free to raise an [Issue](https://github.com/GIGCymru/architecture) to start
+a discussion.
+
+See also our [ADR process](design-authority/dhcw/architecture-decision-record-process/index.md)
+documentation for details on how to propose or contribute new decisions.

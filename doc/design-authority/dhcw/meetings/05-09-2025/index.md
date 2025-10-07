@@ -25,7 +25,7 @@ See [TDA 25/07/2025](../25-06-2025/index.md)
 | TDA-014   | Review Technical Debt | Noted & Action TDA-A014 |
 | TDA-015   | Technical Design Assurance Group (TDAG) Report | Noted |
 | TDA-016   | Review of [Clinical Principles​](../../../../principles/clinical/index.md) | Action TDA-A015 |
-| TDA-017   | Update on [Cloud Selection ADR​](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/issues/30) | Noted |
+| TDA-017   | Update on [Cloud Selection ADR​](https://github.com/GIGCymru/architecture/issues/30) | Noted |
 | TDA-018   | Auditing as a principle | Action TDA-A016 |
 | TDA-019   | Enterprise Tooling approval process discussion | N/A |
 

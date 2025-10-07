@@ -78,5 +78,5 @@ and seek appropriate approval through the [Governance Process](../design-authori
 ## Contributing
 
 If you'd like to suggest changes to existing principles or propose new ones,
-please [Create an Issue](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/issues)
+please [Create an Issue](https://github.com/GIGCymru/architecture/issues)
 and raise your proposal through the appropriate channels.

@@ -60,7 +60,7 @@ required for:
 
 ## Initiation and Commissioning
 
-Prior to the creation of an ADR it is recommended that an [Issue](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/issues)
+Prior to the creation of an ADR it is recommended that an [Issue](https://github.com/GIGCymru/architecture/issues)
 is raised in this GitHub repository outlining the need for a new ADR (or
 update to an existing one). This enables very early discussion around the
 potential ADR with minimal outlay and effort.
@@ -71,14 +71,14 @@ encouraged to use the standard Git/GitHub workflow and raise a Pull Request
 
 ??? Tip "Example Git Workflow"
 
-    * Clone this repository: `git clone git@github.com:GIG-Cymru-NHS-Wales/architecture-decision-records.git`
+    * Clone this repository: `git clone git@github.com:GIGCymru/architecture.git`
     * Create a branch from `main` to work on (see [Naming Conventions](../../../decisions/meta-decisions/architecture-decision-records-naming-conventions/index.md)):
       `git checkout main`, `git checkout -b adr-for-x`
     * Make the required changes (add/update files) in your editor of choice.
       (note [the template](../architecture-decision-record-template.md))
     * Commit the changes: `git add changed-file.md`, `git commit -m "Added new ADR for x"`
     * Push the changes to GitHub `git push -u origin HEAD`
-    * Raise a [Pull Request](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/pulls) on GitHub.com
+    * Raise a [Pull Request](https://github.com/GIGCymru/architecture/pulls) on GitHub.com
 
 Notwithstanding the above guidance, the Technical Design Authority (TDA),
 Technical Design Assurance Group (TDAG), or other relevant governance bodies

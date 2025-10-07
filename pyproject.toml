@@ -1,7 +1,7 @@
 [project]
-name = "architecture-decision-records"
+name = "architecture"
 version = "0.1.0"
-description = "MKDocs Material Setup for ADR site"
+description = "MKDocs Material Setup for GIG Cymru Architecture site"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

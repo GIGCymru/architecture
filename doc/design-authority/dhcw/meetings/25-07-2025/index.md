@@ -18,7 +18,7 @@ See [TDA 13/06/2025](../13-06-2025/index.md)
 | TDA-007   | Approval of [Digital Products & Software Engineering ​Principles](../../../../principles/digital-products-and-software-engineering/index.md) | Approved |
 | TDA-008   | Approval of [UCD Principles​](../../../../principles/user-centred-design/index.md) | Approved |
 | TDA-009   | Approval of revisions to [Level 1 Architecture Principles​](../../../../principles/architecture-principles/index.md) | Approved & Actions TDA-A005, TDA-A006, TDA-A007, TDA-A008 |
-| TDA-010   | [Cloud Selection ADR​](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/issues/30) | Approved & Action TDA-A009 |
+| TDA-010   | [Cloud Selection ADR​](https://github.com/GIGCymru/architecture/issues/30) | Approved & Action TDA-A009 |
 | TDA-011   | Update on National Target Architecture ​| N/A |
 | TDA-012   | API Delivery Framework​ | Action TDA-A010 |
 | TDA-013   | Review of [Clinical Principles​](../../../../principles/clinical/index.md) | Action TDA-A011 |
