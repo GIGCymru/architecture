@@ -5,7 +5,7 @@
 | Reference | Item | Outcome |
 | --------- | ---- | ------- |
 | TDA-001   | [ADR Process](../../architecture-decision-record-process/index.md) for Approval | Approved & Action TDA-A003 |
-| TDA-002   | [Changes to Top Level Architecture Principles](https://github.com/GIG-Cymru-NHS-Wales/architecture-decision-records/pull/58) for Discussion | Action TDA–A001 |
+| TDA-002   | [Changes to Top Level Architecture Principles](https://github.com/GIGCymru/architecture/pull/58) for Discussion | Action TDA–A001 |
 | TDA-003   | [Digital Products & Software Engineering Principles](../../../../principles/digital-products-and-software-engineering/index.md) for Approval | To return for approval next TDA |
 | TDA-004   | [Enterprise Architecture Metamodel](../../../ea-metamodel/index.md) for Information | N/A |
 | TDA-005   | [UCD Principles](../../../../principles/user-centred-design/index.md) for Approval | To return for approval next TDA |
