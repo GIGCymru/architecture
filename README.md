@@ -117,6 +117,24 @@ For those familiar with Make:
 
 View the documentation at: ``http://127.0.0.1:8000/``
 
+## Linting
+
+This project uses `markdownlint-cli2` to lint the markdown files in the `doc/` directory.
+
+To run the linter, you will first need to install it using `npm`:
+
+```bash
+npm install
+```
+
+Once it is installed, you can run the linter by running the following command:
+
+```bash
+make lint
+```
+
+This will check all the markdown files in the `doc/` directory and report any errors.
+
 ## Documentation
 
 Our documentation is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
