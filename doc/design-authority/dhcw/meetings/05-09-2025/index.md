@@ -2,7 +2,7 @@
 
 ## Previous Actions
 
-See [TDA 25/07/2025](../25-06-2025/index.md)
+See [TDA 25/07/2025](../25-07-2025/index.md)
 
 | Ref      | Owner    | Description | Status |
 | -------- | -------- | ----------- | ------ |
