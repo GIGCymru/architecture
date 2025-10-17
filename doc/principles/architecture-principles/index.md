@@ -99,51 +99,65 @@ See also [Security and Identity Principles](../security-and-identity/index.md).
     * All security-relevant events must be logged to a secure, immutable audit
         trail to support monitoring, investigation, and incident response.
 
-## 4. Maintain a Single Source of Truth
+## 4. Use the National Data Resource
 
-Core data entities must be mastered in a single, authoritative source, and made
-available for consumption and contribution via standard, open APIs.
+Services should read from and write to the National Data Resource, contributing
+to a single, comprehensive record for each citizen. This supports both
+longitudinal records and real-time pathways. Services should not use direct
+point-to-point integrations but instead exchange data through the National
+Data Resource.
 
 See also [Data and Analytics Principles](../data-and-analytics/index.md).
 
 ??? info "Rationale"
 
-    Architectures based on point-to-point messaging and data synchronisation
-    between multiple application-specific stores are complex, brittle, and
-    expensive to maintain.
+    Architectures based on point-to-point data integrations and data sharing
+    are complex, brittle, and expensive to maintain. This principle avoids
+    these issues by establishing the National Data Resource as a central hub
+    for data exchange, removing the need for direct data messaging, copying and
+    migrations between individual applications. This radically simplifies the
+    landscape, ensuring that all services are working from a consistent, shared
+    understanding of data. It removes ambiguity and reduces the clinical risk
+    of decisions being made on stale or conflicting information.
 
-    Centralising the management of core data entities (e.g. patient data,
-    reference data) ensures data consistency, quality, and integrity across the
-    entire digital ecosystem. This approach simplifies the overall architecture,
-    promotes loose coupling between services, and reduces the risk of clinical
-    decisions being made on stale or inconsistent information by eliminating
-    the need for complex compensation logic.
+    While applications retain stewardship and mastery of their own data, their
+    mandatory, real-time synchronisation with the National Data Resource is
+    what ensures consistency, quality, and clear provenance across the system.
+    This model provides a complete, trustworthy view of patient information.
+    Furthermore, because data is persisted in the shared record, it mitigates
+    the clinical risk of information being unavailable if a source application
+    goes offline. In principle, it also allows new, simpler applications to be
+    developed that can use the shared record as their primary data layer.
 
 ??? note "Implications"
 
-    * A data entity is considered "core" if it is intended to be shared and
-        reused across multiple services, domains, or organisations. A catalogue
-        of core data entities must be maintained. Examples include, but are not
-        limited to:
+    * Services must read data from the National Data Resource, treating it as a
+        source of truth, updating their internal data store as appropriate. 
+    * Services must write data changes to the National Data Resource with
+        minimum delay, so that other services always have access to current
+        data. 
+    * All interactions with the National Data Resource occur through versioned,
+        documented, and discoverable open APIs. Direct database access is
+        prohibited.
+    * Services should not share data directly with other services, because this
+        excludes other services, and will compromise the reference data layer’s
+        integrity as a single source of truth.  
+    * This principle applies to any data that is relevant to another service. A
+        catalogue of these data must be maintained. Examples include, but are
+        not limited to:
         - Patient demographics
         - Longitudinal patient record data (e.g. events, results, medications)
         - Reference data (e.g. clinical terminologies)
         - Practitioner and staff information
         - Documents and medical images
-    * For each core data entity, a single system of record must be designated.
-        All other services must use this source and must not create or maintain
-        long-lived local copies.
-    * All interactions (read and write) with master data must occur through
-        versioned, documented, and discoverable open APIs. Direct database
-        access from other services is prohibited.
-    * Clear ownership for each core data entity must be established. The owning
-        system is responsible for the quality, availability, and lifecycle
-        management of that data.
-    * Services that create or update master data should do so in near real-time
-        to ensure the single source of truth is always current.
-    * Existing systems that act as a system of record must either expose their
-        data via a standard API facade or have a clear roadmap for migrating
-        their data to an approved authoritative source.
+    * Clear stewardship for each data entity must be established. The steward
+        is responsible for the quality, availability, and lifecycle management
+        of that data.
+    * Procurement processes for new systems must contractually mandate
+        compliance with this principle, ensuring any proposed solution will
+        integrate with the National Data Resource via the required APIs.
+    * Existing systems must have a clear roadmap to integrate fully with the
+        National Data Resource. 
 
 ## 5. Enable Interoperability with Open APIs
 
@@ -178,43 +192,7 @@ See also [Open Architecture & Integration Principles](../open-architecture/index
         shared file systems, or proprietary protocols. All integration must be
         via the published APIs.
 
-## 6. Reuse, Buy, Build
-
-Teams must evaluate solution options in the order of Reuse, Buy, then Build. A
-decision to build is the last resort and requires clear justification.
-
-See also [Build for Reuse, Use Shared Platforms](#7-build-for-reuse-use-shared-platforms).
-
-??? info "Rationale"
-
-    This strategy maximizes the return on existing investments, accelerates
-    delivery, and reduces the long-term maintenance burden on the organisation.
-    Buying proven solutions can leverage vendor expertise and reduce
-    time-to-market.
-
-    Building a custom solution typically carries the highest risk and total
-    cost of ownership and should only be considered when reuse and buy options
-    are demonstrably unsuitable.
-
-??? note "Implications"
-
-    * **1. Reuse:** Before considering other options, teams must demonstrate
-        they have evaluated existing services and components and found them
-        unsuitable.
-    * **2. Buy:** If reuse is not viable, teams must conduct a market analysis
-        of off-the-shelf products (both commercial and open-source). The
-        evaluation must consider the Total Cost of Ownership (TCO), not just
-        the initial purchase price.
-    * **3. Build:** A decision to build a new solution must be documented in
-        an Architecture Decision Record (ADR), explaining why reuse and buy
-        options were rejected.
-    * When selecting an open-source product, there must be a clear plan for
-        obtaining commercial support or resourcing sufficient in-house
-        expertise.
-    * Procurement processes must align with this principle, ensuring reuse is
-        evaluated before initiating a procurement exercise.
-
-## 7. Build for Reuse, Use Shared Platforms
+## 6. Build for Reuse, Use Shared Platforms
 
 Digital services must reuse existing common platforms and components. New
 components must be built for reuse unless a clear exception is justified.
@@ -250,7 +228,7 @@ components must be built for reuse unless a clear exception is justified.
     * There must be a clear process for teams to contribute improvements and
         bug fixes back to the common platforms and components they use.
 
-## 8. Deliver Sustainable Services
+## 7. Deliver Sustainable Services
 
 Digital services must be designed, delivered, and operated in a financially,
 technically, and environmentally sustainable manner throughout their entire
@@ -297,7 +275,7 @@ lifecycle.
     * Procurement of hardware and services should consider the environmental
         impact of the entire supply chain.
 
-## 9. Public Cloud First
+## 8. Public Cloud First
 
 Public cloud is the default hosting environment for all new and modernised
 digital services. Any alternative deployment model requires a documented and
@@ -332,12 +310,12 @@ See also [Cloud and Infrastructure Principles](../cloud-and-infrastructure/index
     * Teams must adopt practices for monitoring, managing, and optimising cloud
         costs. Budgets must be planned for operational expenditure models.
     * A commitment to developing and maintaining cloud engineering, security,
-        and architecture skills within teams is required.
+        and architecture skills within teams is required. 
     * Teams must understand and operate within the shared responsibility model
         for security in the cloud, implementing appropriate controls for
         identity, access, network, and data protection.
 
-## 10. Build for the Modern Web
+## 9. Build for Modern Browsers
 
 User-facing digital services must be browser-based, responsive, and compliant
 with current web and accessibility standards.
@@ -373,7 +351,7 @@ See also [User Centred Design Principles](../user-centred-design/index.md).
         not required.
     * Solutions must not rely on browser plugins or extensions.
 
-## 11. Design for the Public Internet
+## 10. Design for Public Internet
 
 Digital services must be built using modern, open, and widely adopted internet
 standards and protocols.
