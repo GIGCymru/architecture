@@ -11,6 +11,7 @@ nav:
       - Introduction: design-authority/index.md
       - Decision Template: design-authority/dhcw/architecture-decision-record-template.md
       - Decision Process: design-authority/dhcw/architecture-decision-record-process/index.md
+      - Design Template: design-authority/dhcw/architecture-design-overview-template.md
       - ToR: design-authority/dhcw/terms-of-reference/
       - Meetings: design-authority/dhcw/meetings/
       - Enterprise Architecture Metamodel:

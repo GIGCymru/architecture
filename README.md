@@ -136,6 +136,42 @@ make lint
 
 This will check all the markdown files in the `doc/` directory and report any errors.
 
+## Converting Markdown to Word
+
+This repository includes a GitHub workflow to automatically convert specific Markdown files into Microsoft Word documents. This is useful for sharing formatted documents with stakeholders who may prefer Word format.
+
+The conversion is handled by [Pandoc](https://pandoc.org/), a universal document converter.
+
+### Automated Workflow
+
+The GitHub Action workflow is defined in `.github/workflows/markdown-to-word.yml`. It is triggered on pushes to the `main` branch that include changes to the following files:
+
+*   `doc/design-authority/dhcw/architecture-decision-record-template.md`
+*   `doc/design-authority/dhcw/architecture-design-overview-template.md`
+
+When triggered, the workflow creates a new release with the converted `.docx` files.
+
+### Manual Conversion
+
+You can also run the conversion manually. This is helpful for testing changes to the templates or the style reference file before pushing to the repository.
+
+**Prerequisites:**
+
+*   [Pandoc](https://pandoc.org/installing.html) installed on your local machine.
+
+**Command:**
+
+To convert the documents, run the following command from the root of the repository:
+
+```bash
+# Convert all markdown files to word documents
+make word
+```
+
+### Styling
+
+The appearance of the generated Word documents is controlled by a reference document: `.github/workflows/markdown-to-word-styles.docx`. To change the styling (e.g., fonts, headings, spacing), you can edit the styles within this `.docx` file in Microsoft Word, save your changes, and commit the updated file. Pandoc will then use the styles from this reference document during conversion.
+
 ## Documentation
 
 Our documentation is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
