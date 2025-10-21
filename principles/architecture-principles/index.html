@@ -1,0 +1,2786 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://gigcymru.github.io/architecture/principles/architecture-principles/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../clinical/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Architecture Principles - GIG Cymru NHS Wales - Architecture</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  <script>
+    /* Check if  consent was given for Simple Analytics */
+    var consent = __md_get("__consent")
+    if (consent && consent.analytics) {
+        /* properties not used currently */
+        var property = "" 
+      
+        /* Wait for page to load and application to mount */
+        document.addEventListener("DOMContentLoaded", (event) => {
+            <!-- 100% privacy-first analytics -->
+            var simple_analytics=document.createElement("script");
+            simple_analytics.async=!0;
+            simple_analytics.src="https://scripts.simpleanalyticscdn.com/latest.js";
+            document.body.appendChild(simple_analytics);
+        });    
+      }
+
+  </script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="custom" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#architecture-principles" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GIG Cymru NHS Wales - Architecture" class="md-header__button md-logo" aria-label="GIG Cymru NHS Wales - Architecture" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GIG Cymru NHS Wales - Architecture
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Architecture Principles
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GIGCymru/architecture/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Principles
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../design-authority/" class="md-tabs__link">
+          
+  
+  
+  Design Authority
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../decisions/" class="md-tabs__link">
+          
+  
+  
+  Decisions
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GIG Cymru NHS Wales - Architecture" class="md-nav__button md-logo" aria-label="GIG Cymru NHS Wales - Architecture" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    GIG Cymru NHS Wales - Architecture
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GIGCymru/architecture/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Principles
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Principles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DHCW
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            DHCW
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Principles
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Principles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Architecture Principles
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Principles
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-start-with-user-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Start with User Needs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-design-for-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Design for Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-embed-security-and-privacy-by-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Embed Security and Privacy by Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-use-the-national-data-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Use the National Data Resource
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-enable-interoperability-with-open-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Enable Interoperability with Open APIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-build-for-reuse-use-shared-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Build for Reuse, Use Shared Platforms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-deliver-sustainable-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Deliver Sustainable Services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-public-cloud-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Public Cloud First
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-build-for-modern-browsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Build for Modern Browsers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-design-for-public-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Design for Public Internet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clinical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clinical Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloud-and-infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud and Infrastructure Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-and-analytics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data &amp; Analytics Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digital-products-and-software-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Digital Products &amp; Software Engineering Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digital-workplace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Digital Workplace Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Open Architecture &amp; Integration Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-and-identity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Identity &amp; Security Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-centred-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User-Centred Design (UCD) Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Design Authority
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Design Authority
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DHCW
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            DHCW
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/dhcw/architecture-decision-record-template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision Template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/dhcw/architecture-decision-record-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision Process
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/dhcw/architecture-design-overview-template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Design Template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/dhcw/terms-of-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terms of Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_6" id="__nav_3_1_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Meetings
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Meetings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/dhcw/meetings/2025-06-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DHCW TDA 13/06/2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/dhcw/meetings/2025-07-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DHCW TDA 25/07/2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/dhcw/meetings/2025-09-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DHCW TDA 05/09/2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/dhcw/meetings/2025-10-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DHCW TDA 17/10/2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_7" id="__nav_3_1_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Enterprise Architecture Metamodel
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            Enterprise Architecture Metamodel
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/ea-metamodel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design-authority/ea-metamodel/multiple-application-instances/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Multiple Application Instances
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Decisions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Decisions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DHCW
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            DHCW
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_2" id="__nav_4_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Meta Decisions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Meta Decisions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/architecture-decision-records-naming-conventions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Decision Records Naming Convention
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/enable-mkdocs-enhanced-site-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site Navigation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/format-architecture-decision-records-with-markdown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Format Architecture Decision Records using plaintext Markdown
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/mastering-of-architecture-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mastering of Architecture Templates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/use-a-linter-for-markdown-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use a Linter for Markdown Documents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/use-arc42-for-architecture-overview-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adoption of Architecture Overview Documents
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/use-architecture-decision-records-and-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use Architecture Decision Records and Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/use-material-for-mkdocs-for-publishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use Material for MkDocs for Publishing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/use-mermaid-for-documenting-diagrams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use Mermaid for Diagrams
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/meta-decisions/use-spell-checker-for-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spell
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_3" id="__nav_4_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Process Decisions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Process Decisions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/process-decisions/git-organizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git organizations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/process-decisions/hosting-data-in-the-united-states-or-the-united-kingdom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hosting data in the United States or the United Kingdom
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/process-decisions/knowledge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Knowledge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/process-decisions/ways-of-working/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ways Of Working (WOW)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_4" id="__nav_4_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technical Decisions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Technical Decisions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/technical-decisions/cloud-hosting-for-documents-capabilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloud Hosting for Documents Capability
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/technical-decisions/containerization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Containerization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/technical-decisions/document-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What is a Document
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/technical-decisions/fhir-for-interoperability-first/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FHIR for Interoperability First
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/technical-decisions/live-dora-metrics-dashboards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Live DORA Metrics Dashboards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../decisions/technical-decisions/python-script-runner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    python script runner
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-start-with-user-needs" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Start with User Needs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-design-for-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Design for Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-embed-security-and-privacy-by-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Embed Security and Privacy by Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-use-the-national-data-resource" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Use the National Data Resource
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-enable-interoperability-with-open-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Enable Interoperability with Open APIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-build-for-reuse-use-shared-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Build for Reuse, Use Shared Platforms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-deliver-sustainable-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Deliver Sustainable Services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-public-cloud-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Public Cloud First
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-build-for-modern-browsers" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Build for Modern Browsers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-design-for-public-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Design for Public Internet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/GIGCymru/architecture/edit/main/doc/principles/architecture-principles/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/GIGCymru/architecture/raw/main/doc/principles/architecture-principles/index.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="architecture-principles">Architecture Principles</h1>
+<div class="admonition success">
+<p class="admonition-title">Approved</p>
+<p>These principles have been approved by the DHCW TDA</p>
+</div>
+<h2 id="1-start-with-user-needs">1. Start with User Needs</h2>
+<p>Digital services must be designed around the identified, evidence-based needs
+of their users.</p>
+<p>See also <a href="../user-centred-design/">User Centred Design Principles</a>.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>Building services based on a deep understanding of user needs is the most
+effective way to ensure they are adopted, deliver their intended benefits,
+and are easy to support. A user-centred approach reduces the risk of
+building the wrong thing, leading to better outcomes for patients and
+staff, and lower operational costs.</p>
+</details>
+<details class="note">
+<summary>Implications</summary>
+<ul>
+<li>Teams must conduct user research continuously throughout the design,
+    development, and live operation of a service to ensure it continues to
+    meet user needs.</li>
+<li>The term "user" includes all consumers of a service. This includes
+    end-users of a graphical interface (e.g. patients, clinicians) as well
+    as technical users of an API (e.g. developers).</li>
+<li>All significant design and development decisions must be based on
+    evidence from user research.</li>
+<li>Teams must use feedback and data from live services to iterate and
+    improve the user experience.</li>
+</ul>
+</details>
+<h2 id="2-design-for-change">2. Design for Change</h2>
+<p>Digital services must be architected to be loosely coupled and highly cohesive,
+enabling them to evolve easily and safely over time.</p>
+<p>See also <a href="../digital-products-and-software-engineering/">Digital Products and Software Engineering</a>.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>Business, clinical, and technology requirements will inevitably change.
+Architectures that are rigid, monolithic, and tightly coupled make it
+difficult, risky, and expensive to respond to these changes.</p>
+<p>By designing systems that are modular with well-defined interfaces, we can
+isolate the impact of changes, reduce complexity, and enable teams to
+deliver new features and improvements independently and efficiently.</p>
+</details>
+<details class="note">
+<summary>Implications</summary>
+<ul>
+<li>Services must be designed as modular components with single, well-defined
+    responsibilities. Communication between components must be via stable,
+    versioned APIs.</li>
+<li>Services should be configurable to handle variations in environment or
+    behaviour without requiring code changes and redeployment.</li>
+<li>A comprehensive suite of automated tests is essential to provide the
+    confidence needed to refactor and make changes safely.</li>
+<li>Automated CI/CD pipelines must be in place to make the process of testing
+    and deploying changes frequent, low-risk, and reliable.</li>
+<li>Significant architectural decisions and their trade-offs must be
+    documented in Architecture Decision Records (ADRs).</li>
+<li>Third-party dependencies must be carefully managed with a clear strategy
+    for updates to avoid technical debt and security vulnerabilities.</li>
+</ul>
+</details>
+<h2 id="3-embed-security-and-privacy-by-design">3. Embed Security and Privacy by Design</h2>
+<p>Security and privacy must be treated as core quality attributes, embedded
+throughout the entire service lifecycle from inception to decommissioning.</p>
+<p>See also <a href="../security-and-identity/">Security and Identity Principles</a>.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>To protect sensitive health and care data and maintain public trust,
+security cannot be an afterthought. By embedding security and privacy
+considerations into every stage of design and development, we build
+services that are secure by default.</p>
+<p>This proactive approach reduces the risk of data breaches and ensures
+compliance with legal obligations.</p>
+</details>
+<details class="note">
+<summary>Implications</summary>
+<ul>
+<li>Users and systems must be granted the minimum level of access and
+    permissions necessary to perform their functions.</li>
+<li>Services must only collect, process, and retain the data that is
+    absolutely necessary for their specified and legitimate purpose.</li>
+<li>Teams must follow secure coding practices (e.g., OWASP Top 10), conduct
+    regular code reviews, and use tools to scan for vulnerabilities in code
+    and third-party dependencies.</li>
+<li>Security must be continuously validated through automated testing, 
+    regular vulnerability scanning, and periodic penetration testing for
+    high-risk services.</li>
+<li>All services must demonstrate conformance with relevant data protection
+    and security standards on a continuous basis.</li>
+<li>All security-relevant events must be logged to a secure, immutable audit
+    trail to support monitoring, investigation, and incident response.</li>
+</ul>
+</details>
+<h2 id="4-use-the-national-data-resource">4. Use the National Data Resource</h2>
+<p>Services should read from and write to the National Data Resource, contributing
+to a single, comprehensive record for each citizen. This supports both
+longitudinal records and real-time pathways. Services should not use direct
+point-to-point integrations but instead exchange data through the National
+Data Resource.</p>
+<p>See also <a href="../data-and-analytics/">Data and Analytics Principles</a>.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>Architectures based on point-to-point data integrations and data sharing
+are complex, brittle, and expensive to maintain. This principle avoids
+these issues by establishing the National Data Resource as a central hub
+for data exchange, removing the need for direct data messaging, copying and
+migrations between individual applications. This radically simplifies the
+landscape, ensuring that all services are working from a consistent, shared
+understanding of data. It removes ambiguity and reduces the clinical risk
+of decisions being made on stale or conflicting information.</p>
+<p>While applications retain stewardship and mastery of their own data, their
+mandatory, real-time synchronisation with the National Data Resource is
+what ensures consistency, quality, and clear provenance across the system.
+This model provides a complete, trustworthy view of patient information.
+Furthermore, because data is persisted in the shared record, it mitigates
+the clinical risk of information being unavailable if a source application
+goes offline. In principle, it also allows new, simpler applications to be
+developed that can use the shared record as their primary data layer.</p>
+</details>
+<details class="note">
+<summary>Implications</summary>
+<ul>
+<li>Services must read data from the National Data Resource, treating it as a
+    source of truth, updating their internal data store as appropriate. </li>
+<li>Services must write data changes to the National Data Resource with
+    minimum delay, so that other services always have access to current
+    data. </li>
+<li>All interactions with the National Data Resource occur through versioned,
+    documented, and discoverable open APIs. Direct database access is
+    prohibited.</li>
+<li>Services should not share data directly with other services, because this
+    excludes other services, and will compromise the reference data layer’s
+    integrity as a single source of truth.  </li>
+<li>This principle applies to any data that is relevant to another service. A
+    catalogue of these data must be maintained. Examples include, but are
+    not limited to:<ul>
+<li>Patient demographics</li>
+<li>Longitudinal patient record data (e.g. events, results, medications)</li>
+<li>Reference data (e.g. clinical terminologies)</li>
+<li>Practitioner and staff information</li>
+<li>Documents and medical images</li>
+</ul>
+</li>
+<li>Clear stewardship for each data entity must be established. The steward
+    is responsible for the quality, availability, and lifecycle management
+    of that data.</li>
+<li>Procurement processes for new systems must contractually mandate
+    compliance with this principle, ensuring any proposed solution will
+    integrate with the National Data Resource via the required APIs.</li>
+<li>Existing systems must have a clear roadmap to integrate fully with the
+    National Data Resource. </li>
+</ul>
+</details>
+<h2 id="5-enable-interoperability-with-open-apis">5. Enable Interoperability with Open APIs</h2>
+<p>All digital services must expose their data and functionality through
+well-defined, secure, and open APIs.</p>
+<p>See also <a href="../open-architecture/">Open Architecture &amp; Integration Principles</a>.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>A modular architecture, where services communicate via open APIs, is
+essential for creating a flexible and innovative digital ecosystem. This
+approach prevents vendor lock-in, allows individual components to be
+replaced or upgraded without impacting the entire system, and fosters a
+competitive market where suppliers compete on quality.</p>
+<p>By making data and functionality programmatically accessible, we enable
+seamless integration and the creation of new, composite services that can
+better meet user needs.</p>
+</details>
+<details class="note">
+<summary>Implications</summary>
+<ul>
+<li>Services must be designed with their API as the primary interface. The
+    API contract should be defined early in the development process.</li>
+<li>APIs must adhere to widely adopted open standards. E.g. For health data,
+    HL7 <abbr title="Fast Healthcare Interoperability Resources">FHIR</abbr> standards must be used where applicable.</li>
+<li>All APIs must be documented and published in a central API catalogue,
+    making them easy for other teams to find and consume.</li>
+<li>A clear API versioning strategy must be in place to allow for evolution
+    without breaking existing consumer applications.</li>
+<li>System-to-system integration must not use direct database connections,
+    shared file systems, or proprietary protocols. All integration must be
+    via the published APIs.</li>
+</ul>
+</details>
+<h2 id="6-build-for-reuse-use-shared-platforms">6. Build for Reuse, Use Shared Platforms</h2>
+<p>Digital services must reuse existing common platforms and components. New
+components must be built for reuse unless a clear exception is justified.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>Reusing proven platforms and components accelerates the delivery of new
+services, reduces the total cost of ownership, and improves consistency
+across the digital estate. It avoids the duplication of effort and the
+proliferation of solutions that solve the same problem in slightly
+different ways.</p>
+<p>When a suitable component does not exist, we must build new capabilities
+with reusability in mind. This fosters a collaborative engineering culture
+and ensures that our investment in building a new component provides value
+beyond a single project. This principle applies to both building new
+services and procuring third-party solutions.</p>
+</details>
+<details class="note">
+<summary>Implications</summary>
+<ul>
+<li>Teams must first search for and evaluate existing common platforms or
+    components before starting new development. A central catalogue of
+    approved platforms and components must be maintained and consulted.</li>
+<li>Using an existing, approved platform is the default choice. A decision to
+    build a new component to solve a problem that is already addressed by
+    a common platform requires a documented exception (e.g. an ADR).</li>
+<li>Any new component or service that has the potential for reuse must be
+    built with a clear, versioned API, be well-documented, and be
+    independently deployable.</li>
+<li>Every common platform and component must have a clear owner and a
+    defined support model to manage its lifecycle, including maintenance,
+    versioning, and eventual retirement.</li>
+<li>There must be a clear process for teams to contribute improvements and
+    bug fixes back to the common platforms and components they use.</li>
+</ul>
+</details>
+<h2 id="7-deliver-sustainable-services">7. Deliver Sustainable Services</h2>
+<p>Digital services must be designed, delivered, and operated in a financially,
+technically, and environmentally sustainable manner throughout their entire
+lifecycle.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>To ensure long-term value and responsible use of public resources, services
+cannot be built with only short-term goals in mind. A sustainable approach
+considers the total cost of ownership, the long-term health of the technical
+solution, and its environmental impact.</p>
+<p>This holistic view prevents the creation of services that become
+prohibitively expensive to run, impossible to maintain due to technical
+debt, or misaligned with our environmental responsibilities. </p>
+</details>
+<details class="note">
+<summary>Implications</summary>
+<p><strong>Financial sustainability</strong></p>
+<ul>
+<li>Whole-life cost models must be developed during service design, covering
+    development, hosting, support, and eventual decommissioning. </li>
+<li>Operational funding for services must be identified and secured beyond
+    any initial project funding.</li>
+<li>Cloud services must be managed using FinOps best practices to control and
+    optimise costs.</li>
+</ul>
+<p><strong>Technical sustainability</strong></p>
+<ul>
+<li>Technology choices must be supportable and maintainable for the expected
+    life of the service, considering skills availability and vendor
+    viability.</li>
+<li>Technical debt must be actively managed, tracked, and addressed as part
+    of the development lifecycle.</li>
+<li>A clear strategy for dependency management, patching, and component
+    obsolescence must be in place.</li>
+</ul>
+<p><strong>Environmental sustainability</strong></p>
+<ul>
+<li>Design choices should favour resource efficiency (e.g. efficient code,
+    optimised data storage, appropriate scaling).</li>
+<li>Where possible, leverage cloud provider tools to measure, report on, and
+    reduce the carbon footprint of services.</li>
+<li>Procurement of hardware and services should consider the environmental
+    impact of the entire supply chain.</li>
+</ul>
+</details>
+<h2 id="8-public-cloud-first">8. Public Cloud First</h2>
+<p>Public cloud is the default hosting environment for all new and modernised
+digital services. Any alternative deployment model requires a documented and
+approved exception.</p>
+<p>See also <a href="../cloud-and-infrastructure/">Cloud and Infrastructure Principles</a>.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>Leveraging public cloud services accelerates the delivery of value by
+providing on-demand access to scalable, resilient, and secure
+infrastructure. This approach allows teams to focus on developing
+user-centric services rather than managing underlying hardware. The public
+cloud offers significant advantages in agility, cost-effectiveness, and
+access to a wide range of modern, managed services. This principle supports
+our goals for sustainability and operational excellence.</p>
+</details>
+<details class="note">
+<summary>Implications</summary>
+<ul>
+<li>All new services must be designed and built to run on a public cloud
+    platform. Modernisation of existing services should include a plan for
+    cloud migration.</li>
+<li>A decision to host a service outside of the public cloud must be
+    justified and documented in an Architecture Decision Record (ADR),
+    citing specific technical, security, or legislative constraints that
+    cannot be met by available cloud offerings.</li>
+<li>To mitigate vendor lock-in, services should be designed with portability
+    in mind. Favour cloud-agnostic technologies like containers and
+    standard open-source software. The use of provider-specific services
+    that are not easily portable must be a conscious trade-off, justified
+    by significant value.</li>
+<li>Teams must adopt practices for monitoring, managing, and optimising cloud
+    costs. Budgets must be planned for operational expenditure models.</li>
+<li>A commitment to developing and maintaining cloud engineering, security,
+    and architecture skills within teams is required. </li>
+<li>Teams must understand and operate within the shared responsibility model
+    for security in the cloud, implementing appropriate controls for
+    identity, access, network, and data protection.</li>
+</ul>
+</details>
+<h2 id="9-build-for-modern-browsers">9. Build for Modern Browsers</h2>
+<p>User-facing digital services must be browser-based, responsive, and compliant
+with current web and accessibility standards.</p>
+<p>See also <a href="../user-centred-design/">User Centred Design Principles</a>.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>Building services for the web is the most effective way to ensure they are
+accessible to the widest possible audience, regardless of their device or
+operating system. This approach eliminates the significant cost, time, and
+complexity associated with developing, distributing, and maintaining
+separate native applications for different platforms.</p>
+<p>A single, responsive, standards-compliant web application simplifies
+deployment, reduces support overhead, and allows teams to leverage the
+robust security, accessibility, and performance features inherent in modern
+evergreen browsers. It ensures a consistent user experience and means users
+can access services instantly without needing to install anything.</p>
+</details>
+<details class="check">
+<summary>Implications</summary>
+<ul>
+<li>Native mobile or desktop applications will not be built unless a specific,
+    compelling user need is identified that cannot be met by a web
+    application. This requires a documented exception.</li>
+<li>User interfaces must be fully responsive, providing a functional and
+    intuitive experience on all common device sizes, from mobile phones to
+    large desktop monitors.</li>
+<li>All services must comply with Web Content Accessibility Guidelines.</li>
+<li>Services must be tested and functional on the latest versions of all
+    modern, evergreen browsers (e.g., Chrome, Firefox, Edge, Safari).
+    Support for older, non-evergreen browsers (like Internet Explorer) is
+    not required.</li>
+<li>Solutions must not rely on browser plugins or extensions.</li>
+</ul>
+</details>
+<h2 id="10-design-for-public-internet">10. Design for Public Internet</h2>
+<p>Digital services must be built using modern, open, and widely adopted internet
+standards and protocols.</p>
+<details class="info">
+<summary>Rationale</summary>
+<p>Building services that are capable of being safely and securely deployed
+over the public internet is a foundational goal. Adhering to modern
+internet standards (like HTTPS, TLS 1.2+, REST, OAuth 2.0, OpenID Connect)
+ensures services are secure, resilient, and interoperable by default.</p>
+<p>This approach avoids vendor lock-in from proprietary protocols, simplifies
+integration between different systems, and allows services to be accessed
+from a wide range of standard devices without special software or network
+configurations. It provides the architectural flexibility to choose the
+most optimal and cost-effective deployment model, whether on-premises or in
+the public cloud, without being constrained by private network dependencies.</p>
+</details>
+<details class="note">
+<summary>Implications</summary>
+<ul>
+<li>Services must be designed to operate securely over the public internet.
+    Dependencies on private networks should be for specific, justified
+    use-cases and not the default assumption.</li>
+<li>All data-in-transit must be encrypted using current, recommended versions
+    of TLS. APIs should be exposed over HTTPS, following RESTful principles
+    or other modern API standards.</li>
+<li>User and system authentication / authorisation should leverage open
+    standards like OAuth 2.0 and OpenID Connect.</li>
+<li>When procuring or commissioning new services, there must
+    be a requirement for adherence to open internet standards, avoiding
+    solutions that mandate proprietary clients or protocols.</li>
+<li>Existing systems that do not conform must have a clear roadmap for
+    modernisation or be fronted by a standards-compliant API gateway or
+    facade.</li>
+</ul>
+</details>
+<!-- markdownlint-disable-next-line MD041 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../clinical/" class="md-footer__link md-footer__link--next" aria-label="Next: Clinical Principles">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Clinical Principles
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 GIG Cymru - NHS Wales – <a href="#__consent">Change cookie settings</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to optimise site functionality and give you the best possible experience, recognise your repeated visits and preferences, as well as to measure the effectiveness of our site and whether users find what they're searching for. With your consent, you're helping us to make our site better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+      
+        
+  
+  
+    
+    
+      
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Simple Analytics
+    </label>
+  </li>
+
+      
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.footer", "content.action.edit", "content.action.view", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
