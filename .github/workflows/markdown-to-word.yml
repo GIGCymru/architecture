@@ -39,8 +39,6 @@ jobs:
 
       - name: Publish Release
         run: |
-          gh release create ${{ env.RELEASE_TAG }} --draft --generate-notes
-          gh release upload ${{ env.RELEASE_TAG }} architecture-decision-record-template.docx architecture-design-overview-template.docx
-          gh release edit ${{ env.RELEASE_TAG }} --draft=false
+          gh release create ${{ env.RELEASE_TAG }} --generate-notes architecture-decision-record-template.docx architecture-design-overview-template.docx
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
