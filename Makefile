@@ -65,6 +65,15 @@ lint:
 	@echo "The markdownlint-cli2 command should now be complete."
 
 ##
+# word: convert markdown files to word documents using pandoc
+##
+.PHONY: word
+word:
+	pandoc doc/design-authority/dhcw/architecture-decision-record-template.md --reference-doc=.github/workflows/markdown-to-word-styles.docx -o architecture-decision-record-template.docx
+	pandoc doc/design-authority/dhcw/architecture-design-overview-template.md --reference-doc=.github/workflows/markdown-to-word-styles.docx -o architecture-design-overview-template.docx
+	@echo "The pandoc command should now be complete."
+
+##
 # newline: display a newline character so we can print prettier messages.
 ##
 .PHONY: newline

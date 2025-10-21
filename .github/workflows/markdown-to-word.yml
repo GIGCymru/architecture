@@ -1,5 +1,5 @@
-# This workflow converts the ADR template to a Word document and publishes it as a release.
-name: ADR Template to Word
+# This workflow converts Markdown docs to Word documents and publishes them as a release.
+name: Markdown to Word Release
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'doc/design-authority/dhcw/architecture-decision-record-template.md'
+      - 'doc/design-authority/dhcw/architecture-design-overview-template.md'
   workflow_dispatch:
 
 jobs:
@@ -22,7 +23,7 @@ jobs:
         id: get_version
         run: |
           # Get the latest tag
-          latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0")
+          latest_tag=$(git describe --tags $(git rev-list --tags --max-count=1) 2>/dev/null || echo "v0")
           # Increment the version
           version_number=$(echo $latest_tag | sed 's/v//')
           next_version_number=$((version_number + 1))
@@ -34,14 +35,15 @@ jobs:
           sudo apt-get install -y pandoc
 
       - name: Convert Markdown to Word
-        run: |
-          pandoc doc/design-authority/dhcw/architecture-decision-record-template.md -o architecture-decision-record-template.docx
+        run: make word
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.get_version.outputs.tag }}
           name: ${{ steps.get_version.outputs.tag }}
-          files: architecture-decision-record-template.docx
+          files: |
+            architecture-decision-record-template.docx
+            architecture-design-overview-template.docx
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
