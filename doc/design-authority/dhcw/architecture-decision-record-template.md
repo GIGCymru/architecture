@@ -29,6 +29,9 @@ this architectural decision. Think about the underlying reasons and pressures.}
 * {e.g. We need to improve performance, accessibility, remove debt...}
 * {e.g. Feedback from users suggests...}
 * {e.g. The current approach imposes these limitations...}
+* {e.g. Cost pressures require us to reduce operational expenses...}
+* {e.g. Budget constraints or opportunities for cost optimisation...}
+* {e.g. Licensing costs or contract renewals necessitate evaluation...}
 
 ## Options
 
@@ -57,12 +60,18 @@ and, where possible, relate your points back to the *Drivers*.
 
 Consider aspects like:
 
-* Cost (development, operational, licensing)
-* Complexity (implementation, maintenance, learning curve)
-* Risks (technical, operational, security)
-* Alignment with architectural principles or existing standards
-* Impact on performance, scalability, usability, maintainability,
-    security etc.
+* **Financial Implications**: Initial costs (development, procurement,
+    licensing), ongoing operational expenses (hosting, maintenance, support),
+    training and onboarding costs, potential cost savings or avoidance, and
+    total cost of ownership over time. Include both direct and indirect costs.
+* **Complexity**: Implementation effort, maintenance burden, learning curve for
+    teams, operational complexity.
+* **Risks**: Technical risks, operational risks, security considerations,
+    vendor lock-in, dependency risks.
+* **Alignment**: Consistency with architectural principles, existing standards,
+    organisational strategy, and established patterns.
+* **Impact**: Effects on performance, scalability, usability, maintainability,
+    security, accessibility, and other quality attributes.
 
 Include as many Pro/Con/Other statements as required.}
 
