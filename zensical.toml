@@ -1,0 +1,89 @@
+# Zensical configuration for GIG Cymru NHS Wales - Architecture
+# Migrated from mkdocs.yml
+
+[project]
+site_name = "GIG Cymru NHS Wales - Architecture"
+site_url = "https://gigcymru.github.io/architecture/"
+repo_url = "https://github.com/GIGCymru/architecture/"
+docs_dir = "doc"
+edit_uri = "edit/main/doc/"
+copyright = "Copyright &copy; 2025 GIG Cymru - NHS Wales – <a href=\"#__consent\">Change cookie settings</a>"
+
+# Markdown extensions at project level
+markdown_extensions = [
+  "abbr",
+  "admonition",
+  "attr_list",
+  "pymdownx.details",
+  "pymdownx.superfences",
+  "pymdownx.tabbed",
+  "pymdownx.highlight",
+  "pymdownx.inlinehilite",
+  "pymdownx.snippets",
+]
+
+# Theme configuration
+[project.theme]
+variant = "classic"
+custom_dir = "doc/overrides"
+logo = "assets/logo.png"
+favicon = "assets/favicon.ico"
+
+# Theme features - must be at theme level, not nested
+features = [
+  "navigation.tabs",
+  "navigation.footer",
+  "content.action.edit",
+  "content.action.view",
+  "content.code.copy",
+]
+
+# Custom CSS files
+extra_css = [
+  "stylesheets/extra.css",
+]
+
+# Color scheme configuration
+[project.theme.palette]
+scheme = "custom"
+
+# Cookie consent configuration
+[project.extra.consent]
+title = "Cookie consent"
+description = """
+We use cookies to optimise site functionality and give you the best
+possible experience, recognise your repeated visits and preferences, as
+well as to measure the effectiveness of our site and whether
+users find what they're searching for. With your consent, you're helping
+us to make our site better.
+"""
+
+# Cookie consent cookies - using dict format to avoid 'list' error
+[project.extra.consent.cookies]
+analytics = {name = "Simple Analytics", checked = true}
+
+# Analytics configuration
+[project.extra.analytics]
+provider = "simple"
+
+# PyMdown Extensions configuration
+[project.pymdownx.superfences]
+custom_fences = [
+  {name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format"},
+]
+
+[project.pymdownx.tabbed]
+alternate_style = true
+
+[project.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+
+[project.pymdownx.snippets]
+check_paths = true
+auto_append = ["includes/abbreviations.md"]
+
+# Plugins
+[project.plugins]
+search = {}

@@ -1,6 +1,6 @@
 # GIG Cymru NHS Wales - Architecture
 
-[![mkdocs](https://github.com/GIGCymru/architecture/actions/workflows/publish.yml/badge.svg)](https://github.com/GIGCymru/architecture/actions/workflows/publish.yml)
+[![zensical](https://github.com/GIGCymru/architecture/actions/workflows/publish.yml/badge.svg)](https://github.com/GIGCymru/architecture/actions/workflows/publish.yml)
 
 The documents in this repository are published to [https://gigcymru.github.io/architecture/](https://gigcymru.github.io/architecture/).
 
@@ -31,7 +31,7 @@ Once you have successfully launched Codespaces you can run the
 development server from the VS Code Terminal:
 
 ```bash
-    uv run mkdocs serve
+    uv run zensical serve
 ```
 
 You will be prompted to **Open in Browser** to view the locally running site.
@@ -75,7 +75,7 @@ Set up environment and dependencies:
 Start the development server:
 
 ```bash
-    uv run mkdocs serve
+    uv run zensical serve
 ```
 
 View the documentation at: ``http://127.0.0.1:8000/``
@@ -93,13 +93,13 @@ If you prefer using containers:
 Build the container:
 
 ```bash
-    podman build --tag mkdocs .
+    podman build --tag zensical .
 ```
 
 Run the development server:
 
 ```bash
-    podman run -p 8000:8000 mkdocs
+    podman run -p 8000:8000 zensical
 ```
 
 View the documentation at: ``http://127.0.0.1:8000/``
@@ -174,7 +174,7 @@ The appearance of the generated Word documents is controlled by a reference docu
 
 ## Documentation
 
-Our documentation is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+Our documentation is built using [Zensical](https://zensical.org/), a modern static site generator from the team behind Material for MkDocs.
 
 ## Contributing
 
