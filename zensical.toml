@@ -1,10 +1,5 @@
 # Zensical configuration for GIG Cymru NHS Wales - Architecture
-# Migrated from mkdocs.yml
-#
-# Navigation: Zensical auto-discovers navigation from the docs directory structure.
-# Navigation customization is controlled via .nav.yml files in the source directories:
-#   - doc/.nav.yml: Main navigation structure
-#   - doc/design-authority/dhcw/meetings/.nav.yml: Meetings sorted by path
+# Migrated from mkdocs.yml and doc/.nav.yml
 
 [project]
 site_name = "GIG Cymru NHS Wales - Architecture"
@@ -13,6 +8,39 @@ repo_url = "https://github.com/GIGCymru/architecture/"
 docs_dir = "doc"
 edit_uri = "edit/main/doc/"
 copyright = "Copyright &copy; 2025 GIG Cymru - NHS Wales – <a href=\"#__consent\">Change cookie settings</a>"
+
+# Navigation structure (converted from doc/.nav.yml)
+nav = [
+  {"Home" = "index.md"},
+  {"Principles" = [
+    {"DHCW" = [
+      {"Introduction" = "principles/index.md"},
+      {"Principles" = "principles/"},
+    ]},
+  ]},
+  {"Design Authority" = [
+    {"DHCW" = [
+      {"Introduction" = "design-authority/index.md"},
+      {"Decision Template" = "design-authority/dhcw/architecture-decision-record-template.md"},
+      {"Decision Process" = "design-authority/dhcw/architecture-decision-record-process/index.md"},
+      {"Design Template" = "design-authority/dhcw/architecture-design-overview-template.md"},
+      {"ToR" = "design-authority/dhcw/terms-of-reference/"},
+      {"Meetings" = "design-authority/dhcw/meetings/"},
+      {"Enterprise Architecture Metamodel" = [
+        "design-authority/ea-metamodel/index.md",
+        {"Metamodel Decisions" = "design-authority/ea-metamodel/"},
+      ]},
+    ]},
+  ]},
+  {"Decisions" = [
+    {"DHCW" = [
+      {"Introduction" = "decisions/index.md"},
+      {"Meta Decisions" = "decisions/meta-decisions/"},
+      {"Process Decisions" = "decisions/process-decisions/"},
+      {"Technical Decisions" = "decisions/technical-decisions/"},
+    ]},
+  ]},
+]
 
 # Markdown extensions at project level
 markdown_extensions = [
