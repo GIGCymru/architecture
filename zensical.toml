@@ -57,9 +57,10 @@ nav = [
         {"Use a Linter for Markdown Documents" = "decisions/meta-decisions/use-a-linter-for-markdown-documents/"},
         {"Use arc42 for Architecture Overview Documents" = "decisions/meta-decisions/use-arc42-for-architecture-overview-documents/"},
         {"Use Architecture Decision Records and Structure" = "decisions/meta-decisions/use-architecture-decision-records-and-structure/"},
-        {"Use Material for MkDocs for Publishing" = "decisions/meta-decisions/use-material-for-mkdocs-for-publishing/"},
+        {"Use Material for MkDocs for Publishing (Deprecated)" = "decisions/meta-decisions/use-material-for-mkdocs-for-publishing/"},
         {"Use Mermaid for Documenting Diagrams" = "decisions/meta-decisions/use-mermaid-for-documenting-diagrams/"},
         {"Use Spell Checker for Documents" = "decisions/meta-decisions/use-spell-checker-for-documents/"},
+        {"Use Zensical for Publishing" = "decisions/meta-decisions/use-zensical-for-publishing/"},
       ]},
       {"Process Decisions" = [
         {"Git Organizations" = "decisions/process-decisions/git-organizations/"},
