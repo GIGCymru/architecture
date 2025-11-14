@@ -1,5 +1,10 @@
 # Zensical configuration for GIG Cymru NHS Wales - Architecture
 # Migrated from mkdocs.yml
+#
+# Navigation: Zensical auto-discovers navigation from the docs directory structure.
+# Navigation customization is controlled via .nav.yml files in the source directories:
+#   - doc/.nav.yml: Main navigation structure
+#   - doc/design-authority/dhcw/meetings/.nav.yml: Meetings sorted by path
 
 [project]
 site_name = "GIG Cymru NHS Wales - Architecture"
