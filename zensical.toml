@@ -10,12 +10,21 @@ edit_uri = "edit/main/doc/"
 copyright = "Copyright &copy; 2025 GIG Cymru - NHS Wales – <a href=\"#__consent\">Change cookie settings</a>"
 
 # Navigation structure (converted from doc/.nav.yml)
+# Note: Zensical requires explicit page listing - directory paths don't auto-discover subpages
 nav = [
   {"Home" = "index.md"},
   {"Principles" = [
     {"DHCW" = [
       {"Introduction" = "principles/index.md"},
-      {"Principles" = "principles/"},
+      {"Architecture Principles" = "principles/architecture-principles/"},
+      {"Clinical" = "principles/clinical/"},
+      {"Cloud and Infrastructure" = "principles/cloud-and-infrastructure/"},
+      {"Data and Analytics" = "principles/data-and-analytics/"},
+      {"Digital Products and Software Engineering" = "principles/digital-products-and-software-engineering/"},
+      {"Digital Workplace" = "principles/digital-workplace/"},
+      {"Open Architecture" = "principles/open-architecture/"},
+      {"Security and Identity" = "principles/security-and-identity/"},
+      {"User Centred Design" = "principles/user-centred-design/"},
     ]},
   ]},
   {"Design Authority" = [
@@ -33,16 +42,39 @@ nav = [
       ]},
       {"Enterprise Architecture Metamodel" = [
         "design-authority/ea-metamodel/index.md",
-        {"Metamodel Decisions" = "design-authority/ea-metamodel/"},
+        {"Multiple Application Instances" = "design-authority/ea-metamodel/multiple-application-instances/"},
       ]},
     ]},
   ]},
   {"Decisions" = [
     {"DHCW" = [
       {"Introduction" = "decisions/index.md"},
-      {"Meta Decisions" = "decisions/meta-decisions/"},
-      {"Process Decisions" = "decisions/process-decisions/"},
-      {"Technical Decisions" = "decisions/technical-decisions/"},
+      {"Meta Decisions" = [
+        {"Architecture Decision Records Naming Conventions" = "decisions/meta-decisions/architecture-decision-records-naming-conventions/"},
+        {"Site Navigation" = "decisions/meta-decisions/enable-mkdocs-enhanced-site-navigation/"},
+        {"Format Architecture Decision Records with Markdown" = "decisions/meta-decisions/format-architecture-decision-records-with-markdown/"},
+        {"Mastering of Architecture Templates" = "decisions/meta-decisions/mastering-of-architecture-templates/"},
+        {"Use a Linter for Markdown Documents" = "decisions/meta-decisions/use-a-linter-for-markdown-documents/"},
+        {"Use arc42 for Architecture Overview Documents" = "decisions/meta-decisions/use-arc42-for-architecture-overview-documents/"},
+        {"Use Architecture Decision Records and Structure" = "decisions/meta-decisions/use-architecture-decision-records-and-structure/"},
+        {"Use Material for MkDocs for Publishing" = "decisions/meta-decisions/use-material-for-mkdocs-for-publishing/"},
+        {"Use Mermaid for Documenting Diagrams" = "decisions/meta-decisions/use-mermaid-for-documenting-diagrams/"},
+        {"Use Spell Checker for Documents" = "decisions/meta-decisions/use-spell-checker-for-documents/"},
+      ]},
+      {"Process Decisions" = [
+        {"Git Organizations" = "decisions/process-decisions/git-organizations/"},
+        {"Hosting Data in the United States or the United Kingdom" = "decisions/process-decisions/hosting-data-in-the-united-states-or-the-united-kingdom/"},
+        {"Knowledge" = "decisions/process-decisions/knowledge/"},
+        {"Ways of Working" = "decisions/process-decisions/ways-of-working/"},
+      ]},
+      {"Technical Decisions" = [
+        {"Cloud Hosting for Documents Capabilities" = "decisions/technical-decisions/cloud-hosting-for-documents-capabilities/README.md"},
+        {"Containerization" = "decisions/technical-decisions/containerization/"},
+        {"Document Services" = "decisions/technical-decisions/document-services/README.md"},
+        {"FHIR for Interoperability First" = "decisions/technical-decisions/fhir-for-interoperability-first/"},
+        {"Live DORA Metrics Dashboards" = "decisions/technical-decisions/live-dora-metrics-dashboards/"},
+        {"Python Script Runner" = "decisions/technical-decisions/python-script-runner/"},
+      ]},
     ]},
   ]},
 ]
