@@ -29,6 +29,7 @@ This decision addresses the need to adopt a modern, sustainable static site gene
 Material for MkDocs is the current solution we use for publishing architecture documentation. It is mature, well-documented, and widely adopted across the industry.
 
 Key characteristics:
+
 * Extensive plugin ecosystem (mkdocs-awesome-nav, table-reader, etc.)
 * YAML-based configuration (mkdocs.yml)
 * Large community and extensive third-party resources
@@ -40,6 +41,7 @@ Key characteristics:
 Zensical is a modern static site generator built by the same team that created Material for MkDocs. It represents their next-generation approach to documentation tooling.
 
 Key characteristics:
+
 * Built by the creators of Material for MkDocs
 * Modern TOML-based configuration
 * Improved build performance
@@ -53,6 +55,7 @@ Key characteristics:
 Other options like Docusaurus, VitePress, or Starlight could be considered as alternative modern documentation platforms.
 
 Key characteristics:
+
 * Different technology stacks (JavaScript/TypeScript vs Python)
 * Varying levels of maturity and community support
 * Different configuration approaches and workflows
