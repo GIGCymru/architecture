@@ -67,6 +67,7 @@ nav = [
         {"Use Mermaid for Documenting Diagrams" = "decisions/meta-decisions/use-mermaid-for-documenting-diagrams/"},
         {"Use Spell Checker for Documents" = "decisions/meta-decisions/use-spell-checker-for-documents/"},
         {"Use Zensical for Publishing" = "decisions/meta-decisions/use-zensical-for-publishing/"},
+        {"Migrate from Make to Just for Command Running" = "decisions/meta-decisions/migrate-from-make-to-just/"},
       ]},
       {"Process Decisions" = [
         {"Git Organizations" = "decisions/process-decisions/git-organizations/"},

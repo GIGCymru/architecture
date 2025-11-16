@@ -1,0 +1,19 @@
+{
+  "config": {
+      // MD046/code-block-style : Code block style : https://github.com/DavidAnson/markdownlint/blob/v0.39.0/doc/md046.md
+      "code-block-style": false,
+        
+      // MD013/line-length : Line length : https://github.com/DavidAnson/markdownlint/blob/v0.39.0/doc/md013.md
+      "line-length": false,
+
+      // MD060/table-column-style : Table column style : https://github.com/DavidAnson/markdownlint/blob/v0.39.0/doc/md060.md
+      "table-column-style": {
+        "style": "none"
+      }
+  },
+
+  // Ignore files not in the /doc/ directory
+  "ignores": [
+      "*"
+  ]
+}
