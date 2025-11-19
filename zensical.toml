@@ -125,7 +125,7 @@ features = [
   "search.highlight"
 ]
 
-[[project.theme.palette]] 
+[[project.theme.palette]]
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"

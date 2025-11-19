@@ -3,7 +3,7 @@
     "language": "en,en-GB",
     "ignorePaths": [
         ".*",
-        "mkdocs.yml"
+        "zensical.toml"
     ],
     "dictionaryDefinitions": [],
     "dictionaries": [],

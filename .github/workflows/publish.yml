@@ -1,5 +1,5 @@
 # Publish the documentation using zensical to GitHub Pages
-name: zensical
+name: Publish Zensical Site
 
 on:
   push:
