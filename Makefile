@@ -29,23 +29,18 @@ sync:
 
 ##
 # build: build the site; this will build the documentation site ready to serve.
-# This will ignore WARNINGS about README.md duplicating index.md because we have
-# a convention of symlinking index.md and README.md which mkdocs interprets as
-# a duplicate file to ignore (which is is) but we don't want this 'noise' in the
-# output as genuine warnings will be lost. 
 ##
 .PHONY: build
-build: 
-	uv run mkdocs build 2>&1 | grep -v "README\.md' from the site because it conflicts with.*index\.md'"
+build:
+	uv run zensical build
 	@echo "The documentation should now be built"
 
 ##
 # run: run the project aspects; this will launch the documentation server.
-# Note this suppresses WARNINGS, use make build to check for WARNINGS.
 ##
 .PHONY: run
-run: 
-	uv run mkdocs serve --quiet
+run:
+	uv run zensical serve
 	@echo "The documentation should now be available by browsing http://127.0.0.1:8000/"
 
 ##
@@ -53,7 +48,8 @@ run:
 ##
 .PHONY: deploy
 deploy:
-	uv run mkdocs gh-deploy --force
+	uv run zensical build
+	uv run ghp-import -n -p -f -m "Update documentation" site
 	@echo "The documentation should now be available by browsing https://gigcymru.github.io/architecture/"
 
 ##

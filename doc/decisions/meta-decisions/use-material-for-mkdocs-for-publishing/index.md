@@ -1,10 +1,12 @@
 # Use Material for MkDocs for Publishing
 
-!!! note "Pending Approval"
-    Awaiting approval by DHCW Technical Design Authority
+!!! warning "Deprecated"
+    This decision has been superseded by [Use Zensical for Publishing](../use-zensical-for-publishing/). Material for MkDocs was our previous documentation platform, but we have migrated to Zensical as the natural evolution created by the same team.
 
-**Status**: proposed  
-**Date**: 31/03/2025  
+**Status**: deprecated
+**Date**: 31/03/2025
+**Deprecated**: 2025-11-14
+**Superseded by**: [Use Zensical for Publishing](../use-zensical-for-publishing/)
 **Governance**: Drafted for DHCW Technical Design Authority (TDA) for approval
 
 ## Situation - Context and Problem Statement

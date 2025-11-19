@@ -3,7 +3,7 @@
     "language": "en,en-GB",
     "ignorePaths": [
         ".*",
-        "mkdocs.yml"
+        "zensical.toml"
     ],
     "dictionaryDefinitions": [],
     "dictionaries": [],
@@ -24,9 +24,11 @@
         "Mkdoc",
         "mkdocs",
         "NCSC",
+        "Pandoc",
         "Pulumi",
         "TDA",
-        "TDAG"
+        "TDAG",
+        "zensical"
     ],
     "ignoreWords": [],
     "import": []

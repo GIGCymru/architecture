@@ -1,11 +1,10 @@
 [project]
 name = "architecture"
 version = "0.1.0"
-description = "MKDocs Material Setup for GIG Cymru Architecture site"
+description = "Zensical Setup for GIG Cymru Architecture site"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "mkdocs-awesome-nav>=3.1.1",
-    "mkdocs-material>=9.6.9",
-    "mkdocs-table-reader-plugin>=3.1.0",
+    "ghp-import>=2.1.0",
+    "zensical>=0.0.8",
 ]
