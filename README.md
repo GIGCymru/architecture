@@ -1,6 +1,6 @@
 # GIG Cymru NHS Wales - Architecture
 
-[![mkdocs](https://github.com/GIGCymru/architecture/actions/workflows/publish.yml/badge.svg)](https://github.com/GIGCymru/architecture/actions/workflows/publish.yml)
+[![zensical](https://github.com/GIGCymru/architecture/actions/workflows/publish.yml/badge.svg)](https://github.com/GIGCymru/architecture/actions/workflows/publish.yml)
 
 The documents in this repository are published to [https://gigcymru.github.io/architecture/](https://gigcymru.github.io/architecture/).
 
@@ -31,7 +31,7 @@ Once you have successfully launched Codespaces you can run the
 development server from the VS Code Terminal:
 
 ```bash
-    uv run mkdocs serve
+    uv run zensical serve
 ```
 
 You will be prompted to **Open in Browser** to view the locally running site.
@@ -46,7 +46,7 @@ is faster on subsequent launches as the environment is then cached.
 
 **Prerequisites:**
 
-* Python 3.11 or higher
+* Python 3.13 or higher
 * [uv](https://github.com/astral-sh/uv) for package/env management
 * [npm](https://github.com/npm/cli) for markdown linting
 * Git
@@ -75,7 +75,7 @@ Set up environment and dependencies:
 Start the development server:
 
 ```bash
-    uv run mkdocs serve
+    uv run zensical serve
 ```
 
 View the documentation at: ``http://127.0.0.1:8000/``
@@ -93,13 +93,13 @@ If you prefer using containers:
 Build the container:
 
 ```bash
-    podman build --tag mkdocs .
+    podman build --tag zensical .
 ```
 
 Run the development server:
 
 ```bash
-    podman run -p 8000:8000 mkdocs
+    podman run -p 8000:8000 zensical
 ```
 
 View the documentation at: ``http://127.0.0.1:8000/``
@@ -146,8 +146,8 @@ The conversion is handled by [Pandoc](https://pandoc.org/), a universal document
 
 The GitHub Action workflow is defined in `.github/workflows/markdown-to-word.yml`. It is triggered on pushes to the `main` branch that include changes to the following files:
 
-*   `doc/design-authority/dhcw/architecture-decision-record-template.md`
-*   `doc/design-authority/dhcw/architecture-design-overview-template.md`
+* `doc/design-authority/dhcw/architecture-decision-record-template.md`
+* `doc/design-authority/dhcw/architecture-design-overview-template.md`
 
 When triggered, the workflow creates a new release with the converted `.docx` files.
 
@@ -157,7 +157,7 @@ You can also run the conversion manually. This is helpful for testing changes to
 
 **Prerequisites:**
 
-*   [Pandoc](https://pandoc.org/installing.html) installed on your local machine.
+* [Pandoc](https://pandoc.org/installing.html) installed on your local machine.
 
 **Command:**
 
@@ -174,7 +174,7 @@ The appearance of the generated Word documents is controlled by a reference docu
 
 ## Documentation
 
-Our documentation is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+Our documentation is built using [Zensical](https://zensical.org/), a modern static site generator from the team behind Material for MkDocs.
 
 ## Contributing
 
