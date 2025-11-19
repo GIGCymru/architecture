@@ -1,3 +1,4 @@
+#:schema .vscode/zensical-schema.json
 # Zensical configuration for GIG Cymru NHS Wales - Architecture
 # Migrated from mkdocs.yml and doc/.nav.yml
 
