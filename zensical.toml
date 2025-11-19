@@ -76,6 +76,7 @@ nav = [
       ]},
       {"Technical Decisions" = [
         {"Cloud Hosting for Documents Capabilities" = "decisions/technical-decisions/cloud-hosting-for-documents-capabilities/README.md"},
+        {"Cloud Provider Workload Placement" = "decisions/technical-decisions/cloud-workload-placement/"},
         {"Containerization" = "decisions/technical-decisions/containerization/"},
         {"Document Services" = "decisions/technical-decisions/document-services/README.md"},
         {"FHIR for Interoperability First" = "decisions/technical-decisions/fhir-for-interoperability-first/"},
