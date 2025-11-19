@@ -1,10 +1,20 @@
-# Site Navigation
+# Use Awesome-Nav for Site Navigation
 
-**Status**: accepted
+!!! warning "Deprecated"
+    This decision has been superseded by [Use Zensical for Publishing](../use-zensical-for-publishing/). Material for MkDocs was our previous documentation platform, but we have migrated to Zensical as the natural evolution created by the same team. This migration negated the need for `awesome-nav` as Zensical offers sufficient nav structure for our
+    needs right now. The general Recommendations in this ADR remains in terms of approach to site navigation, just
+    without the specific plugin being needed.
 
-**Date**: Updated 2025-04-08
+!!! info
+    **Status**: deprecated
 
-**Governance**: Chris & Joel for now because this is so lightweight.
+    **Level**: 1
+
+    **Date**: Updated 2025-04-08
+
+    **Deprecated**: 2025-11-14
+
+    **Superseded by**: [Use Zensical for Publishing](../use-zensical-for-publishing/)
 
 ## Situation - Context and Problem Statement
 
