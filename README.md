@@ -146,8 +146,8 @@ The conversion is handled by [Pandoc](https://pandoc.org/), a universal document
 
 The GitHub Action workflow is defined in `.github/workflows/markdown-to-word.yml`. It is triggered on pushes to the `main` branch that include changes to the following files:
 
-*   `doc/design-authority/dhcw/architecture-decision-record-template.md`
-*   `doc/design-authority/dhcw/architecture-design-overview-template.md`
+* `doc/design-authority/dhcw/architecture-decision-record-template.md`
+* `doc/design-authority/dhcw/architecture-design-overview-template.md`
 
 When triggered, the workflow creates a new release with the converted `.docx` files.
 
@@ -157,7 +157,7 @@ You can also run the conversion manually. This is helpful for testing changes to
 
 **Prerequisites:**
 
-*   [Pandoc](https://pandoc.org/installing.html) installed on your local machine.
+* [Pandoc](https://pandoc.org/installing.html) installed on your local machine.
 
 **Command:**
 

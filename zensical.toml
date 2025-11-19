@@ -1,4 +1,8 @@
 #:schema .vscode/zensical-schema.json
+# Note: Schema validation currently incomplete so will false-positive on 
+# failures as currently using the old mkdocs-materia schema. 
+# See https://github.com/zensical/backlog/issues/48 
+
 # Zensical configuration for GIG Cymru NHS Wales - Architecture
 # Migrated from mkdocs.yml and doc/.nav.yml
 
