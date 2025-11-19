@@ -46,7 +46,7 @@ is faster on subsequent launches as the environment is then cached.
 
 **Prerequisites:**
 
-* Python 3.11 or higher
+* Python 3.13 or higher
 * [uv](https://github.com/astral-sh/uv) for package/env management
 * [npm](https://github.com/npm/cli) for markdown linting
 * Git

@@ -24,9 +24,11 @@
         "Mkdoc",
         "mkdocs",
         "NCSC",
+        "Pandoc",
         "Pulumi",
         "TDA",
-        "TDAG"
+        "TDAG",
+        "zensical"
     ],
     "ignoreWords": [],
     "import": []
