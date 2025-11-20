@@ -7,7 +7,7 @@ this repository.
 ## Environment Setup
 
 - install the `uv` package manager if not already installed: `make install`
-- install the required packages for mkdocs: `make sync`
+- install the required packages: `make sync`
 - install the `markdownlint-cli2` tool for linting docs: `npm install`
 
 ## Running Locally
