@@ -34,8 +34,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc
 
+      - name: Set up Just
+        uses: extractions/setup-just@v3
+
       - name: Convert Markdown to Word
-        run: make word
+        run: just word
 
       - name: Publish Release
         run: |

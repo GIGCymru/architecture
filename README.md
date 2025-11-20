@@ -27,11 +27,17 @@ This provides:
 * Automatic port forwarding for preview
 * Git integration
 
-Once you have successfully launched Codespaces you can run the
-development server from the VS Code Terminal:
+Once you have successfully launched Codespaces, dependencies will be automatically
+installed. You can start the development server from the VS Code Terminal:
 
 ```bash
-    uv run zensical serve
+    just run
+```
+
+Or see all available commands:
+
+```bash
+    just --list
 ```
 
 You will be prompted to **Open in Browser** to view the locally running site.
@@ -104,16 +110,22 @@ Run the development server:
 
 View the documentation at: ``http://127.0.0.1:8000/``
 
-### 4. Make-based Workflow
+### 4. Just-based Workflow
 
-For those familiar with Make:
+For those familiar with Just (a modern command runner):
+
+**Prerequisites:**
+
+* [Just](https://github.com/casey/just) - Install with: `curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin`
+
+**Setup Steps:**
 
 ```bash
     # See available commands
-    make help
+    just --list
 
     # Full build and serve
-    make
+    just
 ```
 
 View the documentation at: ``http://127.0.0.1:8000/``
@@ -131,7 +143,7 @@ npm install
 Once it is installed, you can run the linter by running the following command:
 
 ```bash
-make lint
+just lint
 ```
 
 This will check all the markdown files in the `doc/` directory and report any errors.
@@ -165,7 +177,7 @@ To convert the documents, run the following command from the root of the reposit
 
 ```bash
 # Convert all markdown files to word documents
-make word
+just word
 ```
 
 ### Styling
