@@ -3,6 +3,7 @@
     "language": "en,en-GB",
     "ignorePaths": [
         ".*",
+        "Dockerfile",
         "zensical.toml"
     ],
     "dictionaryDefinitions": [],
@@ -19,6 +20,7 @@
         "Fiori",
         "isolatability",
         "isolatable",
+        "justfile",
         "Knative",
         "metamodel",
         "Mkdoc",
@@ -30,6 +32,8 @@
         "TDAG",
         "zensical"
     ],
-    "ignoreWords": [],
+    "ignoreWords": [
+        "Rodarmor"
+    ],
     "import": []
 }
