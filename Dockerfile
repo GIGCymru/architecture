@@ -2,7 +2,7 @@
 # See also https://github.com/astral-sh/uv-docker-example/tree/main
 
 # Use a Python image with uv pre-installed
-FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
+FROM ghcr.io/astral-sh/uv:python3.14-bookworm-slim
 
 # Install the project into `/app`
 WORKDIR /app
