@@ -4,28 +4,144 @@ This repository contains the source for the GIG Cymru architecture documentation
 website. The following instructions are for an autonomous AI agent to work with
 this repository.
 
+## Quick Reference
+
+View all available commands at any time:
+
+```bash
+just --list
+```
+
+The published documentation is available at: <https://gigcymru.github.io/architecture/>
+
 ## Environment Setup
 
-- install the `uv` package manager if not already installed: `make install`
-- install the required packages: `make sync`
-- install the `markdownlint-cli2` tool for linting docs: `npm install`
+This project uses [Just](https://github.com/casey/just) as a command runner (migrated from Make).
+
+### Prerequisites
+
+- Python 3.13 or higher
+- [uv](https://github.com/astral-sh/uv) for package/env management
+- [npm](https://github.com/npm/cli) for markdown linting
+- [Just](https://github.com/casey/just) for command running
+- Git
+
+### Initial Setup
+
+Install the `uv` package manager if not already installed:
+
+```bash
+just install
+```
+
+Install the required Python packages and sync the environment:
+
+```bash
+just sync
+```
+
+Install Node.js dependencies for linting:
+
+```bash
+npm install
+```
+
+### Quick Start (All-in-One)
+
+Run the full setup and start the development server:
+
+```bash
+just
+```
+
+This will run: install → sync → build → run
 
 ## Running Locally
 
-- execute `make build` to verify the site builds successfully.
-- execute `make run` to run the site locally, it will be available at `http://127.0.0.1:8000/`
+Build the documentation site (output to ./site directory):
 
-## Conventions
+```bash
+just build
+```
+
+Start the local development server (auto-reloads on file changes):
+
+```bash
+just run
+```
+
+The site will be available at `http://127.0.0.1:8000/`
+
+## Quality Assurance
+
+Run markdown linter on all documentation files:
+
+```bash
+just lint
+```
+
+**Important:** Always run linting before committing to fix any issues.
+
+## Documentation Structure
 
 - All documentation (in Markdown format) to be published on the site lives under the `doc/` path.
 - Markdown documents should adhere to a 120 character line limit, unless it breaks URLs/links/special elements.
-- See `doc/decisions/meta-decisions/architecture-decision-records-naming-conventions/index.md` for ADR naming conventions and rules.
-- Mermaid is used to add diagrams to Markdown files, see `doc/decisions/meta-decisions/use-mermaid-for-documenting-diagrams/index.md` for information.
-- Architecture Decision Records (ADRs) reside under the `doc/decisions/` path.
+- The documentation is built using [Zensical](https://zensical.org/), a modern static site generator.
+
+## Conventions
+
+### Architecture Decision Records (ADRs)
+
+- ADRs reside under the `doc/decisions/` path.
+- ADRs should follow the agreed template: `doc/design-authority/dhcw/architecture-decision-record-template.md`
+- See `doc/decisions/meta-decisions/architecture-decision-records-naming-conventions/index.md` for naming conventions and rules.
+
+### Architecture Principles
+
 - Architecture Principles reside under the `doc/principles/` path.
-- ADRs should follow the agreed template found here: `doc/design-authority/dhcw/architecture-decision-record-template.md`
 
-## PR instructions
+### Diagrams
 
-- Always run `make lint` before committing and fix any lint issues.
-- Always run `make build` before committing and fix any WARNINGS raised.
+- Mermaid is used to add diagrams to Markdown files.
+- See `doc/decisions/meta-decisions/use-mermaid-for-documenting-diagrams/index.md` for information.
+
+## PR Instructions
+
+Before committing changes:
+
+1. **Always run linting:** `just lint` and fix any issues reported
+2. **Always run build:** `just build` and fix any WARNINGS raised
+3. Test the site locally: `just run` and verify your changes render correctly
+
+## Additional Commands
+
+### Document Conversion
+
+Convert markdown templates to Word documents using Pandoc:
+
+```bash
+just word
+```
+
+This converts the ADR and design overview templates to `.docx` format.
+
+### Deployment
+
+Build and deploy documentation to GitHub Pages (requires push permissions):
+
+```bash
+just deploy
+```
+
+The site will be deployed to: <https://gigcymru.github.io/architecture/>
+
+## Development Environment Options
+
+This repository supports multiple development environments:
+
+1. **GitHub Codespaces** (Recommended) - Pre-configured cloud environment
+2. **Local Development** - Traditional local setup with uv and npm
+3. **Container-based** - Using Podman or Docker
+4. **Just-based Workflow** - Modern command runner (current approach)
+
+See the `README.md` for detailed setup instructions for each option.
