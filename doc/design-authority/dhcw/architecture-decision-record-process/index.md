@@ -33,7 +33,7 @@ processes proportionate to their impact/significance.
 For the purposes of the ADR process, **"Architecture"** refers to the
 fundamental structures, patterns, and decisions that shape how systems are
 designed, built, and evolve over time. Architecture encompasses decisions that
-have significant and lasting impact on:
+have an impact on:
 
 * **System Structure**: How components, services, or modules are organised and
     interact with each other.
@@ -55,21 +55,10 @@ have significant and lasting impact on:
     including licensing, infrastructure expenses, development effort, training,
     or ongoing operational costs.
 
-Architecture decisions are distinguished from other types of decisions by their:
-
-* **Scope of Impact**: They affect multiple components, teams, or systems, not
-    just isolated implementations.
-* **Duration of Impact**: They have long-term consequences and are typically
-    difficult or costly to reverse.
-* **Strategic Alignment**: They influence how the organisation achieves its
-    technical and business objectives.
-* **Risk and Cost**: They often involve significant resource commitment, risk,
-    or financial implications.
-
 ### What is NOT Architecture
 
-Not all technical decisions are architectural. The following are generally
-**not** considered architectural decisions for ADR purposes:
+Following are generally **not** considered architectural decisions for ADR
+purposes:
 
 * **Project Management Decisions**: Sprint planning, team organisation, meeting
     schedules, or purely administrative choices.
@@ -92,7 +81,7 @@ Not all technical decisions are architectural. The following are generally
 
 When in doubt, consider:
 
-* Will this decision significantly constrain or enable future technical choices?
+* Will this decision constrain or enable future technical choices?
 * Will understanding "why" this decision was made be valuable to future teams?
 * Does this decision require coordination across multiple teams or systems?
 * Are there significant trade-offs, costs, or risks involved?
@@ -103,9 +92,8 @@ If the answer to most of these questions is "yes", it likely warrants an ADR.
 ## When to Create an ADR
 
 An ADR should be created for decisions that fall within the definition of
-"Architecture" as outlined above and have a significant impact on the technical
-landscape of DHCW. The primary purpose is to capture the context and rationale
-behind important decisions for future reference and understanding.
+"Architecture" as outlined above. The primary purpose is to capture the context
+and rationale behind important decisions for future reference and understanding.
 
 Generally, an ADR is justified when a decision:
 
