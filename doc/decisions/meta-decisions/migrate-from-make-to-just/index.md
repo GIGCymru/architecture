@@ -12,6 +12,10 @@
 
 This ADR documents the decision to migrate from GNU Make to Just as the project's command runner. Just is a modern, cross-platform command runner designed specifically for saving and executing project-specific commands, while Make was originally designed as a build system. This migration simplifies our development workflow and improves the developer experience across different operating systems.
 
+!!! note
+    In this ADR the term "project" refers specifically to the backend of the "Architecture" documentation site — i.e. this repository on GitHub that
+    contains these documents — and not to other unrelated projects.
+
 ## Drivers
 
 * We are using Make solely as a command runner, not as a build system, which is not its primary design purpose.
