@@ -28,12 +28,72 @@ processes proportionate to their impact/significance.
     The approved [ADR template](../architecture-decision-record-template.md)
     should be used to ensure consistency and completeness.
 
+## Definition of Architecture
+
+For the purposes of the ADR process, **"Architecture"** refers to the
+fundamental structures, patterns, and decisions that shape how systems are
+designed, built, and evolve over time. Architecture encompasses decisions that
+have an impact on:
+
+* **System Structure**: How components, services, or modules are organised and
+    interact with each other.
+* **Technical Standards**: The selection and use of technologies, frameworks,
+    platforms, languages, and tools that form the technical foundation.
+* **Integration and Interfaces**: How systems communicate, including APIs, data
+    formats, protocols, and integration patterns.
+* **Quality Attributes**: Decisions that significantly affect non-functional
+    requirements such as performance, scalability, security, reliability,
+    maintainability, and accessibility.
+* **Cross-cutting Concerns**: Patterns and approaches for logging, monitoring,
+    error handling, authentication, authorisation, and other system-wide
+    capabilities.
+* **Infrastructure and Deployment**: Fundamental choices about hosting, cloud
+    platforms, deployment strategies, and operational models.
+* **Data Architecture**: How data is structured, stored, accessed, shared, and
+    governed across systems.
+* **Financial Impact**: Decisions involving significant cost implications,
+    including licensing, infrastructure expenses, development effort, training,
+    or ongoing operational costs.
+
+### What is NOT Architecture
+
+Following are generally **not** considered architectural decisions for ADR
+purposes:
+
+* **Project Management Decisions**: Sprint planning, team organisation, meeting
+    schedules, or purely administrative choices.
+* **Minor Implementation Details**: Specific variable names, code formatting
+    preferences (covered by linters/standards), or localised refactoring within
+    a single component that doesn't affect interfaces or patterns.
+* **Routine Operations**: Standard deployment of existing patterns, routine
+    maintenance tasks, or application of established standards without
+    deviation.
+* **User Interface Details**: Specific UI/UX design choices that don't affect
+    underlying system architecture (e.g., button colours, layout preferences),
+    unless they have broader accessibility or technical implications.
+* **Temporary Solutions**: Short-lived experiments, proofs of concept, or
+    workarounds explicitly marked as temporary and not intended for long-term
+    use or broader adoption.
+* **Business Process Decisions**: Purely operational or business workflow
+    decisions that don't involve technical system changes.
+* **Trivial Cost Decisions**: Minor expenses that don't set precedents or
+    involve long-term commitments (e.g., one-off small tool purchases).
+
+When in doubt, consider:
+
+* Will this decision constrain or enable future technical choices?
+* Will understanding "why" this decision was made be valuable to future teams?
+* Does this decision require coordination across multiple teams or systems?
+* Are there significant trade-offs, costs, or risks involved?
+* Does this decision involve substantial financial commitment or ongoing costs?
+
+If the answer to most of these questions is "yes", it likely warrants an ADR.
+
 ## When to Create an ADR
 
-An ADR should be created for decisions that have a significant impact on the
-architecture of a system or the technical landscape of DHCW. The primary
-purpose is to capture the context and rationale behind important decisions
-for future reference and understanding.
+An ADR should be created for decisions that fall within the definition of
+"Architecture" as outlined above. The primary purpose is to capture the context
+and rationale behind important decisions for future reference and understanding.
 
 Generally, an ADR is justified when a decision:
 
@@ -42,21 +102,27 @@ Generally, an ADR is justified when a decision:
 * Impacts the long-term maintainability, scalability, security, or performance
     of a system or service.
 * Changes external interfaces or significant internal APIs.
+* Involves significant financial implications, including licensing costs,
+    infrastructure expenses, or ongoing operational commitments.
+* Sets a precedent or establishes a pattern that other teams or projects are
+    expected to follow.
 * Would benefit future developers, architects, or stakeholders to understand
     the "why" behind the decision.
 
 While the above guidelines cover many scenarios, an ADR is typically **not**
 required for:
 
-* Decisions that do not fall into the category of "Architecture" (e.g.,
-    purely project management, administrative, or minor UI design choices).
+* Decisions that do not fall into the category of "Architecture" as defined
+    above (e.g., purely project management, administrative, or minor UI design
+    choices).
 * Trivial or routine activities with no lasting architectural impact.
 * Decisions fully covered by existing, well-documented standards, policies,
-    or established patterns.
+    or established patterns (unless deviating from them).
 * Temporary workarounds, short-lived experiments, or proofs of concept
     that are not intended to be permanent architectural components.
 * Low-risk, self-contained decisions made by a single developer within a
     project with no impact outside that immediate scope.
+* Minor expenses or purchases that don't establish patterns or precedents.
 
 ## Initiation and Commissioning
 
@@ -147,6 +213,10 @@ The following checklist should be considered during the review of an ADR:
   trade-offs (pros, cons, consequences) of the chosen solution and key
   alternatives explicitly documented? (See the **Options Analysis** and
   **Recommendation** sections.)
+* **Financial Implications:** Have the financial implications been adequately
+  considered and documented? This includes initial costs, ongoing operational
+  expenses, licensing fees, training costs, and any cost savings or avoidance.
+  The analysis should cover both direct and indirect costs where relevant.
 * **Stakeholder Engagement:** Has feedback from relevant stakeholders been
   sought and incorporated, or is there a rationale if not?
 * **Sufficient Context and Linkages:** Does the ADR include necessary
