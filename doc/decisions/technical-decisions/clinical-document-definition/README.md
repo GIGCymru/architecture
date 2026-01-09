@@ -103,7 +103,7 @@ Core Attributes
 
 - Machine-Processable: Structured for indexing, search, and interoperability across systems.
 
-- Discoverable: Includes sufficient metadata (e.g., author, creation time, document type, subject, version, and encounter context) and alignment to [FHIR Document Reference](https://simplifier.net/guide/fhir-standards-wales-implementation-guide/Home/FHIR-Assets/Profiles-and-Extensions/Profiles/DataStandardsWales-DocumentReference?version=2.3.0)
+- Discoverable: Includes sufficient metadata (e.g., author, creation time, document type, subject, version, and encounter context) and alignment to [FHIR Document Reference](https://simplifier.net/guide/fhir-standards-wales-implementation-guide/Home/FHIR-Assets/Profiles-and-Extensions/Profiles/DataStandardsWales-DocumentReference?version=2.4.0)
 
 Examples include:
 
@@ -133,57 +133,57 @@ To prevent misclassification and ensure alignment with the business capabilities
 
 This definition provides standards alignment and is supported by:
 
-- SNOMED CT: coded clinical content for semantic interoperability
+- [SNOMED CT](https://termbrowser.nhs.uk/?): coded clinical content for semantic interoperability
 
-- FHIR (UK Core / NHS Wales guidance): structured, machine-readable format for interoperability (DocumentReference)
+- FHIR (UK Core / NHS Wales guidance): structured, machine-readable format for interoperability [FHIR Document Reference](https://simplifier.net/guide/fhir-standards-wales-implementation-guide/Home/FHIR-Assets/Profiles-and-Extensions/Profiles/DataStandardsWales-DocumentReference?version=2.4.0)
 
 - Welsh Health Circulars (WHC): [WHC/2015/053](https://www.gov.wales/introduction-snomed-ct-nhs-information-standard-whc201553) & [WHC/2023/018](https://www.gov.wales/introduction-hl7-fhir-foundational-standard-all-nhs-wales-bodies-whc2023018)
 
-- BS 10008: legal admissibility of electronic records
+- [BS 10008](https://knowledge.bsigroup.com/products/evidential-weight-and-legal-admissibility-of-electronically-stored-information-esi-code-of-practice-for-implementation-of-bs-10008-1): legal admissibility of electronic records
 
-- IHE XDS: cross-organisation indexing and sharing
+- [IHE XDS](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html): cross-organisation indexing and sharing
 
-- FAIR Principles:
+- [FAIR Principles](https://www.go-fair.org/fair-principles/): provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets
 
 Action Steps:
 
-Embed this definition into technical specifications, governance frameworks, and clinical safety cases
+- Embed this definition into technical specifications, governance frameworks, and clinical safety cases
 
-Align with national and international standards (e.g., Document metadata standard, IHE XDS, FHIR DocumentReference)
+- Align with national and international standards (e.g., Document metadata standard, IHE XDS, FHIR DocumentReference)
 
-Train system designers, product teams, and clinical staff on appropriate classification and usage
+- Train system designers, product teams, and clinical staff on appropriate classification and usage
 
-Ensure search, lifecycle management, and metadata tagging are aligned with the above definition
+- Ensure search, lifecycle management, and metadata tagging are aligned with the above definition
 
 Exclude non-document artefacts from document repositories (e.g., data points, logs, raw media, Dicom images, active forms, etc)
 
 ### Consequences
 
-Clinical & Technical Practice:
+**Clinical & Technical Practice**:
 
-Establishes a clear, standard definition of a clinical document across all systems.
+- Establishes a clear, standard definition of a clinical document across all systems.
 
-Enhances patient safety and trust by ensuring only complete, authorised documents are stored and shared.
+- Enhances patient safety and trust by ensuring only complete, authorised documents are stored and shared.
 
-Streamlines workflows and improves discoverability through consistent metadata.
+- Streamlines workflows and improves discoverability through consistent metadata.
 
-Requires user education and cultural adoption to embed new documentation practices.
+- Requires user education and cultural adoption to embed new documentation practices.
 
 Teams will need to adjust to clear boundaries between documents, clinical data, forms, and DICOM images, moving away from the historic practice of treating all artefacts as “documents.”
 
-Legacy Data Organisations:
+**Legacy Data Organisations**:
 
-Existing repositories will need audit, reclassification, and cleansing to align with the new definition.
+- Existing repositories will need audit, reclassification, and cleansing to align with the new definition.
 
-Investment will be required to transition legacy data into the new architecture, ensuring compliance and interoperability.
+- Investment will be required to transition legacy data into the new architecture, ensuring compliance and interoperability.
 
-Metadata enrichment and migration planning will be essential to support discoverability and governance.
+- Metadata enrichment and migration planning will be essential to support discoverability and governance.
 
-Future Compliance and Strategy:
+**Future Compliance and Strategy**:
 
-Once new document microservices are in place, all new systems and integrations must comply with the agreed definition and metadata standards.
+- Once new document microservices are in place, all new systems and integrations must comply with the agreed definition and metadata standards.
 
-Strengthens governance and interoperability across NHS Wales through consistent adoption of FHIR DocumentReference.
+- Strengthens governance and interoperability across NHS Wales through consistent adoption of FHIR DocumentReference.
 
-Provides a clear migration pathway toward a modern, scalable, cloud-native document ecosystem aligned with the National Target Architecture.
+- Provides a clear migration pathway toward a modern, scalable, cloud-native document ecosystem aligned with the National Target Architecture.
 
