@@ -63,7 +63,6 @@ Analysis
 
 N/a
 
-
 ## Recommendation
 
 Adopt and operationalise a definition of a clinical document across systems, teams, and governance processes to ensure consistency, safety, and interoperability. This definition should guide system design, information governance, user training, and record-keeping practices.
