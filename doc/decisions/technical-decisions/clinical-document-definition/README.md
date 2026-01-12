@@ -1,11 +1,8 @@
 # What is a clinical document
-
 Ensuring clarity, compliance, and consistency in clinical document management.
 
 **Status**: { TDAG 03/11/25 (Approved), Architecture CoP 15/01/2026}
-
 **Level**: { 4 }
-
 **Updated**: { 2025-10-23 }
 
 ## Summary
@@ -18,9 +15,9 @@ A clear and standardised definition, supported by robust governance, will streng
 
 ## Drivers
 
-The establishment of a consistent and standardised definition of a "clinical document" is driven by key stakeholder feedback obtained through cross-programme workshops, which identified significant variation in interpretation and implementation across systems. Addressing this inconsistency is essential to improve alignment and interoperability within the national digital ecosystem. 
+The establishment of a consistent and standardised definition of a "clinical document" is driven by key stakeholder feedback obtained through cross-programme workshops, which identified significant variation in interpretation and implementation across systems. Addressing this inconsistency is essential to improve alignment and interoperability within the national digital ecosystem.
 
-This work directly supports National Target Architecture, ensuring coherence and integration across digital health services in Wales. Furthermore, the transition towards adopting FHIR for interoperability and FHIR DocumentReference as the standard mechanism for document metadata provides a strategic opportunity to formalise governance, prevent misuse, and embed internationally recognised best practices. 
+This work directly supports National Target Architecture, ensuring coherence and integration across digital health services in Wales. Furthermore, the transition towards adopting FHIR for interoperability and FHIR DocumentReference as the standard mechanism for document metadata provides a strategic opportunity to formalise governance, prevent misuse, and embed internationally recognised best practices.
 
 Collectively, these drivers underpin the need for a unified definition to enhance data integrity, operational efficiency, and safe information exchange across NHS Wales.
 
@@ -48,7 +45,7 @@ However, it is equally important to define what a document is **NOT**:
 
 Without this functional definition and boundary-setting, we risk:
 
-- Storing unnecessary or incomplete information,
+- Storing unnecessary or incomplete information
 - Storage Misuse
 - Search and classification issues
 - Legal and governance gaps (e.g., storing unapproved or draft content as part of the official record)
@@ -129,7 +126,7 @@ Exclude non-document artefacts from document repositories (e.g., data points, lo
 - Streamlines workflows and improves discoverability through consistent metadata.
 - Requires user education and cultural adoption to embed new documentation practices.
 
-Teams will need to adjust to clear boundaries between documents, clinical data, forms, and DICOM images, moving away from the historic practice of treating all artefacts as “documents.”
+Teams will need to adjust to clear boundaries between documents, clinical data, forms, and DICOM images, moving away from the historic practice of treating all artefacts as “documents”.
 
 **Legacy Data Organisations**:
 
@@ -142,4 +139,3 @@ Teams will need to adjust to clear boundaries between documents, clinical data, 
 - Once new document microservices are in place, all new systems and integrations must comply with the agreed definition and metadata standards.
 - Strengthens governance and interoperability across NHS Wales through consistent adoption of FHIR DocumentReference.
 - Provides a clear migration pathway toward a modern, scalable, cloud-native document ecosystem aligned with the National Target Architecture.
-
