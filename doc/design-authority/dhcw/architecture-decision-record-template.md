@@ -7,6 +7,12 @@
     
     **Level**: { 1 - 4 }
 
+    **Proposer**: { Name }
+
+    **Authors**: { Name(s) }
+
+    **Stakeholders / Reviewers**: { Name(s) }
+
     **Updated**: { YYYY-MM-DD }
 
 ## Summary
@@ -149,7 +155,4 @@ not followed?}
 decision, adds context, or guides future actions. Links to other decisions
 and resources might appear here as well.
 
-You could briefly note who was involved in the decision-making process and
-if/how consensus was reached. You may also want to suggest a timeframe or
-specific events that might prompt a re-evaluation of this decision in the
-future.}
+You may also want to suggest a timeframe or specific events that might prompt a re-evaluation of this decision in the future.}

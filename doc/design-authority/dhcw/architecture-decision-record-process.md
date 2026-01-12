@@ -213,6 +213,9 @@ The following checklist should be considered during the review of an ADR:
   trade-offs (pros, cons, consequences) of the chosen solution and key
   alternatives explicitly documented? (See the **Options Analysis** and
   **Recommendation** sections.)
+* **Documented Involvement:** Are the Proposer, Authors, and relevant
+  Stakeholders/Reviewers clearly identified in the ADR? (See the metadata
+  block in the ADR template.)
 * **Financial Implications:** Have the financial implications been adequately
   considered and documented? This includes initial costs, ongoing operational
   expenses, licensing fees, training costs, and any cost savings or avoidance.
@@ -399,7 +402,9 @@ Technical Design Authority (TDA).
 Once an ADR is **Accepted**:
 
 * The decision it documents becomes a collective agreement.
-* The **ADR Proposer** is typically the initial main author.
+* The **ADR Proposer** and **ADR Author(s)** are identified in the metadata.
+* **Stakeholders / Reviewers** involved in the decision are also recorded in
+    the metadata.
 * Ongoing maintenance, such as identifying when an ADR might be outdated,
     superseded, or deprecated, is a collective responsibility of the
     architectural community.
@@ -412,7 +417,9 @@ Once an ADR is **Accepted**:
 
 | Role                 | Responsibility           |
 | :------------------- | :----------------------- |
-| **ADR Proposer**     | Initiates an ADR, leads its development by drafting content and incorporating feedback. Presents the ADR to the relevant review body (e.g., via Pull Request, or to a TDG/TDAG/TDA). Responsible for ensuring the ADR meets quality criteria. |
+| **ADR Proposer**     | Initiates an ADR and leads its development. Presents the ADR to the relevant review body (e.g., via Pull Request, or to a TDG/TDAG/TDA). Responsible for ensuring the ADR meets quality criteria and that all roles are correctly identified in the ADR metadata. |
+| **ADR Author**       | Responsible for drafting and updating the content of the ADR. Often the same as the Proposer but can be different individuals. |
+| **Stakeholders / Reviewers** | Individuals or groups who have a vested interest in the decision or provide expert review. Their feedback is sought and incorporated into the ADR. For Level 2+ ADRs, this includes the members of the TDG. |
 | **TDG Chair**        | (Often the ADR Proposer, or designated for Level 4 TDGs) Facilitates TDG discussions, ensures fair participation, helps track progress towards a decision, and may assist in summarizing the TDG's outcome and updating the ADR. |
 | **TDG Members**      | Actively participate in the evaluation, review, and decision-making for Level 2, 3, and 4 ADRs. Contribute expertise, challenge assumptions constructively, and help the TDG reach consensus on the decision. |
 | **TDAG**             | Facilitates TDG formation for Level 2 & 3 ADRs. Acts as an escalation point for unresolved disagreements in Level 2 & 3 TDGs. Reviews outcomes of Level 1, 2 & 3 ADRs for information and process adherence. Can commission ADRs. Approves requests for private ADRs (Level 2 & 3). Oversees the ADR process and supports the ADR Steward function. |
@@ -427,9 +434,9 @@ Once an ADR is **Accepted**:
 | **2. Drafting the ADR**            | Use template, outline problem, context, options. | ADR Proposer |
 | **3. Assigning a Decision Level**  | Determine decision level (1-4) based on scope/impact. | ADR Proposer (reviewed by ADR Steward or TDAG) |
 | **4. Pull Request Creation**       | Submit ADR draft as PR in the GitHub repo. | ADR Proposer |
-| **5. TDG Formation** (if Level ≥2) | Identify and confirm volunteers, define TDG scope. | ADR Proposer, with TDAG or TDA for Level 3/4 |
+| **5. TDG Formation** (if Level ≥2) | Identify and confirm volunteers, define TDG scope. Update ADR metadata with TDG members as Reviewers. | ADR Proposer, with TDAG or TDA for Level 3/4 |
 | **6. Review & Collaboration**      | Drive reviews, manage discussion, gather feedback. | TDG Chair (or Proposer for Level 1) |
-| **7. Decision Making**             | Reach consensus, capture rationale, finalise ADR. | TDG (Chair facilitates), ADR Proposer |
+| **7. Decision Making**             | Reach consensus, capture rationale, finalise ADR and metadata. | TDG (Chair facilitates), ADR Proposer |
 | **8. Approval & Merge**            | Merge PR, assign status (e.g. Approved), label by level | ADR Proposer |
 | **9. Communication** | Add to TDAG/TDA agenda as needed, broadcast key decisions. | TDAG & TDA Coordinators |
 | **10. Lifecycle Management**       | Monitor for relevance, deprecate outdated ADRs. | ADR Steward |
