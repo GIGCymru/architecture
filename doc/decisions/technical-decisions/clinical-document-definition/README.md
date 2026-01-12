@@ -1,4 +1,4 @@
-### What is a clinical document
+# What is a clinical document
 
 Ensuring clarity, compliance, and consistency in clinical document management.
 
@@ -8,7 +8,7 @@ Ensuring clarity, compliance, and consistency in clinical document management.
 
 **Updated**: { 2025-10-23 }
 
-### Summary
+## Summary
 
 There are significant inconsistencies and confusion across teams and systems regarding the definition of a "clinical document" within Digital Health Services. This lack of a shared understanding leads to misalignment in communication, integration challenges between systems, system misuse and inconsistencies in data governance practices.
 
@@ -16,7 +16,7 @@ To ensure clarity and interoperability, it is essential to establish a consisten
 
 A clear and standardised definition, supported by robust governance, will strengthen data integrity, improve cross-system integration, and enhance the safe and effective delivery of digital health services across NHS Wales.
 
-### Drivers
+## Drivers
 
 The establishment of a consistent and standardised definition of a "clinical document" is driven by key stakeholder feedback obtained through cross-programme workshops, which identified significant variation in interpretation and implementation across systems. Addressing this inconsistency is essential to improve alignment and interoperability within the national digital ecosystem. 
 
@@ -56,18 +56,18 @@ Without this functional definition and boundary-setting, we risk:
 
 A shared understanding of what a clinical document is, and is not, will help inform system architecture, clinical workflows, information governance, and retention strategies across NHS Wales.
 
-### Options
+## Options
 
 N/a
 
-### Options
+## Options
 
 Analysis
 
 N/a
 
 
-### Recommendation
+## Recommendation
 
 Adopt and operationalise a definition of a clinical document across systems, teams, and governance processes to ensure consistency, safety, and interoperability. This definition should guide system design, information governance, user training, and record-keeping practices.
 
@@ -120,7 +120,7 @@ Action Steps:
 
 Exclude non-document artefacts from document repositories (e.g., data points, logs, raw media, Dicom images, active forms, etc)
 
-### Consequences
+## Consequences
 
 **Clinical & Technical Practice**:
 
