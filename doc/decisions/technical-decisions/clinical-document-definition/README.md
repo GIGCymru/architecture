@@ -94,6 +94,7 @@ To prevent misclassification and ensure alignment with the business capabilities
 - Clinical Data: active forms data, as this is clinical data and requires to be structured and stored in a clinical data repository, unless finalised, presented as a PDF, versioned, and stored with appropriate metadata
 
 This definition provides standards alignment and is supported by:
+
 - Terminology [SNOMED CT](https://termbrowser.nhs.uk/?): coded clinical content for semantic interoperability
 - FHIR (UK Core / NHS Wales guidance): structured, machine-readable format for interoperability [FHIR Document Reference](https://simplifier.net/guide/fhir-standards-wales-implementation-guide/Home/FHIR-Assets/Profiles-and-Extensions/Profiles/DataStandardsWales-DocumentReference?version=2.4.0)
 - Welsh Health Circulars (WHC): [WHC/2015/053](https://www.gov.wales/introduction-snomed-ct-nhs-information-standard-whc201553) & [WHC/2023/018](https://www.gov.wales/introduction-hl7-fhir-foundational-standard-all-nhs-wales-bodies-whc2023018)
