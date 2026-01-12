@@ -1,4 +1,5 @@
 # What is a clinical document
+
 Ensuring clarity, compliance, and consistency in clinical document management.
 
 **Status**: { TDAG 03/11/25 (Approved), Architecture CoP 15/01/2026}
@@ -6,6 +7,7 @@ Ensuring clarity, compliance, and consistency in clinical document management.
 **Updated**: { 2025-10-23 }
 
 ## Summary
+
 There are significant inconsistencies and confusion across teams and systems regarding the definition of a "clinical document" within Digital Health Services. This lack of a shared understanding leads to misalignment in communication, integration challenges between systems, system misuse and inconsistencies in data governance practices.
 
 To ensure clarity and interoperability, it is essential to establish a consistent, organisation-wide definition of a "clinical document" that distinguishes it from other artefacts such as, but not limited to, clinical data (form-based data), medical images, and diagnostic results.
@@ -13,6 +15,7 @@ To ensure clarity and interoperability, it is essential to establish a consisten
 A clear and standardised definition, supported by robust governance, will strengthen data integrity, improve cross-system integration, and enhance the safe and effective delivery of digital health services across NHS Wales.
 
 ## Drivers
+
 The establishment of a consistent and standardised definition of a "clinical document" is driven by key stakeholder feedback obtained through cross-programme workshops, which identified significant variation in interpretation and implementation across systems. Addressing this inconsistency is essential to improve alignment and interoperability within the national digital ecosystem.
 
 This work directly supports National Target Architecture, ensuring coherence and integration across digital health services in Wales. Furthermore, the transition towards adopting FHIR for interoperability and FHIR DocumentReference as the standard mechanism for document metadata provides a strategic opportunity to formalise governance, prevent misuse, and embed internationally recognised best practices.
@@ -52,21 +55,17 @@ Without this functional definition and boundary-setting, we risk:
 A shared understanding of what a clinical document is, and is not, will help inform system architecture, clinical workflows, information governance, and retention strategies across NHS Wales.
 
 ## Options
-N/a
-
-## Options
-Analysis
-N/a
+N/A
 
 ## Recommendation
+
 Adopt and operationalise a definition of a clinical document across systems, teams, and governance processes to ensure consistency, safety, and interoperability. This definition should guide system design, information governance, user training, and record-keeping practices.
 
 They should be defined as the following:
 
 A discrete, authored, version-controlled unit of clinical or administrative information that is contextually bound to a care event or activity, intended for long-term storage and reference. It should be retrievable, legally defensible, and include sufficient metadata (e.g., author, creation time, document type, subject, version control and encounter context).
 
-Core Attributes
-
+Core Attributes:
 - Persistent: Remains unchanged over time; intended for long-term storage and retrieval.
 - Complete: Represents a whole, self-contained snapshot of care or decision-making.
 - Authentic: Has clear authorship, provenance, and is auditable.
@@ -76,7 +75,6 @@ Core Attributes
 - Discoverable: Includes sufficient metadata (e.g., author, creation time, document type, subject, version, and encounter context) and alignment to [FHIR Document Reference](https://simplifier.net/guide/fhir-standards-wales-implementation-guide/Home/FHIR-Assets/Profiles-and-Extensions/Profiles/DataStandardsWales-DocumentReference?version=2.4.0)
 
 Examples include:
-
 - Discharge summaries
 - Clinic letters
 - Consent forms
@@ -93,7 +91,6 @@ To prevent misclassification and ensure alignment with the business capabilities
 - Clinical Data: active forms data, as this is clinical data and requires to be structured and stored in a clinical data repository, unless finalised, presented as a PDF, versioned, and stored with appropriate metadata
 
 This definition provides standards alignment and is supported by:
-
 - [SNOMED CT](https://termbrowser.nhs.uk/?): coded clinical content for semantic interoperability
 - FHIR (UK Core / NHS Wales guidance): structured, machine-readable format for interoperability [FHIR Document Reference](https://simplifier.net/guide/fhir-standards-wales-implementation-guide/Home/FHIR-Assets/Profiles-and-Extensions/Profiles/DataStandardsWales-DocumentReference?version=2.4.0)
 - Welsh Health Circulars (WHC): [WHC/2015/053](https://www.gov.wales/introduction-snomed-ct-nhs-information-standard-whc201553) & [WHC/2023/018](https://www.gov.wales/introduction-hl7-fhir-foundational-standard-all-nhs-wales-bodies-whc2023018)
@@ -102,7 +99,6 @@ This definition provides standards alignment and is supported by:
 - [FAIR Principles](https://www.go-fair.org/fair-principles/): provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets
 
 Action Steps:
-
 - Embed this definition into technical specifications, governance frameworks, and clinical safety cases
 - Align with national and international standards (e.g., Document metadata standard, IHE XDS, FHIR DocumentReference)
 - Train system designers, product teams, and clinical staff on appropriate classification and usage
@@ -111,8 +107,8 @@ Action Steps:
 Exclude non-document artefacts from document repositories (e.g., data points, logs, raw media, Dicom images, active forms, etc)
 
 ## Consequences
-**Clinical & Technical Practice**:
 
+**Clinical & Technical Practice**:
 - Establishes a clear, standard definition of a clinical document across all systems.
 - Enhances patient safety and trust by ensuring only complete, authorised documents are stored and shared.
 - Streamlines workflows and improves discoverability through consistent metadata.
