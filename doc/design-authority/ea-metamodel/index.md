@@ -20,7 +20,7 @@ recommended metamodel are capture as metamodel decisions.
 
 The following decisions have been made regarding the metamodel:
 
-* [Multiple Application Instances](multiple-application-instances/index.md)
+* [Multiple Application Instances](multiple-application-instances.md)
 
 ## Metamodel Diagram
 

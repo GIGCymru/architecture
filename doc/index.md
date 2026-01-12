@@ -49,7 +49,7 @@ objectives. You'll find:
 1. New to ADRs? Read [why we write architecture decision records](https://github.blog/engineering/architecture-optimization/why-write-adrs/)
    and this [practical overview of ADRs](https://ctaverna.github.io/adr/)
 
-2. Want to propose a new architecture decision? Follow our [ADRProcess](design-authority/dhcw/architecture-decision-record-process/index.md)
+2. Want to propose a new architecture decision? Follow our [ADRProcess](design-authority/dhcw/architecture-decision-record-process.md)
 
 3. Looking for guidance? Start with our [Architecture Principles](principles/index.md)
 
@@ -63,5 +63,5 @@ We welcome contributions from the NHS Wales technology community.
 Feel free to raise an [Issue](https://github.com/GIGCymru/architecture) to start
 a discussion.
 
-See also our [ADR process](design-authority/dhcw/architecture-decision-record-process/index.md)
+See also our [ADR process](design-authority/dhcw/architecture-decision-record-process.md)
 documentation for details on how to propose or contribute new decisions.
