@@ -55,6 +55,7 @@ Without this functional definition and boundary-setting, we risk:
 A shared understanding of what a clinical document is, and is not, will help inform system architecture, clinical workflows, information governance, and retention strategies across NHS Wales.
 
 ## Options
+
 N/A
 
 ## Recommendation
@@ -66,7 +67,8 @@ They should be defined as the following:
 A discrete, authored, version-controlled unit of clinical or administrative information that is contextually bound to a care event or activity, intended for long-term storage and reference. It should be retrievable, legally defensible, and include sufficient metadata (e.g., author, creation time, document type, subject, version control and encounter context).
 
 Core Attributes:
-- Persistent: Remains unchanged over time; intended for long-term storage and retrieval.
+
+- Persistent: Remains unchanged over time, intended for long-term storage and retrieval.
 - Complete: Represents a whole, self-contained snapshot of care or decision-making.
 - Authentic: Has clear authorship, provenance, and is auditable.
 - Contextual: Bound to a specific clinical or administrative event or activity.
@@ -75,6 +77,7 @@ Core Attributes:
 - Discoverable: Includes sufficient metadata (e.g., author, creation time, document type, subject, version, and encounter context) and alignment to [FHIR Document Reference](https://simplifier.net/guide/fhir-standards-wales-implementation-guide/Home/FHIR-Assets/Profiles-and-Extensions/Profiles/DataStandardsWales-DocumentReference?version=2.4.0)
 
 Examples include:
+
 - Discharge summaries
 - Clinic letters
 - Consent forms
@@ -99,6 +102,7 @@ This definition provides standards alignment and is supported by:
 - [FAIR Principles](https://www.go-fair.org/fair-principles/): provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets
 
 Action Steps:
+
 - Embed this definition into technical specifications, governance frameworks, and clinical safety cases
 - Align with national and international standards (e.g., Document metadata standard, IHE XDS, FHIR DocumentReference)
 - Train system designers, product teams, and clinical staff on appropriate classification and usage
@@ -109,6 +113,7 @@ Exclude non-document artefacts from document repositories (e.g., data points, lo
 ## Consequences
 
 **Clinical & Technical Practice**:
+
 - Establishes a clear, standard definition of a clinical document across all systems.
 - Enhances patient safety and trust by ensuring only complete, authorised documents are stored and shared.
 - Streamlines workflows and improves discoverability through consistent metadata.
@@ -117,11 +122,13 @@ Exclude non-document artefacts from document repositories (e.g., data points, lo
 Teams will need to adjust to clear boundaries between documents, clinical data, forms, and DICOM images, moving away from the historic practice of treating all artefacts as “documents”.
 
 **Legacy Data Organisations**:
+
 - Existing repositories will need audit, reclassification, and cleansing to align with the new definition.
 - Investment will be required to transition legacy data into the new architecture, ensuring compliance and interoperability.
 - Metadata enrichment and migration planning will be essential to support discoverability and governance.
 
 **Future Compliance and Strategy**:
+
 - Once new document microservices are in place, all new systems and integrations must comply with the agreed definition and metadata standards.
 - Strengthens governance and interoperability across NHS Wales through consistent adoption of FHIR DocumentReference.
 - Provides a clear migration pathway toward a modern, scalable, cloud-native document ecosystem aligned with the National Target Architecture.
