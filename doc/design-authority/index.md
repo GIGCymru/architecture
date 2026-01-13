@@ -11,12 +11,12 @@ This section contains the following key areas:
 
 * [Decision Template](dhcw/architecture-decision-record-template.md) - The
   standard template used for documenting architecture decisions.
-* [Decision Process](dhcw/architecture-decision-record-process/index.md) - The
+* [Decision Process](dhcw/architecture-decision-record-process.md) - The
   approved process for proposing, developing, and approving ADRs.
 
 ## Governance
 
-* [Terms of Reference](dhcw/terms-of-reference/index.md) - The TDA's objectives,
+* [Terms of Reference](dhcw/terms-of-reference.md) - The TDA's objectives,
   membership, and operating model.
 * Meeting Records - Documentation of TDA meetings, decisions, and actions
 

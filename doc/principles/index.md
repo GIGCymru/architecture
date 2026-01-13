@@ -6,7 +6,7 @@ help ensure consistency, promote best practices, and align our technology
 decisions with organisational goals. They must be adopted when building
 and procuring technical solutions.
 
-Our principles are developed and approved by the [DHCW Technical Design Authority (TDA)](../design-authority/dhcw/terms-of-reference/index.md).
+Our principles are developed and approved by the [DHCW Technical Design Authority (TDA)](../design-authority/dhcw/terms-of-reference.md).
 
 Principles apply across various contexts, technologies, and systems and are
 stable over time, even as specific technologies or situations change.
@@ -38,21 +38,21 @@ published by the [Centre for Digital Public Services](https://digitalpublicservi
 The following principles have been formally reviewed and approved by the DHCW
 Technical Design Authority (TDA):
 
-* [Architecture Principles](architecture-principles/index.md) - Our foundational
+* [Architecture Principles](architecture-principles.md) - Our foundational
   principles that guide all architectural decisions
-* [Cloud & Infrastructure](cloud-and-infrastructure/index.md) - Principles for
+* [Cloud & Infrastructure](cloud-and-infrastructure.md) - Principles for
   cloud adoption and infrastructure design
-* [Data & Analytics](data-and-analytics/index.md) - Guidelines for data
+* [Data & Analytics](data-and-analytics.md) - Guidelines for data
   management, analytics, and insights
-* [Digital Products & Software Engineering](digital-products-and-software-engineering/index.md) -
+* [Digital Products & Software Engineering](digital-products-and-software-engineering.md) -
   Best practices for building and maintaining digital products
-* [Digital Workplace](digital-workplace/index.md) - Principles for creating
+* [Digital Workplace](digital-workplace.md) - Principles for creating
   effective digital working environments
-* [Open Architecture & Integration](open-architecture/index.md) - Guidelines for
+* [Open Architecture & Integration](open-architecture.md) - Guidelines for
   creating interoperable and extensible systems
-* [Security & Identity](security-and-identity/index.md) - Core security and
+* [Security & Identity](security-and-identity.md) - Core security and
   identity management principles
-* [User-Centred Design](user-centred-design/index.md) - Principles for creating
+* [User-Centred Design](user-centred-design.md) - Principles for creating
   services that meet user needs
 
 ## Principles Under Development
@@ -60,7 +60,7 @@ Technical Design Authority (TDA):
 The following principles are currently being developed and reviewed. While not yet
 formally approved, they provide valuable guidance in their respective areas:
 
-* [Clinical Principles](clinical/index.md) - Guidelines for clinical systems
+* [Clinical Principles](clinical.md) - Guidelines for clinical systems
   and healthcare technology
 
 ## Using These Principles
@@ -73,7 +73,7 @@ These principles should be:
 * Referenced in Architecture Decision Records (ADRs)
 
 If you need to deviate from these principles, document your rationale in an ADR
-and seek appropriate approval through the [Governance Process](../design-authority/dhcw/architecture-decision-record-process/index.md).
+and seek appropriate approval through the [Governance Process](../design-authority/dhcw/architecture-decision-record-process.md).
 
 ## Contributing
 
