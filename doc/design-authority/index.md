@@ -5,6 +5,11 @@ governance body that commissions, owns, and steers the development of DHCW's
 Enterprise Architecture. The TDA ensures alignment with strategic objectives of
 both the organisation and wider Health and Care policy and strategy.
 
+The TDA is supported by the Technical Design Assurance Group (TDAG), which
+maintains the integrity of the architecture by reviewing and approving
+significant changes to platforms and products, and ensuring compliance with
+approved principles and standards.
+
 This section contains the following key areas:
 
 ## Architecture Decision Records (ADRs)
@@ -16,8 +21,9 @@ This section contains the following key areas:
 
 ## Governance
 
-* [Terms of Reference](dhcw/terms-of-reference.md) - The TDA's objectives,
+* [TDA Terms of Reference](dhcw/tda-terms-of-reference.md) - The TDA's objectives,
   membership, and operating model.
+* [TDAG Terms of Reference](dhcw/tdag-terms-of-reference.md) - The Technical Design Assurance Group's objectives and operating model.
 * Meeting Records - Documentation of TDA meetings, decisions, and actions
 
 ## Enterprise Architecture

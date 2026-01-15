@@ -1,13 +1,13 @@
-# Terms of Reference
+# TDA Terms of Reference
 
 ## Introduction
 
-The [DHCW](https://https://dhcw.nhs.wales/) Technical Design Authority (TDA)
+The [DHCW](https://dhcw.nhs.wales/) Technical Design Authority (TDA)
 commissions, owns and steers the development of DHCW’s Enterprise Architecture
 with the aim of ensuring alignment with the strategic objectives of the
 organisation and wider Health and Care policy and strategy.
 
-The TDA meets **monthly** for **90** minutes.
+The TDA meets **every 6 weeks** for **90** minutes.
 
 ## Objectives
 
@@ -17,14 +17,14 @@ patterns, architecture descriptions, catalogues and roadmaps.
 * Commission and oversee TDA Working Groups in the production of EA artifacts
 including:
 
-  * Architecture principles, standards & patterns
-  * Reviewing roadmaps (e.g. platform & product roadmaps)
-  * Architecture catalogues & assessments
-  * Architecture descriptions
+    * Architecture principles, standards & patterns
+    * Reviewing roadmaps (e.g. platform & product roadmaps)
+    * Architecture catalogues & assessments
+    * Architecture descriptions
 
-* Through the Technical Design Assurance Group (TDAG), review and assure
+* Through the [Technical Design Assurance Group (TDAG)](tdag-terms-of-reference.md), review and assure
 architecture & design outputs.
-* Provide an escalation route to the Technical Design Assurance Group (TDAG).
+* Provide an escalation route to the [Technical Design Assurance Group (TDAG)](tdag-terms-of-reference.md).
 * Advise DHCW Execs on digital threats and opportunities.
 * Lead the design of digital technology foundations for DHCW
 

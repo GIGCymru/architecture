@@ -240,7 +240,7 @@ The migration effort is justified by the long-term benefits of aligning with the
 **Future review:**
 
 * This decision should be reviewed if:
-  * Zensical development ceases or changes direction significantly
-  * A major new documentation platform emerges that offers compelling advantages
-  * Team requirements change substantially (e.g., move away from Python ecosystem)
-  * Build performance or maintainability degrades significantly
+    * Zensical development ceases or changes direction significantly
+    * A major new documentation platform emerges that offers compelling advantages
+    * Team requirements change substantially (e.g., move away from Python ecosystem)
+    * Build performance or maintainability degrades significantly
