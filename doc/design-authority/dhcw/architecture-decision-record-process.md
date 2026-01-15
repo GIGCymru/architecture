@@ -126,6 +126,16 @@ required for:
 
 ## Initiation and Commissioning
 
+!!! warning "Sensitive Information"
+
+    Sensitive content must **not** be discussed or stored on the public GitHub
+    repository. Before sharing any information, you must think carefully about
+    whether it could be helpful to someone with malicious intent.
+
+    If you believe the subject matter is sensitive, please refer to the
+    [Handling Sensitive or Secure ADRs](#handling-sensitive-or-secure-adrs)
+    section for the process to follow.
+
 Prior to the creation of an ADR it is recommended that an [Issue](https://github.com/GIGCymru/architecture/issues)
 is raised in this GitHub repository outlining the need for a new ADR (or
 update to an existing one). This enables very early discussion around the
