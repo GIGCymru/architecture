@@ -5,3 +5,4 @@
 *[NCSC]: National Cyber Security Centre
 *[TDAG]: Technical Design Assurance Group
 *[TDG]: Temporary Decision Group
+*[WIAG]: Wales Informatics Assurance Group
