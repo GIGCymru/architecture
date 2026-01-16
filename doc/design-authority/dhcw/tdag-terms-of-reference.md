@@ -101,18 +101,18 @@ group; and have authority to act accordingly.
 | **Executive Sponsor** | Executive Director of Operations |
 | **Chair** | Chief Product and Technology Officer |
 | **Vice Chairs** | Head of Enterprise Architecture, Head of Solution Architecture |
-| **Facilitator** | Amy Vaughan-Thomas, Architect. The facilitator will act as the 'product owner' for the Technical Design Assurance Group: serving as a primary point of contact for those attending TDAG; providing oversight for quality of inputs and outputs; driving continuous improvement to TDAG |
+| **Facilitator** | The facilitator will act as the 'product owner' for the Technical Design Assurance Group: serving as a primary point of contact for those attending TDAG; providing oversight for quality of inputs and outputs; driving continuous improvement to TDAG |
 | **Secretariat** | Directorate Admin, Operations. |
 
 The membership of the group will be as follows:
 
 | Area | Representation needed for quorum? | Responsibility |
 | :--- | :--- | :--- |
-| **Technology ops & architecture** | Yes | Infrastructure (platforms) operations & design impact |
-| **Cyber security** | Yes | Cyber security design |
-| **Data & Digital ops** | Yes | Digital (products) impact |
+| **Technology Ops & Architecture** | Yes | Infrastructure (platforms) operations & design impact |
+| **Cyber Security** | Yes | Cyber security design |
+| **Data & Digital Ops** | Yes | Digital (products) impact |
 | **Architecture** | Yes | Architecture alignment (Enterprise, Solution, General) |
-| **Software development community of practice** | Yes | Software development standards, software developer's viewpoint |
+| **Software Development Community of Practice** | Yes | Software development standards, software developer's viewpoint |
 | **NDR** | Yes | Target Data Architecture |
 | **M365 Centre of Excellence** | No | Represent and voice opportunities to exploit our investment in M365 platform |
 
@@ -154,8 +154,8 @@ instructions.
 All materials (inc. decisions and scheduling) will be managed within a
 ring-fenced Teams Channel available.
 
-(Members and attendees will be allocated the necessary access,
-facilitator and secretariat will administer additional access)
+*Members and attendees will be allocated the necessary access,
+facilitator and secretariat will administer additional access*
 
 ## Outputs
 
@@ -233,19 +233,23 @@ flowchart TD
 
 ## Appendix B: Shift Left Assurance
 
-**Purpose**: to describe at a high level how the Technical Design Assurance Group should review projects / programmes / change in an iterative manner in order to shift assurance earlier in the lifecycle.
+**Purpose**: to describe at a high level how the Technical Design Assurance
+Group should review projects / programmes / change in an iterative manner in
+order to shift assurance earlier in the lifecycle.
 
 Review / approval within the Technical Design Assurance Group should be considered within five groupings:
 
 1. **Initial assessment of change** - assessing levels of architectural / technical complexity, alignment to strategy and confirming the architecture support required.
-2. **Discovery / Concept stage Design review** -- assessing the 'fit' of the planned change against design principles, confirming early design dependencies & assumptions.
-3. **Established change Design review** -- provides refreshed assessment of 'fit' vs design principles, ensures design matches expectations.
-4. **Design Issue resolution** -- Enduring relationship throughout the lifecycle between projects/programmes to resolve blockers.
+2. **Discovery / Concept stage Design review** - assessing the 'fit' of the planned change against design principles, confirming early design dependencies & assumptions.
+3. **Established change Design review** - provides refreshed assessment of 'fit' vs design principles, ensures design matches expectations.
+4. **Design Issue resolution** - Enduring relationship throughout the lifecycle between projects / programmes to resolve blockers.
 5. **Enduring items** - Platform strategies, product strategies and new/updated design principles.
 
-Groups 3 and 5 continues AAAG methodology and are very well established. Examples of Groups 2 & 4 are becoming common types of agenda items.
+Groups 3 and 5 continues AAAG methodology and are very well established.
+Examples of Groups 2 & 4 are becoming common types of agenda items.
 
-Group 1 remains the most complex to deliver, but also where significant enterprise-level value can be obtained.
+Group 1 remains the most complex to deliver, but also where significant
+enterprise-level value can be obtained.
 
 ### Initial Assessment of Change
 
