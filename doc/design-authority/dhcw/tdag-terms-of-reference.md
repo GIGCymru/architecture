@@ -184,7 +184,7 @@ for scrutiny.
 | **TDAG** | Technical Design Assurance Group |
 | **WIAG** | Welsh Informatics Assurance Group |
 
-## Appendix A -- Process for review and approval
+## Appendix A: Process for Review and Approval
 
 Submissions into the Technical Design Assurance Group will follow a
 self-service model wherever possible.
@@ -198,131 +198,125 @@ self-service model wherever possible.
 * Published outcomes (approve, defer, reject) and minutes will be
   available within the same Teams channel post session
 
-## Appendix B -- How the Technical Design Assurance Group seeks to "shift assurance left"
+```mermaid
+flowchart TD
+    subgraph Input
+        Requestor -->|Book Attendance| ScheduleSession[Schedule Session]
+        Requestor -->|Submit Materials| MaterialsReview[Materials Review]
+    end
 
-Purpose -- to describe at a high level how the Technical Design
-Assurance Group should review projects / programmes / change in an
-iterative manner.
+    subgraph Review [TDAG Review]
+        ScheduleSession --> ReviewType{Review Type}
+        MaterialsReview --> ReviewType
+        
+        ReviewType -->|Initial Assessment| AssessComplexity[Assess Complexity & Strategy]
+        ReviewType -->|Discovery / Established| ReviewPrinciples[Review against Principles]
+        ReviewType -->|Design Issue| ReviewResolution[Review Resolution Options]
+        ReviewType -->|Enduring Items| ReviewStrategies[Review Strategies/Principles]
+        
+        AssessComplexity --> AssignArchitect[Assign Architect or Watching Brief]
+        ReviewPrinciples --> Decision{Decision}
+        ReviewResolution --> Decision
+        ReviewStrategies --> Decision
+        
+        Decision -->|Approve / Reject / Defer| UpdateLog[Update Decision Log]
+    end
 
-Review / approval within the Technical Design Assurance Group should be
-considered within five groupings -
+    subgraph Output
+        AssignArchitect --> CommunicateOutcome[Communicate Outcome]
+        UpdateLog --> CommunicateOutcome
+        CommunicateOutcome -->|Within 2 days| Requestor
+        CommunicateOutcome -->|Escalation/Referral| WIAG
+        CommunicateOutcome -->|Report| TDA
+    end
+```
 
-1. **Initial assessment of change** - assessing levels of architectural
-   / technical complexity, alignment to strategy and confirming the
-   architecture support required.
+## Appendix B: Shift Left Assurance
 
-2. **Discovery / Concept stage Design review** -- assessing the 'fit'
-   of the planned change against design principles, confirming early
-   design dependencies & assumptions.
+**Purpose**: to describe at a high level how the Technical Design Assurance Group should review projects / programmes / change in an iterative manner in order to shift assurance earlier in the lifecycle.
 
-3. **Established change Design review** -- provides refreshed
-   assessment of 'fit' vs design principles, ensures design matches
-   expectations.
+Review / approval within the Technical Design Assurance Group should be considered within five groupings:
 
-4. **Design Issue resolution** -- Enduring relationship throughout the
-   lifecycle between projects/programmes to resolve blockers.
+1. **Initial assessment of change** - assessing levels of architectural / technical complexity, alignment to strategy and confirming the architecture support required.
+2. **Discovery / Concept stage Design review** -- assessing the 'fit' of the planned change against design principles, confirming early design dependencies & assumptions.
+3. **Established change Design review** -- provides refreshed assessment of 'fit' vs design principles, ensures design matches expectations.
+4. **Design Issue resolution** -- Enduring relationship throughout the lifecycle between projects/programmes to resolve blockers.
+5. **Enduring items** - Platform strategies, product strategies and new/updated design principles.
 
-5. **Enduring items** - Platform strategies, product strategies and
-   new/updated design principles
+Groups 3 and 5 continues AAAG methodology and are very well established. Examples of Groups 2 & 4 are becoming common types of agenda items.
 
-Groups 3 and 5 continues AAAG methodology and are very well established.
-Examples of Groups 2 & 4 are becoming common types of agenda items.
+Group 1 remains the most complex to deliver, but also where significant enterprise-level value can be obtained.
 
-Group 1 remains the most complex to deliver, but also where significant
-enterprise-level value can be obtained.
+### Initial Assessment of Change
 
-### 1. Initial assessment of change
+**Timeline:** As early as possible in the lifetime of the planned change.
 
-*(Timeline -- as early as possible in the lifetime of the planned
-change)*
+**Inputs:**
 
-Inputs - A templated summary of the planned change allowing for a
-collective review against set criteria -
+A templated summary of the planned change allowing for a collective review against set criteria:
 
-* Is there a new service / functionality required? Is it meeting a
-  temporary or long-term need?
-
-* Are there reusable technologies already in-house that could meet
-  this need?
-
+* Is there a new service / functionality required? Is it meeting a temporary or long-term need?
+* Are there reusable technologies already in-house that could meet this need?
 * Is the project delivering repeatable / low complexity change?
+* Is there an expectation of technical debt or manual workaround created by this change?
 
-* Is there an expectation of technical debt or manual workaround
-  created by this change?
+**Outputs:**
 
-Outputs --
+Either:
 
-Either a. Confirmed level of assigned architect resource OR b. Approval
-to proceed under architect "watching brief" / without architect
-intervention (Presenter to reach out to architecture function if design
-challenges experienced)
+* Confirmed level of assigned architect resource OR
 
-### 2. Discovery / Concept stage Design review
+* Approval to proceed under architect "watching brief" / without architect intervention (Presenter to reach out to architecture function if design challenges experienced)
 
-*(Timeline -- before exit from Discovery / Concept phase of change - to
-allow for WIAG approval of Safety Case and Readiness report, if
-applicable)*
+### Discovery Design Review
 
-Inputs -- Utilising SRS, IDD, SAD, DES and Platform/Product Strategies
-to -
+**Timeline:** Before exit from Discovery - to allow for WIAG approval of
+Safety Case and Readiness report, if applicable.
 
-* Conduct detailed review of planned change -- how it meets design
-  principles and aligns to business requirements and supports the
-  delivery of strategic business objectives and outcomes.
+**Inputs:**
 
-* Draw out impacts upon Technology, High level Processes, Locations,
-  Available products / services, Available channels,
+Utilising SRS, IDD, SAD, DES and Platform/Product Strategies to:
 
-* Confirm and agree in-scope and out of scope items and anticipated
-  design risks
+* Conduct detailed review of planned change -- how it meets design principles and aligns to business requirements and supports the delivery of strategic business objectives and outcomes.
+* Draw out impacts upon Technology, High level Processes, Locations, Available products / services, Available channels.
+* Confirm and agree in-scope and out of scope items and anticipated design risks.
 
-Outputs --
+**Outputs:**
 
-* Formal approval / rejection / deferral to proceed with planned
-  design
+* Formal approval / rejection / deferral to proceed with planned design.
+* Formal approval / rejection / deferral of any compromise where design principles cannot be fully met. Agree levels of acceptable technical debt, manual workaround, if applicable.
 
-* Formal approval / rejection / deferral of any compromise where
-  design principles cannot be fully met. Agree levels of acceptable
-  technical debt, manual workaround, if applicable
+### Established Change Design Review
 
-### 3. 'Established change' Design review
+**Timeline:** Before exit from Development phase of change - to allow for WIAG
+approval of Safety Case and Readiness report, if applicable.
 
-*(Timeline -- before exit from Development phase of change - to allow
-for WIAG approval of Safety Case and Readiness report, if applicable)*
+**Inputs:**
 
-Inputs -- Utilising SRS, IDD, SAD, DES and Platform/Product Strategies
-to provide a **[refreshed]{.underline}** summary of planned change
+Utilising SRS, IDD, SAD, DES and Platform/Product Strategies to provide a **refreshed** summary of planned change:
 
-* Describe updated assessment of fit vs design principles
+* Describe updated assessment of fit vs design principles.
+* Illustrate refreshed view of impacts across the organisation.
 
-* Illustrate refreshed view of impacts across the organisation
+Discussion to draw out:
 
-Discussion to draw out -
+* Key design risks and design dependencies identified, de-scoped items and design assumptions that have been disproved since last review.
 
-* Key design risks and design dependencies identified, de-scoped items
-  and design assumptions that have been disproved since last review
+**Outputs:**
 
-Outputs --
+* Formal approval / rejection / deferral to continue to proceed with planned design.
+* Formal approval / rejection / deferral of any newly established compromise where design principles cannot be fully met or re-approval of previous position. Ditto for technical debt, manual workaround, if applicable.
 
-* Formal approval / rejection / deferral to continue to proceed with
-  planned design
+### Design Issue Resolution
 
-* Formal approval / rejection / deferral of any newly established
-  compromise where design principles cannot be fully met or
-  re-approval of previous position. Ditto for technical debt, manual
-  workaround, if applicable
+**Timeline:** Enduring throughout all phases.
 
-### 4. Design Issue Resolution
+**Inputs:**
 
-Timeline -- enduring throughout all phases
+* Clear statement of issue being experienced, and its impact upon planned design / progress.
 
-Inputs -- Clear statement of issue being experienced, and its impact
-upon planned design / progress
+* Draw out impacts, options for resolution *(avoid / reduce / transfer / accept)*, the preferred option and its rationale.
 
-Draw out impacts, options for resolution *(avoid / reduce / transfer /
-accept)*, the preferred option and its rationale
+**Outputs:**
 
-Outputs --
-
-* Formal approval / rejection / deferral to continue to proceed with
-  preferred option
+* Formal approval / rejection / deferral to continue to proceed with preferred option.
