@@ -60,9 +60,10 @@ Adopt an Architecture Decision Record **naming convention** of:
 * Author to ensure titles are human readable and unique.
 * Avoid the use of acronyms
 * Examples:
-  * 'Use Architecture Decision Records and Structure'
-  * 'Architecture Decision Records Naming Conventions'
-  * 'Format Architecture Decision Records with Markdown'
+
+    * 'Use Architecture Decision Records and Structure'
+    * 'Architecture Decision Records Naming Conventions'
+    * 'Format Architecture Decision Records with Markdown'
 
 Whilst numbering Architecture Decision Records makes them easy to cross-reference, it introduces an administrative/process overhead to ensure numbers are unique and sequential and adds complexity in the ordering of records, especially when multiple records are in development in parallel (which gets published first, who gets the next record number etc.)
 

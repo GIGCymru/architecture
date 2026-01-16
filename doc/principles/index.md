@@ -6,7 +6,7 @@ help ensure consistency, promote best practices, and align our technology
 decisions with organisational goals. They must be adopted when building
 and procuring technical solutions.
 
-Our principles are developed and approved by the [DHCW Technical Design Authority (TDA)](../design-authority/dhcw/terms-of-reference.md).
+Our principles are developed and approved by the [DHCW Technical Design Authority (TDA)](../design-authority/dhcw/tda-terms-of-reference.md).
 
 Principles apply across various contexts, technologies, and systems and are
 stable over time, even as specific technologies or situations change.
