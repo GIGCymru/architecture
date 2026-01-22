@@ -9,6 +9,7 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "AAAG",
         "Ardoq",
         "CCIO",
         "CISO",
@@ -30,9 +31,11 @@
         "Pulumi",
         "TDA",
         "TDAG",
+        "WIAG",
         "zensical"
     ],
     "ignoreWords": [
+        "mklink",
         "Rodarmor"
     ],
     "import": []
