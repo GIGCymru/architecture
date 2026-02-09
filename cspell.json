@@ -10,9 +10,12 @@
     "dictionaries": [],
     "words": [
         "AAAG",
+        "ABUHB",
         "Ardoq",
         "CCIO",
         "CISO",
+        "CODEOWNERS",
+        "CPTO",
         "daemonless",
         "Descr",
         "DHCW",
@@ -35,8 +38,10 @@
         "zensical"
     ],
     "ignoreWords": [
+        "Collis",
         "mklink",
-        "Rodarmor"
+        "Rodarmor",
+        "tlsv"
     ],
     "import": []
 }

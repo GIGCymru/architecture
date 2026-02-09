@@ -14,6 +14,19 @@ the involvement of formal governance bodies (e.g. Technical Design Authority
 (TDA) and Technical Design Assurance Group (TDAG)) as much as is practicable
 whilst maintaining suitable levels of assurance and governance.
 
+!!! important "Public and Internal Repositories"
+
+    DHCW maintains two separate GitHub repositories for architecture:
+    
+    *   **Internal Repository** (`architecture-internal`): This is where all
+        active development, discussions, and reviews occur. **All
+        contributions must be made here (unless highly sensitive).**
+    *   **Public Repository** (`architecture`): This is a read-only, public-facing
+        mirror that is automatically updated from the internal repository.
+    
+    Content from the internal repository is only synchronized to the public site
+    if it is explicitly listed in the `sync-public.toml` manifest.
+
 Anyone can propose an ADR and request collaboration to approve a decision.
 The proposal should clearly articulate the problem and context, and may
 include a solution or decision if ready. Early engagement is strongly
@@ -128,33 +141,36 @@ required for:
 
 !!! warning "Sensitive Information"
 
-    Sensitive content must **not** be discussed or stored on the public GitHub
-    repository. Before sharing any information, you must think carefully about
-    whether it could be helpful to someone with malicious intent.
+    Sensitive content must **not** be discussed or stored on the **public**
+    GitHub repository and **highly sensitive** content shouldn't be stored in
+    **ANY** Git repository. Before sharing any information, you must think
+    carefully about whether it could be helpful to someone with malicious
+    intent.
 
-    If you believe the subject matter is sensitive, please refer to the
-    [Handling Sensitive or Secure ADRs](#handling-sensitive-or-secure-adrs)
-    section for the process to follow.
+    See [Public Publication Process](#public-publication-process) and
+    [Handling Highly Sensitive ADRs](#handling-highly-sensitive-adrs) for the
+    processes to follow.
 
-Prior to the creation of an ADR it is recommended that an [Issue](https://github.com/GIGCymru/architecture/issues)
-is raised in this GitHub repository outlining the need for a new ADR (or
+Prior to the creation of an ADR it is recommended that an [Issue](https://github.com/GIGCymru/architecture-internal/issues)
+is raised in the **internal** GitHub repository outlining the need for a new ADR (or
 update to an existing one). This enables very early discussion around the
 potential ADR with minimal outlay and effort.
 
 Once the proposer wants to move forward with creating/updating an ADR, they are
 encouraged to use the standard Git/GitHub workflow and raise a Pull Request
-(PR) ahead of following the decision making process documented here.
+(PR) in the `architecture-internal` repository ahead of following the decision
+making process documented here.
 
 ??? Tip "Example Git Workflow"
 
-    * Clone this repository: `git clone git@github.com:GIGCymru/architecture.git`
+    * Clone the internal repository: `git clone git@github.com:GIGCymru/architecture-internal.git`
     * Create a branch from `main` to work on (see [Naming Conventions](../../decisions/meta-decisions/architecture-decision-records-naming-conventions.md)):
-      `git checkout main`, `git checkout -b adr-for-x`
+      `git checkout main`, `git checkout -b adr/name-of-adr`
     * Make the required changes (add/update files) in your editor of choice.
       (note [the template](architecture-decision-record-template.md))
     * Commit the changes: `git add changed-file.md`, `git commit -m "Added new ADR for x"`
     * Push the changes to GitHub `git push -u origin HEAD`
-    * Raise a [Pull Request](https://github.com/GIGCymru/architecture/pulls) on GitHub.com
+    * Raise a [Pull Request](https://github.com/GIGCymru/architecture-internal/pulls) on GitHub.com
 
 Notwithstanding the above guidance, the Technical Design Authority (TDA),
 Technical Design Assurance Group (TDAG), or other relevant governance bodies
@@ -448,8 +464,9 @@ Once an ADR is **Accepted**:
 | **6. Review & Collaboration**      | Drive reviews, manage discussion, gather feedback. | TDG Chair (or Proposer for Level 1) |
 | **7. Decision Making**             | Reach consensus, capture rationale, finalise ADR and metadata. | TDG (Chair facilitates), ADR Proposer |
 | **8. Approval & Merge**            | Merge PR, assign status (e.g. Approved), label by level | ADR Proposer |
-| **9. Communication** | Add to TDAG/TDA agenda as needed, broadcast key decisions. | TDAG & TDA Coordinators |
-| **10. Lifecycle Management**       | Monitor for relevance, deprecate outdated ADRs. | ADR Steward |
+| **9. Publishing (Optional)**       | Request public publication (if suitable). Review by TDAG, Approval by CPTO & CISO. Add to `sync-public.toml`. | ADR Proposer / CPTO / CISO |
+| **10. Communication** | Add to TDAG/TDA agenda as needed, broadcast key decisions. | TDAG & TDA Coordinators |
+| **11. Lifecycle Management**       | Monitor for relevance, deprecate outdated ADRs. | ADR Steward |
 
 ### Approval Authority
 
@@ -494,57 +511,73 @@ ensuring architectural consistency and adherence to accepted decisions.
 Teams need to be proactive in consulting the ADRs and using them as a living
 knowledge base of architectural decisions to inform designs and approaches.
 
-## Handling Sensitive or Secure ADRs
+## Public Publication Process
 
-The default is to collaborate on ADRs via the DHCW public GitHub repository,
-in the open.
+The default is to collaborate on ADRs via the DHCW **internal** GitHub
+repository unless they are **[highly sensitive](#handling-highly-sensitive-adrs)**.
 
-While ADRs are public by default to promote transparency, there are exceptional
-circumstances where the subject matter is highly sensitive (e.g., involving
-security vulnerabilities, confidential commercial information, or critical
-infrastructure details that should not be broadly disclosed).
+While many ADRs should eventually be made public to promote transparency, the
+internal/public repository split provides a natural control point.
 
-### Requesting a Private ADR Process
+!!! warning "Should this be public?"
 
-If a proposed ADR topic is believed to be highly sensitive:
+    As a general guideline, ADRs shouldn't be made public if they contain
+    sensitive information, such as:
+    
+    * Specific IP addresses or server names.
+    * Passwords, secrets, or API keys.
+    * Internal network information.
+    * Information on security and protection systems (firewalls etc.)
+    * Unannounced commercial or strategic information.
+    * Personal data or specific staff names (unless agreed).
+    * Anything else you think would not be suitable for the public domain.
 
-1. The proposer must formally request an exception for private discussion
-    and restricted documentation from the **Technical Design Authority (TDA)**
-    or the **Technical Design Assurance Group (TDAG)** (depending on the
-    level of decision). This request should be made through appropriate internal
-    channels and should outline the nature of the sensitivity and why a private
-    process is necessary.
-2. The TDA/TDAG will review the request. Approval for a private process will
-    be granted if the justification for sensitivity is deemed valid.
+    Consider if the architecture decision itself can be separated from any
+    sensitive information to allow the ADR to be shared.
 
-### Private Discussion and Documentation
+Explicit approval is required to move an ADR from the **internal** repository
+to the **public** repository.
 
-If approved for a private process:
+1. **Request for Publication:** The ADR Proposer indicates the intention to
+    publish the ADR publicly.
+2. **TDAG Review:** ADRs requesting public publication are added to the TDAG
+    agenda. TDAG members discuss the suitability for publication and agree on a
+    recommendation.
+3. **Executive Approval:** The recommendation from TDAG is sent to the Chief
+    Products and Technology Officer (CPTO) and the Chief Information Security
+    Officer (CISO) for review.
+    * Both the CPTO and CISO must review the request.
+    * The CISO has the final say on whether an ADR can be published.
+4. **Publication:** Upon approval, the ADR is added to the `sync-public.toml`
+    manifest and the automated publication process will synchronise the ADR
+    with the public repository and site.
 
-* Discussions will occur in a restricted forum, as determined and facilitated
+### Handling Highly Sensitive ADRs
+
+If a proposed ADR topic is believed to be **highly sensitive** (e.g. information
+that would reveal vulnerabilities, disclose critical infrastructure etc.)
+
+* Discussions must occur in a restricted forum, as determined and facilitated
     by the TDA/TDAG (e.g., a private channel, dedicated secure meetings).
 * An ADR will still be created using the standard template and will follow the
     standard lifecycle (e.g., Proposed, Accepted).
 * However, the ADR itself, containing sensitive details, will be stored in a
     secure, access-controlled location designated by the TDA/TDAG, rather
-    than the public repository.
-
-### Transparency of Outcome for Private ADRs
+    than the GitHub repository.
 
 To maintain a degree of transparency and traceability while protecting
 sensitive information a placeholder or summary ADR **may** be created in the
-public repository.
+internal GitHub repository.
 
-This public-facing ADR would typically:
+This ADR would typically:
 
 * Indicate that a decision on a sensitive topic has been made and recorded.
-* State the ADR title (if the title itself is not sensitive).
+* State the ADR title (if the title itself is not highly sensitive).
 * Provide a high-level, non-sensitive summary of the decision's scope or
     impact, if possible and appropriate.
 * Clearly state that the full details are restricted and stored in a
-    secure location due to sensitivity, referencing the approval from
-    TDA/TDAG.
-* Link to the original generic public issue if one was created.
+    secure location due to sensitivity.
+* Link to the original generic issue if one was created.
 * The decision on whether to create a public placeholder/summary, and the
     level of detail it contains, will be made by the TDA/TDAG, in
     consultation with relevant security and information governance stakeholders.
@@ -578,37 +611,55 @@ graph TD
     accTitle: ADR Workflow
     accDescr: Flowchart showing the typical steps for proposing, developing, and deciding on an Architecture Decision Record.
 
-    Start(["Start: Identify need for a new or updated ADR"]) --> Raise_GitHub_Issue("Optional: Raise GitHub Issue for Early Discussion");
-    Raise_GitHub_Issue          --> Is_Sensitive{"Is ADR content expected to be **sensitive**?"};
+    %% Initialization
+    Start(["Start: Identify<br/>need for ADR"]) --> Issue["Optional: Raise Issue<br/>(Internal Repo)"];
+    Issue --> Sensitive_Check{"Is content<br/>**Highly Sensitive**?"};
 
-    %% Private or Public ADR
-    Is_Sensitive        -- Yes  --> Request_Private["Request private process from TDAG (Level 1-3) or TDA (Level 4)"];
-    Is_Sensitive        -- No   --> Process_Publicly;
+    %% Sensitive Path
+    Sensitive_Check -- Yes --> Request_Private["Request Private Process<br/>(TDAG/TDA)"];
+    Request_Private --> Private_Auth{"Approved?"};
+    Private_Auth -- Yes --> Private_Exec["**Private Process**:<br/>Secure storage &<br/>restricted forum"];
+    Private_Auth -- No --> Standard_Init;
+    Private_Exec --> Private_Decision["Decision<br/>Reached?"];
+    Private_Decision -- Yes --> Placeholder["Optional: Create<br/>Internal Placeholder"];
+    Placeholder --> End(["End"]);
 
-    Request_Private             --> Private_Approval{"Private Process Approved?"};
-    Private_Approval    -- Yes  --> Process_Privately["ADR Handled **Privately**: Secure discussion & storage. **Optional** public placeholder on GitHub."];
-    Private_Approval    -- No   --> Process_Publicly["ADR Handled **Publicly**: Open discussion, public storage via GitHub & Pull Request process"];
-    Process_Privately           --> TDG_Decision{"Decision Level?"};
-    Process_Publicly            --> TDG_Decision;
+    %% Standard Path
+    Sensitive_Check -- No --> Standard_Init["**Standard Process**:<br/>Create/Update ADR<br/>in Internal Repo"];
+    Standard_Init --> Level_Check{"Decision<br/>Level?"};
 
-    %% Level 1 Process
-    TDG_Decision        -- 'Level 1'    --> Peer_Review_ADR["Proposer requests ADR Peer Review (default: 1 week)"];
-    Peer_Review_ADR     --> TDG_Consensus_Q
+    %% Level 1
+    Level_Check -- "Level 1" --> Peer_Review["PR Peer Review<br/>(1 week)"];
+    Peer_Review --> Consensus_Check{"Consensus?"};
 
-    %% Level 2 - 4 Process
-    TDG_Decision        -- 'Level >= 2' --> Flag_TDAG_TDA["Flag to TDAG (Level 2 & 3) or TDA (Level 4)"];
+    %% Level 2, 3, 4
+    Level_Check -- "Level 2/3" --> Flag_TDAG["Flag to TDAG"];
+    Level_Check -- "Level 4" --> Flag_TDA["Flag to TDA"];
+    
+    Flag_TDAG --> Form_TDG["Form TDG"];
+    Flag_TDA --> Form_TDG;
+    
+    Form_TDG --> Collaborate["TDG Collaboration<br/>(2 weeks)"];
+    Collaborate --> Consensus_Check;
 
-    Flag_TDAG_TDA --> TDG_Formed["TDG Formed (Proposer + members, size / composition varies by level)"];
+    %% Consensus Handling
+    Consensus_Check -- No --> Escalate["Escalate to TDAG<br/>(L1-3) or TDA (L4)"];
+    Escalate --> Final_Ruling["TDAG/TDA Decision"];
+    Final_Ruling --> Merge;
+    
+    Consensus_Check -- Yes --> Merge["Merge PR &<br/>Update Status<br/>(Accepted/Rejected)"];
 
-    TDG_Formed --> TDG_Collaboration["TDG Collaborates, Reviews & Seeks Consensus (default: 2 weeks)"];
+    %% Governance & Publication
+    Merge --> Notify["Notify TDAG/TDA"];
+    Notify --> Pub_Check{"Request Public<br/>Publication?"};
 
-    TDG_Collaboration --> TDG_Consensus_Q{"General Consensus on ADR?"};
-    TDG_Consensus_Q -- Yes --> Accept_Reject_ADR;
-    TDG_Consensus_Q -- No --> Escalate["Escalate to TDAG (Level 1 - 3) or TDA (Level 4) for Resolution"];
-    Escalate --> TDAG_TDA_Decides["TDAG/TDA Makes Final Decision"];
-    TDAG_TDA_Decides --> Accept_Reject_ADR;
-
-    %% Finalise ADR
-    Accept_Reject_ADR["Update ADR Status (e.g., 'Accepted', 'Rejected') & Merge Pull Request"] --> Notify_Governance["Notify TDAG (Level 1-3) and TDA (Level 4)"];
-    Notify_Governance --> End(["End"]);
+    %% Publication Path
+    Pub_Check -- No --> End;
+    Pub_Check -- Yes --> TDAG_Rec["TDAG Review &<br/>Recommendation"];
+    TDAG_Rec --> Exec_Review["CPTO & CISO<br/>Review"];
+    Exec_Review --> CISO_Auth{"CISO<br/>Approves?"};
+    
+    CISO_Auth -- Yes --> Add_Manifest["Add to<br/>'sync-public.toml'"];
+    Add_Manifest --> End;
+    CISO_Auth -- No --> End;
 ```

@@ -1,0 +1,50 @@
+name: Quality Assurance
+
+on: [pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Markdown Linting
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
+    - uses: tj-actions/changed-files@v46
+      id: changed-files
+      with:
+        files: 'doc/**/*.md'
+        separator: ","
+    - uses: DavidAnson/markdownlint-cli2-action@v19
+      if: steps.changed-files.outputs.any_changed == 'true'
+      with:
+        config: '.markdownlint-cli2.jsonc'
+        globs: ${{ steps.changed-files.outputs.all_changed_files }}
+        separator: ","
+
+  links:
+    name: Internal Link Check
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+    - name: Check internal links
+      run: python3 scripts/check-links.py doc/
+
+  sync-manifest:
+    name: Verify Sync Manifest
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+    - name: Verify sync manifest files exist
+      run: python3 scripts/verify-sync-manifest.py

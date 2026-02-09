@@ -74,13 +74,13 @@ The site will be available at `http://127.0.0.1:8000/`
 
 ## Quality Assurance
 
-Run markdown linter on all documentation files:
+Run all quality assurance checks (linting and link checking):
 
 ```bash
-just lint
+just qa
 ```
 
-**Important:** Always run linting before committing to fix any issues.
+**Important:** Always run quality checks before committing to fix any issues.
 
 ## Documentation Structure
 
@@ -109,7 +109,7 @@ just lint
 
 Before committing changes:
 
-1. **Always run linting:** `just lint` and fix any issues reported
+1. **Always run quality checks:** `just qa` and fix any issues reported
 2. **Always run build:** `just build` and fix any WARNINGS raised
 3. Test the site locally: `just run` and verify your changes render correctly
 

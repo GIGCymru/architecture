@@ -69,6 +69,7 @@ nav = [
         {"Use Mermaid for Documenting Diagrams" = "decisions/meta-decisions/use-mermaid-for-documenting-diagrams.md"},
         {"Use Spell Checker for Documents" = "decisions/meta-decisions/use-spell-checker-for-documents.md"},
         {"Use Zensical for Publishing" = "decisions/meta-decisions/use-zensical-for-publishing.md"},
+        {"Internal and Public Repository Split" = "decisions/meta-decisions/internal-and-public-repo-split.md"},
         {"Migrate from Make to Just for Command Running" = "decisions/meta-decisions/migrate-from-make-to-just.md"},
       ]},
       {"Process Decisions" = [

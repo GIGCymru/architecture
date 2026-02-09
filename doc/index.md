@@ -57,11 +57,17 @@ objectives. You'll find:
 
 ## Contributing
 
-This site is managed through our [GitHub repository](https://github.com/GIGCymru/architecture).
+This site is managed through our **internal** [GitHub repository](https://github.com/GIGCymru/architecture-internal).
 We welcome contributions from the NHS Wales technology community.
 
-Feel free to raise an [Issue](https://github.com/GIGCymru/architecture) to start
+Feel free to raise an [Issue](https://github.com/GIGCymru/architecture-internal/issues) to start
 a discussion.
 
 See also our [ADR process](design-authority/dhcw/architecture-decision-record-process.md)
 documentation for details on how to propose or contribute new decisions.
+
+!!! note "Public and Internal Repositories"
+
+    Note that DHCW maintains both an **internal** repository for development and a
+    **public** read-only repository for the published site. Consult the 
+    [README](https://github.com/GIGCymru/architecture#readme) for more details.

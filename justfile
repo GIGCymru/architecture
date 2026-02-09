@@ -77,11 +77,22 @@ deploy:
 # Quality Assurance
 # ============================================================================
 
+# Run all quality checks (linting, link checking, and sync manifest verification)
+qa: lint check-links verify-sync-manifest
+
 # Run markdown linter on all documentation files (requires npm install)
 lint:
     @echo "🔍 Linting markdown files with markdownlint-cli2..."
     npx markdownlint-cli2 "doc/**/*.md" --config .markdownlint-cli2.jsonc
     @echo "✅ Markdown linting complete - no issues found!"
+
+# Check for broken internal links in markdown files. Pass `-h` to show help.
+check-links *args:
+    @uv run scripts/check-links.py {{args}}
+
+# Verify that all files in sync-public.toml exist in the repository. Pass `-h` to show help.
+verify-sync-manifest *args:
+    @uv run scripts/verify-sync-manifest.py {{args}}
 
 # ============================================================================
 # Document Conversion
@@ -97,3 +108,11 @@ word:
     @echo "✅ Word documents generated successfully!"
     @echo "   Output: architecture-decision-record-template.docx"
     @echo "   Output: architecture-design-overview-template.docx"
+
+# =========================================================================
+# Publishing Sync
+# =========================================================================
+
+# Run script to sync to the public repository clone (dry-run by default). Pass `-h` to show help.
+sync-public *args:
+    uv run scripts/sync-public.py {{args}}

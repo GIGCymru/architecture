@@ -1,0 +1,62 @@
+name: Sync Public Repository
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout internal repository
+        uses: actions/checkout@v6
+        with:
+          repository: GIGCymru/architecture-internal
+          path: internal-repo
+          ref: main
+          fetch-depth: 1
+      
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Generate Token
+        id: generate_token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.SYNC_APP_ID }}
+          private-key: ${{ secrets.SYNC_APP_PRIVATE_KEY }}
+          owner: GIGCymru
+          repositories: architecture
+      
+      - name: Checkout public repository
+        uses: actions/checkout@v6
+        with:
+          repository: GIGCymru/architecture
+          token: ${{ steps.generate_token.outputs.token }}
+          persist-credentials: true
+          path: public-repo
+          ref: main
+          fetch-depth: 1
+      
+      - name: Sync files
+        run: python internal-repo/scripts/sync-public.py public-repo --repo-root internal-repo --apply
+      
+      - name: Commit and push changes
+        run: |
+          INTERNAL_SHA=$(git -C internal-repo rev-parse --short HEAD)
+          cd public-repo
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to sync"
+            exit 0
+          fi
+          git config user.name "GIGCymru-Architecture-Sync[bot]"
+          git config user.email "2715548+GIGCymru-Architecture-Sync[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Sync from internal repository @ ${INTERNAL_SHA}"
+          git push
