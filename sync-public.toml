@@ -6,6 +6,7 @@ files = [
   ".devcontainer.json",
   ".dockerignore",
   # ".github/dependabot.yml", - Only runs on internal repo.
+  ".github/workflows/copilot-setup-steps.yml",
   ".github/workflows/markdown-to-word-styles.docx",
   ".github/workflows/markdown-to-word.yml",
   ".github/workflows/pr-quality.yml",
