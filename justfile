@@ -77,14 +77,20 @@ deploy:
 # Quality Assurance
 # ============================================================================
 
-# Run all quality checks (linting, link checking, and sync manifest verification)
-qa: lint check-links verify-sync-manifest
+# Run all quality checks (linting, spell checking, link checking, and sync manifest verification)
+qa: lint spell check-links verify-sync-manifest
 
 # Run markdown linter on all documentation files (requires npm install)
 lint:
     @echo "🔍 Linting markdown files with markdownlint-cli2..."
     npx markdownlint-cli2 "doc/**/*.md" --config .markdownlint-cli2.jsonc
     @echo "✅ Markdown linting complete - no issues found!"
+
+# Run spell checker on all documentation files (requires npm install)
+spell:
+    @echo "🔍 Spell checking files with cspell..."
+    npx cspell-cli "doc/**/*.md"
+    @echo "✅ Spell checking complete - no issues found!"
 
 # Check for broken internal links in markdown files. Pass `-h` to show help.
 check-links *args:

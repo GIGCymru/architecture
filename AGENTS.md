@@ -74,13 +74,41 @@ The site will be available at `http://127.0.0.1:8000/`
 
 ## Quality Assurance
 
-Run all quality assurance checks (linting and link checking):
+Run all quality assurance checks (linting, spell checking, and link checking):
 
 ```bash
 just qa
 ```
 
 **Important:** Always run quality checks before committing to fix any issues.
+
+### Individual Quality Checks
+
+Run markdown linting only:
+
+```bash
+just lint
+```
+
+Run spell checking only:
+
+```bash
+just spell
+```
+
+Run internal link checking only:
+
+```bash
+just check-links
+```
+
+Run sync manifest verification only:
+
+```bash
+just verify-sync-manifest
+```
+
+All of these checks run automatically as part of `just qa` and in the GitHub PR workflow.
 
 ## Documentation Structure
 

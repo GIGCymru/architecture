@@ -7,7 +7,7 @@
 
 **Date**: 2025-03-21
 
-**Governance**: To Be Discovered; potentially a combo of this repo partipants, DHCW CISO, NHS Wales UCB peers, etc.
+**Governance**: To Be Discovered; potentially a combo of this repo participants, DHCW CISO, NHS Wales UCB peers, etc.
 
 ## Situation - Context and Problem Statement
 

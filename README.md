@@ -177,6 +177,26 @@ just lint
 
 This will check all the markdown files in the `doc/` directory and report any errors.
 
+### Spell Checking
+
+This project uses `cspell` to spell check the markdown files in the [doc/](doc/) directory.
+
+To run the spell checker, you will first need to install it using `npm`:
+
+```bash
+npm install
+```
+
+Once it is installed, you can run the spell checker by running the following command:
+
+```bash
+just spell
+```
+
+This will check all the markdown files in the `doc/` directory and report any spelling errors.
+
+The spell checker is configured using the `cspell.json` file in the root of the repository. This file contains project-specific words and ignore patterns that are allowed in the documentation.
+
 ### Internal Link Checker
 
 We also provide a custom script to verify that all internal markdown links
