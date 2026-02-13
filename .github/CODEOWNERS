@@ -1,0 +1,3 @@
+# Require review from specific users for changes to the public sync manifest
+
+sync-public.toml @collisdigital

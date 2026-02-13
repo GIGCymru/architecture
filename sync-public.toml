@@ -3,9 +3,11 @@
 # Any files not included here will be deleted from the destination repository if they exist there
 # 
 files = [
+  ".github/CODEOWNERS",
   ".devcontainer.json",
   ".dockerignore",
-  # ".github/dependabot.yml", - Only runs on internal repo.
+  # `dependabot.yml` mapped so it only runs on the internal repo.
+  { source = ".github/dependabot.yml", dest = ".github-internal/dependabot.yml" },
   ".github/copilot-instructions.md",
   ".github/workflows/copilot-setup-steps.yml",
   ".github/workflows/markdown-to-word-styles.docx",
@@ -18,6 +20,7 @@ files = [
   ".gitignore",
   ".markdownlint-cli2.jsonc",
   ".python-version",
+  ".vscode/launch.json",
   ".vscode/settings.json",
   ".vscode/zensical-schema.json",
   "AGENTS.md",
@@ -30,6 +33,8 @@ files = [
   "cspell.json",
   "doc/assets/favicon.ico",
   "doc/assets/logo.png",
+
+  # Decisions
   "doc/decisions/index.md",
   "doc/decisions/meta-decisions/architecture-decision-records-naming-conventions.md",
   "doc/decisions/meta-decisions/enable-mkdocs-enhanced-site-navigation.md",
@@ -45,17 +50,23 @@ files = [
   "doc/decisions/meta-decisions/use-mermaid-for-documenting-diagrams.md",
   "doc/decisions/meta-decisions/use-spell-checker-for-documents.md",
   "doc/decisions/meta-decisions/use-zensical-for-publishing.md",
-  "doc/decisions/process-decisions/git-organizations.md",
-  "doc/decisions/process-decisions/hosting-data-in-the-united-states-or-the-united-kingdom.md",
-  "doc/decisions/process-decisions/knowledge.md",
-  "doc/decisions/process-decisions/ways-of-working.md",
+
+  # Old ADRs from before the ADR process was approved, need revisiting before being published
+  # "doc/decisions/process-decisions/git-organizations.md",
+  # "doc/decisions/process-decisions/hosting-data-in-the-united-states-or-the-united-kingdom.md",
+  # "doc/decisions/process-decisions/knowledge.md",
+  # "doc/decisions/process-decisions/ways-of-working.md",
+
   "doc/decisions/technical-decisions/cloud-hosting-for-documents-capabilities.md",
   "doc/decisions/technical-decisions/cloud-workload-placement.md",
-  "doc/decisions/technical-decisions/containerization.md",
   "doc/decisions/technical-decisions/document-services.md",
   "doc/decisions/technical-decisions/fhir-for-interoperability-first.md",
-  "doc/decisions/technical-decisions/live-dora-metrics-dashboards.md",
-  "doc/decisions/technical-decisions/python-script-runner.md",
+
+  # Old ADRs from before the ADR process was approved, need revisiting before being published
+  # "doc/decisions/technical-decisions/containerization.md",
+  # "doc/decisions/technical-decisions/live-dora-metrics-dashboards.md",
+  # "doc/decisions/technical-decisions/python-script-runner.md",
+
   "doc/design-authority/dhcw/architecture-decision-record-process.md",
   "doc/design-authority/dhcw/architecture-decision-record-template.md",
   "doc/design-authority/dhcw/architecture-design-overview-template.md",
@@ -71,6 +82,8 @@ files = [
   "doc/design-authority/index.md",
   "doc/index.md",
   "doc/overrides/partials/integrations/analytics/simple.html",
+
+  # Principles
   "doc/principles/architecture-principles.md",
   "doc/principles/clinical.md",
   "doc/principles/cloud-and-infrastructure.md",
@@ -88,7 +101,12 @@ files = [
   "package.json",
   "sync-public.toml",
   "pyproject.toml",
+  "scripts/_utils.py",
+  "scripts/check-links.py",
+  "scripts/check-sync-excluded-nav.py",
+  "scripts/list-sync-excluded-files.py",
   "scripts/sync-public.py",
+  "scripts/verify-sync-manifest.py",
   "uv.lock",
   "zensical.toml",
 ]

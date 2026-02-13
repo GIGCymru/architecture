@@ -30,14 +30,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6
-    - name: Set up Node.js
-      uses: actions/setup-node@v6
-      with:
-        node-version: 'lts/*'
-    - name: Install npm dependencies
-      run: npm ci
     - name: Run cspell
-      run: npx cspell-cli "doc/**/*.md"
+      uses: streetsidesoftware/cspell-action@v8
+      with:
+        files: 'doc/**/*.md'
+        config: 'cspell.json'
+        strict: true
+        inline: warning
 
   links:
     name: Internal Link Check
@@ -49,7 +48,7 @@ jobs:
       with:
         python-version: '3.13'
     - name: Check internal links
-      run: python3 scripts/check-links.py doc/
+      run: python3 scripts/check-links.py doc/ --format github
 
   sync-manifest:
     name: Verify Sync Manifest
@@ -61,4 +60,16 @@ jobs:
       with:
         python-version: '3.13'
     - name: Verify sync manifest files exist
-      run: python3 scripts/verify-sync-manifest.py
+      run: python3 scripts/verify-sync-manifest.py --format github
+
+  sync-excluded-nav:
+    name: Check Sync Excluded Nav
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+    - name: Check nav entries excluded from sync manifest
+      run: python3 scripts/check-sync-excluded-nav.py --format github

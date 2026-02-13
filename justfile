@@ -77,8 +77,8 @@ deploy:
 # Quality Assurance
 # ============================================================================
 
-# Run all quality checks (linting, spell checking, link checking, and sync manifest verification)
-qa: lint spell check-links verify-sync-manifest
+# Run all quality checks (linting, spell checking, link checking, sync manifest verification, and nav checks)
+qa: lint spell check-links verify-sync-manifest list-sync-excluded check-sync-excluded-nav
 
 # Run markdown linter on all documentation files (requires npm install)
 lint:
@@ -94,11 +94,27 @@ spell:
 
 # Check for broken internal links in markdown files. Pass `-h` to show help.
 check-links *args:
+    @echo "🔗 Checking internal links..."
     @uv run scripts/check-links.py {{args}}
+    @echo "✅ Internal link check complete - no issues found!"
 
 # Verify that all files in sync-public.toml exist in the repository. Pass `-h` to show help.
 verify-sync-manifest *args:
+    @echo "🔍 Verifying sync manifest files exist..."
     @uv run scripts/verify-sync-manifest.py {{args}}
+    @echo "✅ Sync manifest verification complete - no issues found!"
+
+# List git-tracked files excluded from sync-public.toml. Pass `-h` to show help.
+list-sync-excluded *args:
+    @echo "📋 Listing files excluded from sync manifest..."
+    @uv run scripts/list-sync-excluded-files.py {{args}}
+    @echo "✅ Excluded file listing complete!"
+
+# Check for navigation entries excluded from sync-public.toml. Pass `-h` to show help.
+check-sync-excluded-nav *args:
+    @echo "🧭 Checking navigation entries against sync manifest..."
+    @uv run scripts/check-sync-excluded-nav.py {{args}}
+    @echo "✅ Navigation exclusion check complete - no issues found!"
 
 # ============================================================================
 # Document Conversion

@@ -200,8 +200,9 @@ The spell checker is configured using the `cspell.json` file in the root of the 
 ### Internal Link Checker
 
 We also provide a custom script to verify that all internal markdown links
-resolve correctly. This script automatically ignores links within code blocks
-to avoid false positives.
+resolve correctly and that linked files are included in the public sync
+manifest (links to excluded files fail the check). This script automatically
+ignores links within code blocks to avoid false positives.
 
 To check all internal links (defaults to checking the [doc/](doc/) directory):
 
@@ -229,6 +230,52 @@ just verify-sync-manifest
 
 This check runs automatically as part of the PR quality workflow and as part of
 `just qa`.
+
+### Sync Excluded Navigation Check
+
+We also verify that any files listed in the Zensical navigation are included in
+the public sync manifest. This prevents navigation entries from pointing to
+content that is excluded from the public repository.
+
+To check for excluded navigation entries:
+
+```bash
+just check-sync-excluded-nav
+```
+
+This check runs automatically as part of the PR quality workflow and as part of
+`just qa`.
+
+### Listing Sync Excluded Files
+
+For informational purposes, you can view which git-tracked files are excluded
+from the public sync manifest. This command is useful for understanding what
+content remains internal-only.
+
+To list excluded files:
+
+```bash
+just list-sync-excluded
+```
+
+This command displays a summary showing:
+
+- Total count of tracked files
+- Total count of files in the sync manifest
+- Total count of excluded files
+- A list of all excluded file paths
+
+**Note:** This is an informational-only command that does not fail the build. It
+runs as part of `just qa` to provide visibility into sync exclusions, but it
+does not run in the PR workflow and does not block merging. You are not required
+to act on its output unless you specifically need to add or remove files from
+the public sync manifest.
+
+The output can be useful when:
+
+- Verifying that sensitive or internal-only files are correctly excluded
+- Reviewing what content is available publicly vs. internally
+- Deciding whether to add new files to the sync manifest
 
 ## Converting Markdown to Word
 
