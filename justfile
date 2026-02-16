@@ -87,6 +87,7 @@ lint:
     @echo "✅ Markdown linting complete - no issues found!"
 
 # Run spell checker on all documentation files (requires npm install)
+# Note: GitHub Actions uses streetsidesoftware/cspell-action for inline PR annotations
 spell:
     @echo "🔍 Spell checking files with cspell..."
     npx cspell-cli "doc/**/*.md"

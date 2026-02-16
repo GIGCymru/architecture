@@ -195,7 +195,12 @@ just spell
 
 This will check all the markdown files in the `doc/` directory and report any spelling errors.
 
-The spell checker is configured using the `cspell.json` file in the root of the repository. This file contains project-specific words and ignore patterns that are allowed in the documentation.
+The spell checker is configured using the `cspell.json` file in the root of the repository. This file contains
+project-specific words and ignore patterns that are allowed in the documentation.
+
+**GitHub Actions Integration:** When running in pull requests, the spell checker uses the official
+`streetsidesoftware/cspell-action` GitHub Action to display spelling errors as inline annotations in the Files
+Changed view, making it easier to identify and fix spelling issues.
 
 ### Internal Link Checker
 

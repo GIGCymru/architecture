@@ -42,6 +42,7 @@ nav = [
       {"TDA Terms of Reference" = "design-authority/dhcw/tda-terms-of-reference.md"},
       {"TDAG Terms of Reference" = "design-authority/dhcw/tdag-terms-of-reference.md"},
       {"Meetings" = [
+        {"2026-01-14" = "design-authority/dhcw/meetings/2026-01-14.md"},
         {"2025-10-17" = "design-authority/dhcw/meetings/2025-10-17.md"},
         {"2025-09-05" = "design-authority/dhcw/meetings/2025-09-05.md"},
         {"2025-07-25" = "design-authority/dhcw/meetings/2025-07-25.md"},

@@ -96,6 +96,9 @@ Run spell checking only:
 just spell
 ```
 
+**Note:** In GitHub Actions PRs, spelling issues are displayed inline in the Files Changed view using the
+official `streetsidesoftware/cspell-action` GitHub Action.
+
 Run internal link checking only:
 
 ```bash
