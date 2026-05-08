@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "cspell-cli": "^9.6.0",
-    "markdownlint-cli2": "^0.21.0"
+    "cspell-cli": "^10.0.0",
+    "markdownlint-cli2": "^0.22.1"
   }
 }
