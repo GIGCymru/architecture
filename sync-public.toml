@@ -61,6 +61,7 @@ files = [
   "doc/decisions/technical-decisions/cloud-workload-placement.md",
   "doc/decisions/technical-decisions/document-services.md",
   "doc/decisions/technical-decisions/fhir-for-interoperability-first.md",
+  "doc/decisions/technical-decisions/github-as-source-control-platform.md",
 
   # Old ADRs from before the ADR process was approved, need revisiting before being published
   # "doc/decisions/technical-decisions/containerization.md",

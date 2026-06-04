@@ -79,6 +79,7 @@ nav = [
         {"Cloud Provider Workload Placement" = "decisions/technical-decisions/cloud-workload-placement.md"},
         {"Document Services" = "decisions/technical-decisions/document-services.md"},
         {"FHIR for Interoperability First" = "decisions/technical-decisions/fhir-for-interoperability-first.md"},
+        {"GitHub as Source Control Platform" = "decisions/technical-decisions/github-as-source-control-platform.md"},
       ]},
     ]},
   ]},
