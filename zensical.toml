@@ -12,7 +12,7 @@ site_url = "https://gigcymru.github.io/architecture/"
 repo_url = "https://github.com/GIGCymru/architecture/"
 docs_dir = "doc"
 edit_uri = "edit/main/doc/"
-copyright = "Copyright &copy; 2025 GIG Cymru - NHS Wales – <a href=\"#__consent\">Change cookie settings</a>"
+copyright = "Copyright &copy; 2026 GIG Cymru - NHS Wales – <a href=\"#__consent\">Change cookie settings</a>"
 extra_css = ["stylesheets/extra.css"]
 
 # Navigation structure (converted from doc/.nav.yml)
@@ -41,7 +41,10 @@ nav = [
       {"Design Template" = "design-authority/dhcw/architecture-design-overview-template.md"},
       {"TDA Terms of Reference" = "design-authority/dhcw/tda-terms-of-reference.md"},
       {"TDAG Terms of Reference" = "design-authority/dhcw/tdag-terms-of-reference.md"},
+      {"Technical Debt" = "design-authority/dhcw/technical-debt.md"},
       {"Meetings" = [
+        {"2026-06-26" = "design-authority/dhcw/meetings/2026-06-26.md"},
+        {"2026-04-17" = "design-authority/dhcw/meetings/2026-04-17.md"},
         {"2026-02-20" = "design-authority/dhcw/meetings/2026-02-20.md"},
         {"2026-01-14" = "design-authority/dhcw/meetings/2026-01-14.md"},
         {"2025-10-17" = "design-authority/dhcw/meetings/2025-10-17.md"},
@@ -79,6 +82,7 @@ nav = [
         {"Cloud Provider Workload Placement" = "decisions/technical-decisions/cloud-workload-placement.md"},
         {"Document Services" = "decisions/technical-decisions/document-services.md"},
         {"FHIR for Interoperability First" = "decisions/technical-decisions/fhir-for-interoperability-first.md"},
+        {"GitHub as Source Control Platform" = "decisions/technical-decisions/github-as-source-control-platform.md"},
       ]},
     ]},
   ]},
