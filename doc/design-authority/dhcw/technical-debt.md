@@ -1,8 +1,9 @@
 # Technical Debt
 
-!!! warning "Awaiting Approval"
+!!! success "Approved"
 
-    This definition is awaiting approval by the DHCW Technical Design Authority (TDA)
+    This definition was approved by the DHCW Technical Design Authority (TDA) on
+    26/06/2026
 
 ## Introduction
 
