@@ -388,7 +388,7 @@ to map to a different location, for example:
 ```toml
 files = [
   "doc/index.md", 
-  { source = "doc/overrides/partials/integrations/analytics/simple.html", dest = "overrides/analytics.html" },
+  { source = ".github-public/workflows/publish.yml", dest = ".github/workflows/publish.yml" },
 ]
 ```
 
@@ -404,6 +404,16 @@ Note:
 * The GitHub Pages workflow at [.github-public/workflows/publish.yml](.github-public/workflows/publish.yml)
   is copied to `.github/workflows/publish.yml` so it only runs on the
   **public** repository.
+
+## Analytics
+
+The site uses [Simple Analytics](https://www.simpleanalytics.com/), a cookieless analytics service.
+Analytics is on by default. Visitors can opt out through the banner's **Manage settings** control or the
+**Change analytics settings** footer link. Preferences are saved in browser local storage.
+
+The banner text is configured in [zensical.toml](zensical.toml). The loader is in
+[overrides/partials/integrations/analytics/simple.html](overrides/partials/integrations/analytics/simple.html).
+Theme overrides live in the top-level `overrides/` directory, outside the published documentation source.
 
 ## Contributing
 

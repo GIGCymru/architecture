@@ -118,6 +118,7 @@ All of these checks run automatically as part of `just qa` and in the GitHub PR 
 - All documentation (in Markdown format) to be published on the site lives under the `doc/` path.
 - Markdown documents should adhere to a 120 character line limit, unless it breaks URLs/links/special elements.
 - The documentation is built using [Zensical](https://zensical.org/), a modern static site generator.
+- Theme template overrides live in the top-level `overrides/` directory, not under `doc/`.
 
 ## Conventions
 

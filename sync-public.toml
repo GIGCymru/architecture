@@ -90,7 +90,7 @@ files = [
   "doc/design-authority/nhs-wales/sag-terms-of-reference.md",
   "doc/design-authority/phw/index.md",
   "doc/index.md",
-  "doc/overrides/partials/integrations/analytics/simple.html",
+  "overrides/partials/integrations/analytics/simple.html",
 
   # Principles
   "doc/principles/dhcw/architecture-principles.md",

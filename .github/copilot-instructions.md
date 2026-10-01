@@ -143,6 +143,7 @@ it must sit under the relevant `{org}/` subfolder so the published URL includes 
 ### Key Configuration
 
 - **`zensical.toml`** - Site configuration (name, URL, navigation, theme)
+- **`overrides/`** - Theme template overrides, kept outside the published `doc/` source
 - **`justfile`** - Command definitions
 - **`pyproject.toml`** - Python dependencies
 - **`package.json`** - Node.js dependencies (for linting)
