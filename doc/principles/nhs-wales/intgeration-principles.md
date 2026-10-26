@@ -4,6 +4,7 @@
 >
 > These integration principles are being developed as part of
 > the National Target Architecture and have not yet been formally endorsed.
+
   
 ## IP01. Open Standards-based Integration  
   Use approved open standards, information models and reusable integration patterns by default. Document exceptions for bespoke formats or pair-specific designs.  
@@ -39,6 +40,7 @@ Avoid unnecessary technical debt. Where delivery or platform-exit constraints re
 ## IP09. Design for reliable delivery and safe reprocessing  
   
 Define delivery, acknowledgement, retry and redelivery rules for each pattern. Anticipate duplicates, delays and out of-order delivery, and support safe reprocessing.  
+
 ## IP10. Provide end-to-end visibility and reconciliation  
   
 Trace delivery from source to target, including relevant outcomes from the receiving system. Use correlation and reconciliation to direct failures to the responsible owner.  
