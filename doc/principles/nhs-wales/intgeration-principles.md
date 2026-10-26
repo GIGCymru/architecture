@@ -5,9 +5,9 @@
 > These integration principles are being developed as part of
 > the National Target Architecture and have not yet been formally endorsed.
 
-  
 ## IP01. Open Standards-based Integration  
-  Use approved open standards, information models and reusable integration patterns by default. Document exceptions for bespoke formats or pair-specific designs.  
+  
+Use approved open standards, information models and reusable integration patterns by default. Document exceptions for bespoke formats or pair-specific designs.  
   
 ## IP02. Contract-first integration  
   
