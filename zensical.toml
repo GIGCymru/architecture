@@ -67,6 +67,7 @@ nav = [
     ]},
     {"PHW" = [
       {"Introduction" = "design-authority/phw/index.md"},
+      {"TDA Terms of Reference" = "design-authority/phw/tda-terms-of-reference.md"},
     ]},
   ]},
   {"Decisions" = [

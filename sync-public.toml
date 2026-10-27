@@ -89,6 +89,7 @@ files = [
   "doc/design-authority/nhs-wales/index.md",
   "doc/design-authority/nhs-wales/sag-terms-of-reference.md",
   "doc/design-authority/phw/index.md",
+  "doc/design-authority/phw/tda-terms-of-reference.md",
   "doc/index.md",
   "overrides/partials/integrations/analytics/simple.html",
 

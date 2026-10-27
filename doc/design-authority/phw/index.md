@@ -8,3 +8,10 @@
 
 This section is being established to hold PHW-specific design authority
 content.
+
+This section contains the following key areas:
+
+## Governance
+
+* [TDA Terms of Reference](tda-terms-of-reference.md) - The PHW Technical
+  Design Authority's objectives, membership, and operating model.
