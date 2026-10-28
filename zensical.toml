@@ -23,6 +23,7 @@ nav = [
     {"NHS Wales" = [
       {"Introduction" = "principles/nhs-wales/index.md"},
       {"Architecture Principles" = "principles/nhs-wales/architecture-principles.md"},
+      {"Integration Principles" = "principles/nhs-wales/integration-principles.md"},
     ]},
     {"DHCW" = [
       {"Introduction" = "principles/dhcw/index.md"},

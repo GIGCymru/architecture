@@ -106,6 +106,7 @@ files = [
   "doc/principles/dhcw/user-centred-design.md",
   "doc/principles/nhs-wales/architecture-principles.md",
   "doc/principles/nhs-wales/index.md",
+  "doc/principles/nhs-wales/integration-principles.md",
   "doc/stylesheets/extra.css",
   "includes/abbreviations.md",
   "justfile",

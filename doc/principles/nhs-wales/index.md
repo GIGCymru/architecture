@@ -19,6 +19,8 @@ rationale, implications, and more detailed domain-specific principles.
 * [Architecture Principles](architecture-principles.md) - The foundational
   principles approved by SAG for use across NHS Wales.
 
+* [Integration Principles](integration-principles.md) - **⚠️ DRAFT – FOR REVIEW** - Working principles developed through the NTA Integration Platform deep dive.
+
 ## Contributing
 
 Proposed changes to the national principles should be raised with the NHS
